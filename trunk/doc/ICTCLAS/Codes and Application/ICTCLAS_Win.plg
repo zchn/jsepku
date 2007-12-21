@@ -1,0 +1,100 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ICTCLAS_Win - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\WANGDO~1.HOL\LOCALS~1\Temp\RSP4B0.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/ICTCLAS_Win.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\ICTCLAS\Codes and Application\ICTCLAS_Win.cpp"
+"D:\ICTCLAS\Codes and Application\ICTCLAS_WinDlg.cpp"
+"D:\ICTCLAS\Codes and Application\Segment\DynamicArray.cpp"
+"D:\ICTCLAS\Codes and Application\Segment\NShortPath.cpp"
+"D:\ICTCLAS\Codes and Application\Segment\Queue.cpp"
+"D:\ICTCLAS\Codes and Application\Segment\SegGraph.cpp"
+"D:\ICTCLAS\Codes and Application\Segment\Segment.cpp"
+"D:\ICTCLAS\Codes and Application\Utility\ContextStat.cpp"
+"D:\ICTCLAS\Codes and Application\Utility\Dictionary.cpp"
+"D:\ICTCLAS\Codes and Application\Utility\Utility.cpp"
+"D:\ICTCLAS\Codes and Application\Tag\Span.cpp"
+"D:\ICTCLAS\Codes and Application\Unknown\UnknowWord.cpp"
+"D:\ICTCLAS\Codes and Application\Result\Result.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\WANGDO~1.HOL\LOCALS~1\Temp\RSP4B0.tmp" 
+Creating temporary file "C:\DOCUME~1\WANGDO~1.HOL\LOCALS~1\Temp\RSP4B1.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/ICTCLAS_Win.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\ICTCLAS\Codes and Application\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\WANGDO~1.HOL\LOCALS~1\Temp\RSP4B1.tmp" 
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ICTCLAS_Win.cpp
+ICTCLAS_WinDlg.cpp
+DynamicArray.cpp
+NShortPath.cpp
+Queue.cpp
+SegGraph.cpp
+Segment.cpp
+ContextStat.cpp
+Dictionary.cpp
+Utility.cpp
+Span.cpp
+UnknowWord.cpp
+Result.cpp
+Generating Code...
+Creating temporary file "C:\DOCUME~1\WANGDO~1.HOL\LOCALS~1\Temp\RSP4B2.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/ICTCLAS_Win.pdb" /debug /machine:I386 /out:"Debug/ICTCLAS_Win.exe" /pdbtype:sept 
+".\Debug\ICTCLAS_Win.obj"
+".\Debug\ICTCLAS_WinDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\DynamicArray.obj"
+".\Debug\NShortPath.obj"
+".\Debug\Queue.obj"
+".\Debug\SegGraph.obj"
+".\Debug\Segment.obj"
+".\Debug\ContextStat.obj"
+".\Debug\Dictionary.obj"
+".\Debug\Utility.obj"
+".\Debug\Span.obj"
+".\Debug\UnknowWord.obj"
+".\Debug\Result.obj"
+".\Debug\ICTCLAS_Win.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\WANGDO~1.HOL\LOCALS~1\Temp\RSP4B2.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating temporary file "C:\DOCUME~1\WANGDO~1.HOL\LOCALS~1\Temp\RSP4B3.tmp" with contents
+[
+/nologo /o"Debug/ICTCLAS_Win.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\ICTCLAS_Win.sbr"
+".\Debug\ICTCLAS_WinDlg.sbr"
+".\Debug\DynamicArray.sbr"
+".\Debug\NShortPath.sbr"
+".\Debug\Queue.sbr"
+".\Debug\SegGraph.sbr"
+".\Debug\Segment.sbr"
+".\Debug\ContextStat.sbr"
+".\Debug\Dictionary.sbr"
+".\Debug\Utility.sbr"
+".\Debug\Span.sbr"
+".\Debug\UnknowWord.sbr"
+".\Debug\Result.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\WANGDO~1.HOL\LOCALS~1\Temp\RSP4B3.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+ICTCLAS_Win.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

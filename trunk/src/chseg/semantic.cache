@@ -1,0 +1,21 @@
+;; Object ChSeg/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ChSeg/"
+  :tables (list 
+   (semanticdb-table "HzSeg.cpp"
+    :major-mode 'c++-mode
+    :tags '(("HzSeg.h" include nil nil [20 38]) ("Dict.h" include nil nil [39 56]) ("MAX_WORD_LENGTH" variable (:constant-flag t :default-value "8" :type "unsigned int") nil [58 97]) ("SEPARATOR" function (:prototype-flag t :constant-flag t :type ("string" type (:type "class") nil nil)) nil [98 128]) ("CHzSeg" function (:constructor-flag t :parent "CHzSeg" :type ("CHzSeg" type (:type "class") nil nil)) nil [158 178]) ("CHzSeg" function (:destructor-flag t :parent "CHzSeg" :type "void") nil [180 201]) ("SegmentHzStrMM" function (:parent "CHzSeg" :arguments (("dict" variable (:type ("CDict" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [294 306]) ("s1" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [307 317])) :type ("string" type (:type "class") nil nil)) nil [263 744]) ("SegmentSentenceMM" function (:parent "CHzSeg" :arguments (("dict" variable (:type ("CDict" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [823 835]) ("s1" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [836 846])) :type ("string" type (:type "class") nil nil)) nil [789 2740]) ("Translate" function (:parent "CHzSeg" :arguments (("SourceStr" variable (:pointer 1 :type "char") (reparse-symbol arg-sub-list) [2815 2831])) :type "void") nil [2792 3428]) ("SegmentURL" function (:parent "CHzSeg" :arguments (("dict" variable (:type ("CDict" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3519 3531]) ("url" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3532 3543])) :type ("string" type (:type "class") nil nil)) nil [3493 4823]))
+    :file "HzSeg.cpp"
+    :pointmax 4826
+    )
+   (semanticdb-table "Dict.cpp"
+    :major-mode 'c++-mode
+    :tags '(("Dict.h" include nil nil [19 36]) ("CDict" function (:constructor-flag t :parent "CDict" :type ("CDict" type (:type "class") nil nil)) nil [38 69]) ("CDict" function (:destructor-flag t :parent "CDict" :type "void") nil [71 108]) ("OpenDict" function (:parent "CDict" :type "void") nil [110 502]) ("IsWord" function (:parent "CDict" :arguments (("str" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [523 535])) :type "bool") nil [504 616]))
+    :file "Dict.cpp"
+    :pointmax 617
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )
