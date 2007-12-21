@@ -1,0 +1,144 @@
+\documentclass[14pt,a4paper]{article}
+
+\usepackage{times}
+\usepackage{fontspec}
+\usepackage{xunicode,xltxtra}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\setmainfont[BoldFont={SimHei},Mapping=tex-text]{SimSun}
+\setsansfont[BoldFont={SimHei},Mapping=tex-text]{SimSun}
+\setromanfont[BoldFont={SimHei},Mapping=tex-text]{SimSun}
+
+\makeatletter
+\def\verbatim@font{\sffamily\small} %如果使用roman字体族，将sffamily改成rmfamily
+\makeatother
+
+\title{J Search Engine 原理}
+%\subtitle{PROJ3 实习报告}
+\author{00648333 陈志杰(Joyan) \and 00648332 揭忠(lezhengyi)}
+%\institute{北京大学计算机系}
+
+\begin{document}
+
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+\lstset{numbers=left,
+  frame=shadowbox,
+  escapeinside={`}{`},
+  breaklines,
+  backgroundcolor=\color[rgb]{0.90,0.90,0.90},
+  basicstyle=\small,
+  stringstyle=\ttfamily,      % typewriter type for strings
+  showstringspaces=false}     % no special string spaces
+\maketitle        
+\section{分组情况}
+陈志杰（00648333），揭忠（00648332）
+\section{工作流程}
+\subsection{抓取部分}
+\begin{description}
+\item[文件名] crawl
+\item[用法] crawl dir-name
+\item[说明] 递归访问dir-name下的文件，在dir-name下建立.tianwang.raw原始文件。
+\item[备注] 天网文件格式：\\
+  \begin{lstlisting}
+    version:1.0
+    url:foo.txt
+    date:Tue, 15 Apr 2003 08:13:06 GMT
+    length:12345
+
+    XXXXXXXXXXX
+    XXXXXXXXXXXXX
+    ...
+    XXXXXX
+
+    version:1.0
+    ...
+  \end{lstlisting}
+\end{description}
+\subsection{索引部分}
+\begin{description}
+\item[文件名] rawseg
+\item[用法] rawseg xxx.raw
+\item[说明] 对 xxx.raw 进行切词处理，存入 xxx.raw.seg
+\item[备注] *.raw.seg文件格式：\\
+  \begin{lstlisting}
+    DocID term1 term2 ...
+    DocID term1 term2 ...
+    ......
+  \end{lstlisting}
+\end{description}
+\begin{description}
+\item[文件名] docoff
+\item[用法] docoff xxx.raw
+\item[说明] 将raw中每个原始文件的url的MD5与其正文在raw文件中的偏移关联，存入xxx.didx
+\item[备注] *.didx文件格式：\\
+  \begin{lstlisting}
+    DocID offset
+    DocID offset
+    ......
+  \end{lstlisting}
+\end{description}
+\begin{description}
+\item[文件名] sort
+\item[用法] sort xxx.didx > xxx.didx.sort
+\item[说明] 排序
+\end{description}
+\begin{description}
+\item[文件名] preinvert
+\item[用法] preinvert xxx.raw.seg
+\item[说明] 将xxx.raw.seg转化为准倒排文件xxx.piidx
+\item[备注] *.piidx文件格式：\\
+  \begin{lstlisting}
+    term(lock 8char) DocID(lock 8char HEX)
+    term DocID
+    ......
+  \end{lstlisting}
+\end{description}
+\begin{description}
+\item[文件名] sort
+\item[用法] sort xxx.piidx >xxx.piidx.sort
+\item[说明] 排序
+\end{description}
+\begin{description}
+\item[文件名] invert
+\item[用法] invert xxx.piidx.sort
+\item[说明] 将准倒排文件转化为正式的倒排文件,存入xxx.iidx
+\item[备注] *.iidx文件格式：\\
+  \begin{lstlisting}
+    term DocID DocID docid ...
+    term DocID DocID ...
+    ......
+  \end{lstlisting}
+\end{description}
+\subsection{查询部分}
+\begin{description}
+\item[文件名] query
+\item[用法] query keyword
+\item[说明] 将keyword切词，分别求出其docid集合，合并后将docid按照词频排序,输出到res.txt文件中
+\item[备注] res.txt文件格式：\\
+  \begin{lstlisting}
+    docid offset1 offset2 offset3 ...
+    docid offset1 ...
+    ......
+  \end{lstlisting}
+\end{description}
+\subsection{用户部分}
+\begin{description}
+\item[文件名] query.htm
+\item[用法] 用浏览器打开
+\item[说明] 将res.txt翻译成html格式并显示出来。
+\item[备注] 条目格式：\\
+  \begin{verbatim}
+    文件名    
+    摘要摘要摘要摘要摘要摘要摘要摘要摘要
+    摘要摘要摘要摘要摘要摘（关键词高亮）    
+    文件路径
+  \end{verbatim}
+\end{description}
+\end{document}
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
