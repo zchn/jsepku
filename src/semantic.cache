@@ -1,0 +1,22 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "crawl.cpp"
+    :major-mode 'c++-mode
+    :tags '(("RAWFILENAME" variable (:dereference 1 :constant-flag t :default-value "\"tianwang.raw\"" :type "char") nil [120 162]) ("crawl" function (:arguments (("raw" variable (:type ("ofstream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [174 188]) ("dir_name" variable (:pointer 1 :constant-flag t :type "char") (reparse-symbol arg-sub-list) [188 209])) :type "int") nil [164 1360]) ("main" function (:arguments (("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1371 1380]) ("argv" variable (:pointer 2 :type "char") (reparse-symbol arg-sub-list) [1381 1393])) :type "int") nil [1362 1691]))
+    :file "crawl.cpp"
+    :pointmax 1692
+    :unmatched-syntax 'nil
+    )
+    (semanticdb-table "rawseg.cpp"
+    :major-mode 'c++-mode
+    :tags '(("chseg/Dict.h" include nil nil [74 97]) ("chseg/HzSeg.h" include nil nil [98 122]) ("iDict" variable (:type ("CDict" type (:type "class") nil nil)) nil [124 136]) ("good_char" function (:prototype-flag t :arguments (("c" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [261 277])) :type "bool") nil [246 278]) ("clean" function (:prototype-flag t :arguments (("content" variable (:pointer 1 :type "char") (reparse-symbol arg-sub-list) [290 304]) ("len" variable (:type "int") (reparse-symbol arg-sub-list) [304 312]) ("out" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [312 324])) :type "void") nil [279 325]) ("main" function (:arguments (("argc" variable (:type "int") (reparse-symbol arg-sub-list) [338 347]) ("argv" variable (:pointer 1 :dereference 1 :type "char") (reparse-symbol arg-sub-list) [348 361])) :type "int") nil [329 2107]) ("clean" function (:arguments (("content" variable (:pointer 1 :type "char") (reparse-symbol arg-sub-list) [2120 2134]) ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2134 2142]) ("out" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2142 2154])) :type "void") nil [2109 2343]) ("good_char" function (:arguments (("c" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [2360 2376])) :type "bool") nil [2345 2463]))
+    :file "rawseg.cpp"
+    :pointmax 2464
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )

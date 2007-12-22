@@ -1,0 +1,384 @@
+
+Md5.cpp,765
+#define GET_UINT32(11,221
+#define PUT_UINT32(19,628
+void CMD5::md5_starts(29,1076
+void CMD5::md5_process(39,1314
+#define S(60,1995
+#define P(62,2057
+#define F(72,2337
+#undef F91,3051
+#define F(93,3063
+#undef F112,3777
+#define F(114,3793
+#undef F133,4499
+#define F(135,4511
+#undef F154,5220
+void CMD5::md5_update(162,5337
+static uint8 md5_padding[md5_padding199,6173
+void CMD5::md5_finish(207,6425
+void CMD5::GenerateMD5(227,7010
+CMD5::CMD5(235,7226
+CMD5::CMD5(241,7287
+int _httoi(245,7356
+  struct CHexMap247,7390
+    char chr;CHexMap::chr249,7413
+    int value;CHexMap::value250,7428
+CMD5::CMD5(295,8394
+CMD5 CMD5::operator +(CMD5::operator +312,8676
+bool CMD5::operator ==(CMD5::operator ==320,8843
+string CMD5::ToString(330,9020
+
+DocSegment.cpp,118
+CDict iDict;14,220
+const unsigned int HEADER_BUF_SIZE 18,256
+const unsigned int MAX_DOC_ID 20,382
+int main(22,422
+
+txtfile/Md5.cpp,765
+#define GET_UINT32(11,221
+#define PUT_UINT32(19,628
+void CMD5::md5_starts(29,1076
+void CMD5::md5_process(39,1314
+#define S(60,1995
+#define P(62,2057
+#define F(72,2337
+#undef F91,3051
+#define F(93,3063
+#undef F112,3777
+#define F(114,3793
+#undef F133,4499
+#define F(135,4511
+#undef F154,5220
+void CMD5::md5_update(162,5337
+static uint8 md5_padding[md5_padding199,6173
+void CMD5::md5_finish(207,6425
+void CMD5::GenerateMD5(227,7010
+CMD5::CMD5(235,7226
+CMD5::CMD5(241,7287
+int _httoi(245,7356
+  struct CHexMap247,7390
+    char chr;CHexMap::chr249,7413
+    int value;CHexMap::value250,7428
+CMD5::CMD5(295,8394
+CMD5 CMD5::operator +(CMD5::operator +312,8676
+bool CMD5::operator ==(CMD5::operator ==320,8843
+string CMD5::ToString(330,9020
+
+txtfile/DocSegment.cpp,118
+CDict iDict;14,220
+const unsigned int HEADER_BUF_SIZE 18,256
+const unsigned int MAX_DOC_ID 20,382
+int main(22,422
+
+txtfile/crawl.cpp,79
+const char RAWFILENAME[RAWFILENAME10,119
+int crawl(12,164
+int main(55,1352
+
+txtfile/.svn/text-base/Md5.cpp.svn-base,765
+#define GET_UINT32(11,221
+#define PUT_UINT32(19,628
+void CMD5::md5_starts(29,1076
+void CMD5::md5_process(39,1314
+#define S(60,1995
+#define P(62,2057
+#define F(72,2337
+#undef F91,3051
+#define F(93,3063
+#undef F112,3777
+#define F(114,3793
+#undef F133,4499
+#define F(135,4511
+#undef F154,5220
+void CMD5::md5_update(162,5337
+static uint8 md5_padding[md5_padding199,6173
+void CMD5::md5_finish(207,6425
+void CMD5::GenerateMD5(227,7010
+CMD5::CMD5(235,7226
+CMD5::CMD5(241,7287
+int _httoi(245,7356
+  struct CHexMap247,7390
+    char chr;CHexMap::chr249,7413
+    int value;CHexMap::value250,7428
+CMD5::CMD5(295,8394
+CMD5 CMD5::operator +(CMD5::operator +312,8676
+bool CMD5::operator ==(CMD5::operator ==320,8843
+string CMD5::ToString(330,9020
+
+txtfile/.svn/text-base/Md5.h.svn-base,345
+#define _MD5_H2,16
+using namespace std;8,90
+class CMD513,140
+	#define uint8 16,165
+	#define uint32 17,196
+	struct md5_contextCMD5::md5_context19,233
+		uint32 total[CMD5::md5_context::total21,258
+		uint32 state[CMD5::md5_context::state22,278
+		uint8 buffer[CMD5::md5_context::buffer23,298
+	unsigned long m_data[CMD5::m_data56,1080
+
+txtfile/.svn/text-base/crawl.cpp.svn-base,105
+using namespace std;5,55
+const char RAWFILENAME[RAWFILENAME10,119
+int crawl(12,164
+int main(55,1352
+
+txtfile/.svn/text-base/DocSegment.cpp.svn-base,146
+CDict iDict;14,220
+using namespace std;16,234
+const unsigned int HEADER_BUF_SIZE 18,256
+const unsigned int MAX_DOC_ID 20,382
+int main(22,422
+
+txtfile/Md5.h,345
+#define _MD5_H2,16
+using namespace std;8,90
+class CMD513,140
+	#define uint8 16,165
+	#define uint32 17,196
+	struct md5_contextCMD5::md5_context19,233
+		uint32 total[CMD5::md5_context::total21,258
+		uint32 state[CMD5::md5_context::state22,278
+		uint8 buffer[CMD5::md5_context::buffer23,298
+	unsigned long m_data[CMD5::m_data56,1080
+
+chseg/Dict.cpp,96
+CDict::CDict(5,41
+CDict::~CDict(10,79
+void CDict::OpenDict(15,123
+bool CDict::IsWord(34,536
+
+chseg/HzSeg.cpp,235
+const unsigned int MAX_WORD_LENGTH 6,57
+CHzSeg::CHzSeg(9,157
+CHzSeg::~CHzSeg(13,179
+string CHzSeg::SegmentHzStrMM 18,262
+string CHzSeg::SegmentSentenceMM 43,788
+void CHzSeg::Translate(125,2840
+string CHzSeg::SegmentURL(163,3541
+
+chseg/ExSeg.cpp,37
+CDict iDict;11,144
+int main(13,158
+
+chseg/HzSeg.h,77
+#define _HZSEG_H_040415_2,25
+using namespace std;9,127
+class CHzSeg11,149
+
+chseg/Dict.h,222
+#define _DICT_H_040401_2,25
+using namespace std;9,130
+class CDict22,278
+	bool GetFreq(CDict::GetFreq29,337
+	void AddFreq(CDict::AddFreq31,414
+	map<CDict::map34,457
+	map<string, int> mapDict;CDict::mapDict34,457
+
+chseg/ExSegUrl.cpp,37
+CDict iDict;11,144
+int main(13,158
+
+chseg/.svn/text-base/HzSeg.cpp.svn-base,235
+const unsigned int MAX_WORD_LENGTH 6,57
+CHzSeg::CHzSeg(9,157
+CHzSeg::~CHzSeg(13,179
+string CHzSeg::SegmentHzStrMM 18,262
+string CHzSeg::SegmentSentenceMM 43,788
+void CHzSeg::Translate(125,2840
+string CHzSeg::SegmentURL(163,3541
+
+chseg/.svn/text-base/ExSeg.cpp.svn-base,64
+using namespace std;9,122
+CDict iDict;11,144
+int main(13,158
+
+chseg/.svn/text-base/Dict.h.svn-base,222
+#define _DICT_H_040401_2,25
+using namespace std;9,130
+class CDict22,278
+	bool GetFreq(CDict::GetFreq29,337
+	void AddFreq(CDict::AddFreq31,414
+	map<CDict::map34,457
+	map<string, int> mapDict;CDict::mapDict34,457
+
+chseg/.svn/text-base/HzSeg.h.svn-base,77
+#define _HZSEG_H_040415_2,25
+using namespace std;9,127
+class CHzSeg11,149
+
+chseg/.svn/text-base/ExSegUrl.cpp.svn-base,64
+using namespace std;9,122
+CDict iDict;11,144
+int main(13,158
+
+chseg/.svn/text-base/Dict.cpp.svn-base,96
+CDict::CDict(5,41
+CDict::~CDict(10,79
+void CDict::OpenDict(15,123
+bool CDict::IsWord(34,536
+
+crawl.cpp,79
+const char RAWFILENAME[RAWFILENAME10,119
+int crawl(12,163
+int main(55,1361
+
+.svn/text-base/Md5.cpp.svn-base,765
+#define GET_UINT32(11,221
+#define PUT_UINT32(19,628
+void CMD5::md5_starts(29,1076
+void CMD5::md5_process(39,1314
+#define S(60,1995
+#define P(62,2057
+#define F(72,2337
+#undef F91,3051
+#define F(93,3063
+#undef F112,3777
+#define F(114,3793
+#undef F133,4499
+#define F(135,4511
+#undef F154,5220
+void CMD5::md5_update(162,5337
+static uint8 md5_padding[md5_padding199,6173
+void CMD5::md5_finish(207,6425
+void CMD5::GenerateMD5(227,7010
+CMD5::CMD5(235,7226
+CMD5::CMD5(241,7287
+int _httoi(245,7356
+  struct CHexMap247,7390
+    char chr;CHexMap::chr249,7413
+    int value;CHexMap::value250,7428
+CMD5::CMD5(295,8394
+CMD5 CMD5::operator +(CMD5::operator +312,8676
+bool CMD5::operator ==(CMD5::operator ==320,8843
+string CMD5::ToString(330,9020
+
+.svn/text-base/Md5.h.svn-base,345
+#define _MD5_H2,16
+using namespace std;8,90
+class CMD513,140
+	#define uint8 16,165
+	#define uint32 17,196
+	struct md5_contextCMD5::md5_context19,233
+		uint32 total[CMD5::md5_context::total21,258
+		uint32 state[CMD5::md5_context::state22,278
+		uint8 buffer[CMD5::md5_context::buffer23,298
+	unsigned long m_data[CMD5::m_data56,1080
+
+.svn/text-base/crawl.cpp.svn-base,105
+using namespace std;5,55
+const char RAWFILENAME[RAWFILENAME10,119
+int crawl(12,163
+int main(55,1355
+
+.svn/text-base/DocSegment.cpp.svn-base,146
+CDict iDict;14,220
+using namespace std;16,234
+const unsigned int HEADER_BUF_SIZE 18,256
+const unsigned int MAX_DOC_ID 20,382
+int main(22,422
+
+md5/Md5.cpp,765
+#define GET_UINT32(11,221
+#define PUT_UINT32(19,628
+void CMD5::md5_starts(29,1076
+void CMD5::md5_process(39,1314
+#define S(60,1995
+#define P(62,2057
+#define F(72,2337
+#undef F91,3051
+#define F(93,3063
+#undef F112,3777
+#define F(114,3793
+#undef F133,4499
+#define F(135,4511
+#undef F154,5220
+void CMD5::md5_update(162,5337
+static uint8 md5_padding[md5_padding199,6173
+void CMD5::md5_finish(207,6425
+void CMD5::GenerateMD5(227,7010
+CMD5::CMD5(235,7226
+CMD5::CMD5(241,7287
+int _httoi(245,7356
+  struct CHexMap247,7390
+    char chr;CHexMap::chr249,7413
+    int value;CHexMap::value250,7428
+CMD5::CMD5(295,8394
+CMD5 CMD5::operator +(CMD5::operator +312,8676
+bool CMD5::operator ==(CMD5::operator ==320,8843
+string CMD5::ToString(330,9020
+
+md5/.svn/text-base/Md5.cpp.svn-base,765
+#define GET_UINT32(11,221
+#define PUT_UINT32(19,628
+void CMD5::md5_starts(29,1076
+void CMD5::md5_process(39,1314
+#define S(60,1995
+#define P(62,2057
+#define F(72,2337
+#undef F91,3051
+#define F(93,3063
+#undef F112,3777
+#define F(114,3793
+#undef F133,4499
+#define F(135,4511
+#undef F154,5220
+void CMD5::md5_update(162,5337
+static uint8 md5_padding[md5_padding199,6173
+void CMD5::md5_finish(207,6425
+void CMD5::GenerateMD5(227,7010
+CMD5::CMD5(235,7226
+CMD5::CMD5(241,7287
+int _httoi(245,7356
+  struct CHexMap247,7390
+    char chr;CHexMap::chr249,7413
+    int value;CHexMap::value250,7428
+CMD5::CMD5(295,8394
+CMD5 CMD5::operator +(CMD5::operator +312,8676
+bool CMD5::operator ==(CMD5::operator ==320,8843
+string CMD5::ToString(330,9020
+
+md5/.svn/text-base/Md5.h.svn-base,345
+#define _MD5_H2,16
+using namespace std;8,90
+class CMD513,140
+	#define uint8 16,165
+	#define uint32 17,196
+	struct md5_contextCMD5::md5_context19,233
+		uint32 total[CMD5::md5_context::total21,258
+		uint32 state[CMD5::md5_context::state22,278
+		uint8 buffer[CMD5::md5_context::buffer23,298
+	unsigned long m_data[CMD5::m_data56,1080
+
+md5/Md5.h,345
+#define _MD5_H2,16
+using namespace std;8,90
+class CMD513,140
+	#define uint8 16,165
+	#define uint32 17,196
+	struct md5_contextCMD5::md5_context19,233
+		uint32 total[CMD5::md5_context::total21,258
+		uint32 state[CMD5::md5_context::state22,278
+		uint8 buffer[CMD5::md5_context::buffer23,298
+	unsigned long m_data[CMD5::m_data56,1080
+
+Md5.h,345
+#define _MD5_H2,16
+using namespace std;8,90
+class CMD513,140
+	#define uint8 16,165
+	#define uint32 17,196
+	struct md5_contextCMD5::md5_context19,233
+		uint32 total[CMD5::md5_context::total21,258
+		uint32 state[CMD5::md5_context::state22,278
+		uint8 buffer[CMD5::md5_context::buffer23,298
+	unsigned long m_data[CMD5::m_data56,1080
+
+rawseg.cpp,0
+
+semantic.cache,0
+
+chseg/semantic.cache,0
+
+chseg/.svn/text-base/semantic.cache.svn-base,0
