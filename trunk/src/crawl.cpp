@@ -31,7 +31,7 @@ int crawl(ofstream &raw,const char *dir_name)
       ifstream in((string(dir_name)+"/"+sub->d_name).c_str());
       if(!in){
         cerr<<"[ERROR]:Fail to open file "<<dir_name<<'/'<<sub->d_name<<endl;
-        c!mountontinue;
+        continue;
       }
       raw<<"version:1.0"<<endl;
       raw<<"url:"<<dir_name<<'/'<<sub->d_name<<endl;
