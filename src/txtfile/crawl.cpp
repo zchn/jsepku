@@ -1,13 +1,14 @@
 #include<iostream>
 #include<fstream>
 #include<string>
+#include<cstring>
 
 using namespace std;
 
 #include<sys/types.h>
 #include<dirent.h>
 
-const char RAWFILENAME[] = ".tianwang.raw";
+string RAWFILENAME;
 
 int crawl(ofstream &raw,const char *dir_name)
 {
@@ -21,13 +22,13 @@ int crawl(ofstream &raw,const char *dir_name)
   for(sub = readdir(dir); sub != NULL; sub = readdir(dir)){
     if(strcmp(sub->d_name,".")==0
        ||strcmp(sub->d_name,"..")==0
-       ||strcmp(sub->d_name,RAWFILENAME)==0) continue;
+       ||strcmp(sub->d_name,RAWFILENAME.c_str())==0) continue;
     if(sub->d_type == DT_DIR){
-      cerr<<"[DEBUG]:I'm a dir"<<endl;
+      //cerr<<"[DEBUG]:I'm a dir"<<endl;
       crawl(raw,(string(dir_name)+"/"+sub->d_name).c_str());
     }
     if(sub->d_type == DT_REG){
-      cerr<<"[DEBUG]:I'm a file "<<sub->d_name<<endl;
+      //cerr<<"[DEBUG]:I'm a file "<<sub->d_name<<endl;
       ifstream in((string(dir_name)+"/"+sub->d_name).c_str());
       if(!in){
         cerr<<"[ERROR]:Fail to open file "<<dir_name<<'/'<<sub->d_name<<endl;
@@ -53,8 +54,20 @@ int crawl(ofstream &raw,const char *dir_name)
 }
 
 int main(int argc, char **argv)
-{  
-  ofstream raw((string(argv[1])+"/"+RAWFILENAME).c_str());
+{
+  string path = *argv;
+
+  while(path[path.length()-1] == '/'){
+    path.erase(path.length()-1);
+  }
+  
+  unsigned int pos = path.rfind('/');
+  if(pos == string::npos)
+    RAWFILENAME = path+".raw";
+  else
+    RAWFILENAME = path.substr(pos)+".raw";
+    
+  ofstream raw((path+"/"+RAWFILENAME).c_str());
   if(!raw){
     cerr<<"[ERROR]:Error when opening tianwang raw file "<<argv[1]<<"/"<<RAWFILENAME<<" to write!"<<endl;
     return -1;

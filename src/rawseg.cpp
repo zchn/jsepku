@@ -43,6 +43,8 @@ int main(int argc, char* argv[])
   while (!fidx.eof()){
     string idx_line;
     getline(fidx,idx_line);
+    if(idx_line.length() < 4)
+      continue;
     unsigned int docid = 0,offset = 0;
     if(sscanf(idx_line.c_str(),"%x %x",&docid,&offset) != 2){
       cerr<<"[ERROR]:Irregular format found when reading "<<in_idx_name<<endl;
