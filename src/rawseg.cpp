@@ -3,8 +3,8 @@
 #include<cstdio>
 #include<cstring>
 
-#include "chseg/Dict.h"
-#include "chseg/HzSeg.h"
+#include "Dict.h"
+#include "HzSeg.h"
 
 CDict iDict;
 
@@ -95,12 +95,16 @@ void clean(char *content,int len,string &out)
       out += *curr;
     else if(good_char(*(curr+1)))
       out += ' ';
-  }            
+  }
 }
 
 bool good_char(unsigned char c)
 {
-  if((c >= '0' && c <= 'z') || c >= 128)
+  if((c >= '0' && c <= '9')
+     || (c >= 'A' && c <= 'Z')
+     || (c >= 'a' && c <= 'z')
+     || (c == '\'')
+     || c >= 128)
     return true;
   else
     return false;

@@ -4,7 +4,7 @@
 #include<string>
 #include<iomanip>
 using namespace std;
-const int TERM_LEN=16;
+const unsigned int TERM_LEN=16;
 int preinvert(string path)
 {
 	ifstream file1;
@@ -25,19 +25,19 @@ int preinvert(string path)
 	{
 		string id;
 		file1>>id;
-		while(file1.peek()!='/n'&&!file1.eof())
+		while(file1.peek()!='\n'&&!file1.eof())
 		{
 			string words;
 			if(words.length()>TERM_LEN) continue;
 			else if(words.length()<TERM_LEN&&words.length()!=0) 
 			{
-				for(int i=words.length();i<TERM_LEN;i++)
+				for(unsigned int i=words.length();i<TERM_LEN;i++)
 				{
 					words[i]=' ';
 				}
 			}
 			file1>>words;
-			file2<<setw(TERM_LEN)<<left<<words<<' '<<setw(TERM_LEN)<<left<<id<<' ';
+			file2<<setw(TERM_LEN)<<left<<words<<' '<<setw(TERM_LEN)<<left<<id<<endl;
 		}
 	}
 	return 0;
