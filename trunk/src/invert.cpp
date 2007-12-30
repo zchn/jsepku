@@ -4,7 +4,7 @@
 #include<string>
 #include<iomanip>
 using namespace std;
-const int TERM_LEN=16;
+const int TERM_LEN=32;
 struct word_info
 {
 	string words;
@@ -24,7 +24,7 @@ int invert(string path)
 	int len=out_name.length();
 	len-=11;
 	out_name.erase(len);
-	out_name+="iidx";
+	out_name+=".iidx";
 	ofstream out_iidx(out_name.c_str());
 	in_piidx_sort>>words_info[0].words;
 	in_piidx_sort>>words_info[0].id;
@@ -36,12 +36,12 @@ int invert(string path)
 		in_piidx_sort>>words_info[1].id;
 		if(words_info[1].words==words_info[0].words) 
 		{
-			out_iidx<<setw(TERM_LEN)<<left<<words_info[1].id;
+			out_iidx<<setw(8)<<left<<words_info[1].id<<' ';
 		}
 		else
 		{
-			out_iidx<<endl<<setw(TERM_LEN)<<left<<words_info[1].words;
-			out_iidx<<setw(TERM_LEN)<<left<<words_info[1].id;
+			out_iidx<<endl<<setw(TERM_LEN)<<left<<words_info[1].words<<' ';
+			out_iidx<<setw(8)<<left<<words_info[1].id<<' ';
 		}
 		words_info[0].words=words_info[1].words;
 		words_info[0].id=words_info[1].id;

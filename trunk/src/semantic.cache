@@ -4,16 +4,63 @@
   :tables (list 
    (semanticdb-table "crawl.cpp"
     :major-mode 'c++-mode
-    :tags '(("RAWFILENAME" variable (:dereference 1 :constant-flag t :default-value "\"tianwang.raw\"" :type "char") nil [120 162]) ("crawl" function (:arguments (("raw" variable (:type ("ofstream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [174 188]) ("dir_name" variable (:pointer 1 :constant-flag t :type "char") (reparse-symbol arg-sub-list) [188 209])) :type "int") nil [164 1360]) ("main" function (:arguments (("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1371 1380]) ("argv" variable (:pointer 2 :type "char") (reparse-symbol arg-sub-list) [1381 1393])) :type "int") nil [1362 1691]))
+    :tags '(("RAWFILENAME" variable (:type ("string" type (:type "class") nil nil)) nil [138 157]) ("crawl" function (:arguments (("raw" variable (:type ("ofstream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [169 183]) ("dir_name" variable (:pointer 1 :constant-flag t :type "char") (reparse-symbol arg-sub-list) [183 204])) :type "int") nil [159 1357]) ("main" function (:arguments (("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1368 1377]) ("argv" variable (:pointer 2 :type "char") (reparse-symbol arg-sub-list) [1378 1390])) :type "int") nil [1359 1930]))
     :file "crawl.cpp"
-    :pointmax 1692
+    :pointmax 1931
     :unmatched-syntax 'nil
     )
-    (semanticdb-table "rawseg.cpp"
+   (semanticdb-table "rawseg.cpp"
     :major-mode 'c++-mode
-    :tags '(("chseg/Dict.h" include nil nil [74 97]) ("chseg/HzSeg.h" include nil nil [98 122]) ("iDict" variable (:type ("CDict" type (:type "class") nil nil)) nil [124 136]) ("good_char" function (:prototype-flag t :arguments (("c" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [261 277])) :type "bool") nil [246 278]) ("clean" function (:prototype-flag t :arguments (("content" variable (:pointer 1 :type "char") (reparse-symbol arg-sub-list) [290 304]) ("len" variable (:type "int") (reparse-symbol arg-sub-list) [304 312]) ("out" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [312 324])) :type "void") nil [279 325]) ("main" function (:arguments (("argc" variable (:type "int") (reparse-symbol arg-sub-list) [338 347]) ("argv" variable (:pointer 1 :dereference 1 :type "char") (reparse-symbol arg-sub-list) [348 361])) :type "int") nil [329 2107]) ("clean" function (:arguments (("content" variable (:pointer 1 :type "char") (reparse-symbol arg-sub-list) [2120 2134]) ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2134 2142]) ("out" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2142 2154])) :type "void") nil [2109 2343]) ("good_char" function (:arguments (("c" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [2360 2376])) :type "bool") nil [2345 2463]))
+    :tags '(("Dict.h" include nil nil [74 91]) ("HzSeg.h" include nil nil [92 110]) ("iDict" variable (:type ("CDict" type (:type "class") nil nil)) nil [209 221]) ("good_char" function (:prototype-flag t :arguments (("c" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [346 362])) :type "bool") nil [331 363]) ("clean" function (:prototype-flag t :arguments (("content" variable (:pointer 1 :type "char") (reparse-symbol arg-sub-list) [375 389]) ("len" variable (:type "int") (reparse-symbol arg-sub-list) [389 397]) ("out" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [397 409])) :type "void") nil [364 410]) ("main" function (:arguments (("argc" variable (:type "int") (reparse-symbol arg-sub-list) [423 432]) ("argv" variable (:pointer 1 :dereference 1 :type "char") (reparse-symbol arg-sub-list) [433 446])) :type "int") nil [414 2502]) ("clean" function (:arguments (("content" variable (:pointer 1 :type "char") (reparse-symbol arg-sub-list) [2515 2529]) ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2529 2537]) ("out" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2537 2549])) :type "void") nil [2504 2726]) ("good_char" function (:arguments (("c" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [2743 2759])) :type "bool") nil [2728 2933]))
     :file "rawseg.cpp"
-    :pointmax 2464
+    :pointmax 2934
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags '(("CXX" variable (:default-value ("g++")) nil [1 11]) ("CXXFLAGS" variable (:default-value ("-O2" "-Wall" "-g")) nil [11 35]) ("all" function (:arguments ("crawl" "docoff" "rawseg" "preinvert" "invert")) nil [37 79]) ("crawl" function (:arguments ("crawl.cpp")) nil [79 135]) ("docoff" function (:arguments ("docoff.cpp")) nil [135 195]) ("rawseg" function (:arguments ("rawseg.cpp" "Dict.cpp" "HzSeg.cpp")) nil [195 293]) ("preinvert" function (:arguments ("preinvert.cpp")) nil [293 365]) ("invert" function (:arguments ("invert.cpp")) nil [365 423]))
+    :file "Makefile"
+    :pointmax 423
+    )
+   (semanticdb-table "Dict.h"
+    :major-mode 'c-mode
+    :tags '(("_DICT_H_040401_" variable (:constant-flag t) nil [33 51]) ("iostream" include (:system-flag t) (dependency-file none) [50 69]) ("fstream" include (:system-flag t) (dependency-file none) [70 88]) ("string" include (:system-flag t) (dependency-file none) [89 106]) ("map" include (:system-flag t) (dependency-file none) [107 121]) ("DICTFILENAME" function (:prototype-flag t :constant-flag t :type ("string" type (:type "class") nil nil)) nil [145 185]) ("CDict" type (:members (("public" label nil (reparse-symbol classsubparts) [277 284]) ("CDict" function (:prototype-flag t :constructor-flag t :type ("CDict" type (:type "class") nil nil)) (reparse-symbol classsubparts) [286 294]) ("CDict" function (:prototype-flag t :destructor-flag t :type "void") (reparse-symbol classsubparts) [296 305]) ("GetFreq" function (:arguments (("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [324 332])) :type "bool") (reparse-symbol classsubparts) [311 354]) ("IsWord" function (:prototype-flag t :arguments (("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [369 377])) :type "bool") (reparse-symbol classsubparts) [357 384]) ("AddFreq" function (:arguments (("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [399 407])) :type "void") (reparse-symbol classsubparts) [386 410]) ("private" label nil (reparse-symbol classsubparts) [416 424]) ("mapDict" variable (:type ("map" type (:type "class") nil nil)) (reparse-symbol classsubparts) [426 451]) ("OpenDict" function (:prototype-flag t :type "void") (reparse-symbol classsubparts) [453 469])) :type "class") nil [258 475]))
+    :file "Dict.h"
+    :pointmax 506
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Dict.cpp"
+    :major-mode 'c++-mode
+    :tags '(("Dict.h" include nil nil [19 36]) ("CDict" function (:constructor-flag t :parent "CDict" :type ("CDict" type (:type "class") nil nil)) nil [38 69]) ("CDict" function (:destructor-flag t :parent "CDict" :type "void") nil [71 108]) ("OpenDict" function (:parent "CDict" :type "void") nil [110 502]) ("IsWord" function (:parent "CDict" :arguments (("str" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [523 535])) :type "bool") nil [504 616]))
+    :file "Dict.cpp"
+    :pointmax 617
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "HzSeg.cpp"
+    :major-mode 'c++-mode
+    :tags '(("HzSeg.h" include nil nil [20 38]) ("Dict.h" include nil nil [39 56]) ("MAX_WORD_LENGTH" variable (:constant-flag t :default-value "8" :type "unsigned int") nil [58 97]) ("MAX_EWORD_LENGTH" variable (:constant-flag t :default-value "8" :type "unsigned int") nil [98 138]) ("SEPARATOR" function (:prototype-flag t :constant-flag t :type ("string" type (:type "class") nil nil)) nil [139 167]) ("CHzSeg" function (:constructor-flag t :parent "CHzSeg" :type ("CHzSeg" type (:type "class") nil nil)) nil [197 217]) ("CHzSeg" function (:destructor-flag t :parent "CHzSeg" :type "void") nil [219 240]) ("SegmentHzStrMM" function (:parent "CHzSeg" :arguments (("dict" variable (:type ("CDict" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [333 345]) ("s1" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [346 356])) :type ("string" type (:type "class") nil nil)) nil [302 783]) ("good_char" function (:parent "CHzSeg" :arguments (("c" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [809 825])) :type "bool") nil [786 1005]) ("SegmentSentenceMM" function (:parent "CHzSeg" :arguments (("dict" variable (:type ("CDict" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1084 1096]) ("s1" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1097 1107])) :type ("string" type (:type "class") nil nil)) nil [1050 3247]) ("Translate" function (:parent "CHzSeg" :arguments (("SourceStr" variable (:pointer 1 :type "char") (reparse-symbol arg-sub-list) [3322 3338])) :type "void") nil [3299 3935]) ("SegmentURL" function (:parent "CHzSeg" :arguments (("dict" variable (:type ("CDict" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4026 4038]) ("url" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4039 4050])) :type ("string" type (:type "class") nil nil)) nil [4000 5330]))
+    :file "HzSeg.cpp"
+    :pointmax 5333
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "invert.cpp"
+    :major-mode 'c++-mode
+    :tags '(("TERM_LEN" variable (:constant-flag t :default-value "16" :type "int") nil [95 117]) ("word_info" type (:members (("words" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [138 151]) ("id" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [153 163])) :type "struct") nil [118 166]) ("invert" function (:arguments (("path" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [178 190])) :type "int") nil [167 1188]) ("main" function (:arguments (("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1198 1207]) ("argv" variable (:pointer 1 :dereference 1 :type "char") (reparse-symbol arg-sub-list) [1207 1220])) :type "int") nil [1189 1307]))
+    :file "invert.cpp"
+    :pointmax 1307
+    )
+   (semanticdb-table "HzSeg.h"
+    :major-mode 'c-mode
+    :tags '(("_HZSEG_H_040415_" variable (:constant-flag t) nil [34 53]) ("iostream" include (:system-flag t) (dependency-file none) [52 71]) ("string" include (:system-flag t) (dependency-file none) [72 89]) ("fstream" include (:system-flag t) (dependency-file none) [90 108]) ("Dict.h" include nil nil [109 126]) ("CHzSeg" type (:members (("public" label nil (reparse-symbol classsubparts) [165 172]) ("CHzSeg" function (:prototype-flag t :constructor-flag t :type ("CHzSeg" type (:type "class") nil nil)) (reparse-symbol classsubparts) [174 183]) ("CHzSeg" function (:prototype-flag t :destructor-flag t :type "void") (reparse-symbol classsubparts) [185 195]) ("SegmentSentenceMM" function (:prototype-flag t :arguments (("" variable (:type ("CDict" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [224 231]) ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [232 239])) :type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [198 246]) ("SegmentHzStrMM" function (:prototype-flag t :arguments (("" variable (:type ("CDict" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [271 278]) ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [279 286])) :type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [248 293]) ("SegmentURL" function (:prototype-flag t :arguments (("" variable (:type ("CDict" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [313 320]) ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [321 328])) :type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [295 335]) ("good_char" function (:prototype-flag t :arguments (("c" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [359 375])) :type "bool") (reparse-symbol classsubparts) [344 382]) ("Translate" function (:prototype-flag t :arguments (("SourceStr" variable (:pointer 1 :type "char") (reparse-symbol arg-sub-list) [442 458])) :type "void") (reparse-symbol classsubparts) [427 465])) :type "class") nil [150 468]))
+    :file "HzSeg.h"
+    :pointmax 501
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "preinvert.cpp"
+    :major-mode 'c++-mode
+    :tags '(("TERM_LEN" variable (:constant-flag t :default-value "32" :type "int") nil [95 117]) ("preinvert" function (:arguments (("path" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [132 144])) :type "int") nil [118 808]) ("main" function (:arguments (("argc" variable (:type "int") (reparse-symbol arg-sub-list) [818 827]) ("argv" variable (:pointer 1 :dereference 1 :type "char") (reparse-symbol arg-sub-list) [827 840])) :type "int") nil [809 930]))
+    :file "preinvert.cpp"
+    :pointmax 931
     )
    )
   :file "semantic.cache"
