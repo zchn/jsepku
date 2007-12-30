@@ -10,6 +10,7 @@
 //#include "./ChiAnalyzer/Analyzer/Analyzer.cpp"
 
 CDict iDict;
+CHzSeg iHzSeg;
 
 using namespace std;
 
@@ -103,7 +104,7 @@ int main(int argc, char* argv[])
     delete [] content;
     
     // segment the document
-    CHzSeg iHzSeg;
+
     //string seged;
     tmp = iHzSeg.SegmentSentenceMM(iDict,tmp);
     //    if(seger.processString(tmp,seged)){
