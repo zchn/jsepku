@@ -1,0 +1,3 @@
+ChiAnalyzer.rar: 易用的分词接口
+File.rar: 枚举目录下所有文件的接口，跨linux和windows
+stemming.rar: 英文提取词根(stemming)工具

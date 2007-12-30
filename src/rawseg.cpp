@@ -67,6 +67,18 @@ int main(int argc, char* argv[])
     if(tmp != "version:1.0"){
       cerr<<"[ERROR]:docid - offset wrong, cannot find \"version:1.0\" in that offset"<<endl;
     }
+    
+
+    while(tmp.substr(0,4) != "url:"){
+      if(fin.eof()){
+        cerr<<"[ERROR]:EOF found when finding the string \"url:\""<<endl;
+        return -1;
+      }
+      getline(fin,tmp);
+    }
+
+    cerr<<"[MESSAGE]Processing file "<<tmp<<" ...";
+    
     while(tmp.substr(0,7) != "length:"){
       if(fin.eof()){
         cerr<<"[ERROR]:EOF found when finding the string \"length:\""<<endl;
@@ -99,6 +111,7 @@ int main(int argc, char* argv[])
     //}else{
     //cerr<<"[ERROR]:Seging file "<<docid<<" failed!"<<endl;
     //}
+    cerr<<"Done!"<<endl;
   }
   return 0;
 }
