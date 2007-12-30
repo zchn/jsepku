@@ -1,3 +1,6 @@
+#ifndef _QUERY_H_
+#define _QUERY_H_
+
 #include<algorithm>
 #include<map>
 #include<string>
@@ -10,28 +13,44 @@
 
 using namespace std;
 
+struct s_result{
+  int docid;
+  int weight;
+};
+
+
 bool comp_weight(const struct s_result &a,const struct s_result &b){
   return a.weight < b.weight;
-};
+}
 
 bool comp_docid(const struct s_result &a,const struct s_result &b){
   return a.docid < b.docid;
-};
+}
 
 class c_query{
  private:
-  struct s_result{
-    int docid;
-    int weight;
-  };
   CDict iDict;
   CHzSeg iHzSeg;
   string cuted;
-  map <string,int> find_site;
+  map<string,int> map_word;
+  ifstream iidx_file;
  public:
-  c_query(){}
-  
+  c_query(const string path){
+    iidx_file.open(path.c_str());
+    if(!iidx_file.is_open())
+      {
+        cerr<<"[ERROR]:file "<<path<<" can't be opened"<<endl;
+      }
+  }
+  ~c_query(){
+    iidx_file.close();
+  }
+
   void query(const string words,vector<struct s_result> &res);
+
+  string get_cuted(){
+    return cuted;
+  }
 
   string cut_words(const string words){
     //string seged;
@@ -39,40 +58,29 @@ class c_query{
     return cuted;
   }
 
-  void creat_map(const string path)
+  void creat_map()
   {
     string word;
     int site;
-    ifstream file1;
-    file1.open(path.c_str());
-    if(!file1.is_open()){
-      cerr<<"[ERROR]:file "<<path<<" can't be opened"<<endl;
-    }
-    while(!file1.eof()){
-      file1>>word;
-      site=file1.tellg();
+    while(!iidx_file.eof()){
+      iidx_file>>word;
+      site=iidx_file.tellg();
       site-=word.length();
-      find_site.insert(pair<string,int>(word,site));
-      getline(file1,word);/*让指针跳到下一行*/
+      map_word.insert(pair<string,int>(word,site));
+      getline(iidx_file,word);
       word="";
     }
-    file1.close();
+     
   }
 
-  string get_term(const string path,const string word)
+  string get_term(const string word)
   {
     string words;
     map<string,int>::iterator item;
-    item=find_site.find(word);
+    item=map_word.find(word);
     int site=item->second;
-    ifstream file1;
-    file1.open(path.c_str());
-    if(!file1.is_open())
-      {
-        cerr<<"[ERROR]:file "<<path<<" can't be opened"<<endl;
-      }
-    file1.seekg(site);
-    getline(file1,words);
+    iidx_file.seekg(site);
+    getline(iidx_file,words);
     cout<<words<<endl;
     return words;
   }
@@ -102,3 +110,5 @@ class c_query{
     }
   }    
 };
+
+#endif
