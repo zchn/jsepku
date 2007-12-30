@@ -1,0 +1,15 @@
+;; Object ChiAnalyzer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ChiAnalyzer/"
+  :tables (list 
+   (semanticdb-table "testAnalyzer.cpp"
+    :major-mode 'c++-mode
+    :tags '(("./Analyzer/Analyzer.h" include nil nil [1 33]) ("./Analyzer/Analyzer.cpp" include nil nil [34 68]) ("iostream" include (:system-flag t) nil [69 88]) ("fstream" include (:system-flag t) nil [89 107]) ("string" include (:system-flag t) nil [108 125]) ("testProcessFile" function (:prototype-flag t :type "void") nil [148 171]) ("testProcessString" function (:prototype-flag t :type "void") nil [172 197]) ("main" function (:type "void") nil [199 388]) ("testProcessFile" function (:type "void") nil [390 789]) ("testProcessString" function (:type "void") nil [791 1192]))
+    :file "testAnalyzer.cpp"
+    :pointmax 1192
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )

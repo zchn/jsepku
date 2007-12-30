@@ -1,0 +1,21 @@
+;; Object Analyzer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Analyzer/"
+  :tables (list 
+   (semanticdb-table "Analyzer.H"
+    :major-mode 'c++-mode
+    :tags '(("_ANALYZER_H_" variable (:constant-flag t) nil [30 45]) ("../Result/Result.cpp" include nil nil [44 75]) ("../Unknown/UnknowWord.cpp" include nil nil [76 112]) ("../Tag/Span.cpp" include nil nil [113 139]) ("../Utility/Dictionary.cpp" include nil nil [140 175]) ("../Segment/Segment.cpp" include nil nil [176 208]) ("../Segment/Queue.cpp" include nil nil [209 239]) ("../Segment/SegGraph.cpp" include nil nil [240 273]) ("../Segment/DynamicArray.cpp" include nil nil [274 311]) ("../Segment/NShortPath.cpp" include nil nil [312 347]) ("../Utility/ContextStat.cpp" include nil nil [348 384]) ("../Utility/Utility.cpp" include nil nil [385 417]) ("string" include (:system-flag t) nil [419 436]) ("Analyzer" type (:members (("private" label nil (reparse-symbol classsubparts) [658 666]) ("m_bValid" variable (:type "bool") (reparse-symbol classsubparts) [668 682]) ("m_Result" variable (:type ("CResult" type (:type "class") nil nil)) (reparse-symbol classsubparts) [701 718]) ("isValid" function (:prototype-flag t :type "bool") (reparse-symbol classsubparts) [722 743]) ("public" label nil (reparse-symbol classsubparts) [744 751]) ("Analyzer" function (:prototype-flag t :constructor-flag t :type ("Analyzer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [768 779]) ("Analyzer" function (:prototype-flag t :destructor-flag t :typemodifiers ("virtual") :type "void") (reparse-symbol classsubparts) [797 817]) ("init" function (:prototype-flag t :type "bool") (reparse-symbol classsubparts) [887 899]) ("processString" function (:prototype-flag t :arguments (("sSource" variable (:constant-flag t :type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1016 1043]) ("sResult" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1044 1065])) :type "bool") (reparse-symbol classsubparts) [997 1066]) ("processFile" function (:prototype-flag t :arguments (("sFilePath" variable (:constant-flag t :type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1199 1228]) ("sResult" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1229 1250])) :type "bool") (reparse-symbol classsubparts) [1182 1251])) :type "class") nil [642 1254]))
+    :file "Analyzer.H"
+    :pointmax 1269
+    )
+   (semanticdb-table "Analyzer.cpp"
+    :major-mode 'c++-mode
+    :tags '(("Analyzer.h" include nil nil [1 22]) ("io.h" include (:system-flag t) nil [23 38]) ("string" include (:system-flag t) nil [39 56]) ("fstream" include (:system-flag t) nil [57 75]) ("iostream" include (:system-flag t) nil [76 95]) ("Analyzer" function (:constructor-flag t :parent "Analyzer" :type ("Analyzer" type (:type "class") nil nil)) nil [97 119]) ("Analyzer" function (:destructor-flag t :parent "Analyzer" :type "void") nil [120 144]) ("init" function (:parent "Analyzer" :type "bool") nil [383 1005]) ("isValid" function (:parent "Analyzer" :type "bool") nil [1274 1332]) ("processString" function (:parent "Analyzer" :arguments (("sSource" variable (:constant-flag t :type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1363 1390]) ("sResult" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1391 1412])) :type "bool") nil [1334 1647]) ("processFile" function (:parent "Analyzer" :arguments (("sFileName" variable (:constant-flag t :type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1676 1705]) ("sResult" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1706 1727])) :type "bool") nil [1649 2611]))
+    :file "Analyzer.cpp"
+    :pointmax 2613
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )
