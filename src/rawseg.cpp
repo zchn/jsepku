@@ -6,6 +6,9 @@
 #include "Dict.h"
 #include "HzSeg.h"
 
+//#include "./ChiAnalyzer/Analyzer/Analyzer.h"
+//#include "./ChiAnalyzer/Analyzer/Analyzer.cpp"
+
 CDict iDict;
 
 using namespace std;
@@ -40,6 +43,13 @@ int main(int argc, char* argv[])
     return -1;
   }
 
+  //Analyzer seger;
+
+  //if(!seger.init()){
+  //cerr<<"[ERROR]:Seger init() failed!"<<endl;
+  //return -1;
+  //}
+  
   while (!fidx.eof()){
     string idx_line;
     getline(fidx,idx_line);
@@ -82,8 +92,13 @@ int main(int argc, char* argv[])
     
     // segment the document
     CHzSeg iHzSeg;
+    //string seged;
     tmp = iHzSeg.SegmentSentenceMM(iDict,tmp);
+    //    if(seger.processString(tmp,seged)){
     fout<<hex<<setfill('0')<<setw(8)<<docid<<' '<< tmp<<endl;
+    //}else{
+    //cerr<<"[ERROR]:Seging file "<<docid<<" failed!"<<endl;
+    //}
   }
   return 0;
 }

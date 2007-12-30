@@ -3,7 +3,8 @@
 #include "HzSeg.h"
 #include "Dict.h"
 
-const unsigned int MAX_WORD_LENGTH = 31;
+const unsigned int MAX_WORD_LENGTH = 8;
+const unsigned int MAX_EWORD_LENGTH = 8;
 const string SEPARATOR(" ");		// delimiter between words
 
 CHzSeg::CHzSeg()
@@ -70,7 +71,7 @@ string CHzSeg::SegmentSentenceMM (CDict &dict, string s1) const
                 
 		if(ch<128) { // deal with ASCII
 			i=1;
-			if(len > MAX_WORD_LENGTH) len=MAX_WORD_LENGTH;
+			if(len > MAX_EWORD_LENGTH) len=MAX_EWORD_LENGTH;
 			while (i<len && ((unsigned char)s1[i]<128) 
                                && good_char(s1[i])) { // LF, CR
 				i++;
