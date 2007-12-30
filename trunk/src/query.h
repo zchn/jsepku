@@ -46,8 +46,27 @@ class c_query{
     iidx_file.close();
   }
 
-  void query(const string words,vector<struct s_result> &res);
-
+  void query(const string words,vector<struct s_result> &res)
+  {
+    string m_words;
+    m_words=cut_words(words);
+    creat_map();
+    string keywords;
+    unsigned int i=0;
+    while(i<m_words.length())
+      {
+        for(;i<m_words.length();i++)/*cut words by space,and search one word each time*/
+          {
+            if(m_words[i]==' ') break;
+            keywords+=m_words[i];
+          }
+        string record=get_term(keywords);
+        vector<s_result> temp_vector;/*this temp is what i will give to your function*/
+        process_term(record,temp_vector);
+        res_merge(temp_vector,res);/*this maybe wrong*/
+      }
+  }
+ 
   string get_cuted(){
     return cuted;
   }
@@ -85,9 +104,55 @@ class c_query{
     return words;
   }
 
-  void process_term(const string record,
-                    vector<struct s_result> &sub_result);
+  void process_term(const string record,vector<struct s_result> &sub_result)
+  {
+    int len;
+    len=record.length();
+    string words;
+    s_result temp;
+    string c_num1,c_num2;
+    int num1=-1,num2=-1;
+    int i=0;
+    while(record[i]==' ')i++;
+    for(;i<len;i++)
+      {
+        if(record[i]==' ') break;
+        words+=record[i];
+      }
+    while(record[i]==' ') i++;
+    while(i<len)
+      {
+        for(int a=0;a<8;a++,i++)
+          {
+            c_num1+=record[i];
+          }
+        cout<<c_num1;
+        sscanf(c_num1.c_str(),"%x",&num2);
+        c_num1="";
+        if(num1==-1)
+          {
+            num1=num2;
+            temp.docid=num1;
+            temp.weight=0;
+            while(record[i]==' ') i++;
+            continue;
+          }
+        else if(num1==num2)
+          {
+            temp.weight++;
+          }
+        else
+          {
+            sub_result.push_back(temp);
+            num1=num2;
+            temp.docid=num1;
+            temp.weight=0;
+          }
+        while(record[i]==' ') i++;
+      }
+  }
 
+ 
   void res_merge(vector<struct s_result> &final,
                  vector<struct s_result> &sub_result){
     sort(sub_result.begin(),sub_result.end(),comp_docid);
