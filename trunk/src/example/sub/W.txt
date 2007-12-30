@@ -1,0 +1,1320 @@
+    用户名  密码   记住信息 
+     
+
+| 网站首页 | 注册账号 | 论坛帮助 |  
+
+
+欢迎来到LinuxSir.Org! 
+您还未登录，请登录后查看论坛，或者点击论坛上方的注册链接注册新账号。  
+
+   LinuxSir.Org > Linux 发行版讨论区 —— LinuxSir.Org > Linux 发行版Gentoo讨论区 > [分享]在IBM ThinkPad X41上安装Gentoo全记录！（第一部分）  
+ 
+
+转到页面... 
+   
+  第1页，共2页 1 2 >   
+ 
+    主题工具   
+
+ 07-10-05, 17:26  第 1 帖  
+hooong.jiang  
+
+ 
+
+ 
+ 
+ 
+
+注册会员 
+
+  注册日期: May 2006
+  帖子: 76 
+  精华: 2
+ 
+  
+标题: [分享]在IBM ThinkPad X41上安装Gentoo全记录！（第一部分） 
+
+--------------------------------------------------------------------------------
+
+
+[分享]在IBM ThinkPad X41上安装Gentoo全记录!
+
+这是我的Gentoo安装记录，有点乱七八糟，有些我也记不太清楚啦，呵呵！错误或说不详的地方会较多！各位DX不要见笑。我记录分两部分，第一部分为系统安装，从基础系统到KDE图形界面。第二部分主要为驱动，我的英文太差，很多腳本是从别的地方拿来即用，会有很多错误，迟点发上来给大家看看。希望各位DX帮忙改正！
+
+第一部分：系统安装
+
+第二部分 驱动程序：http://www.linuxsir.org/bbs/showthre...13#post1763513
+
+一、基础系统安装
+参考连接：http://www.gentoo.org/doc/zh_cn/hand...ndbook-x86.xml
+
+001. 使用fdisk来为你的磁盘分区
+
+代码:
+# [color=blue]fdisk /dev/sda键入p来显示你的磁盘的当前分区配置：
+
+代码:
+Command (m for help): p
+
+Disk /dev/sda: 60.0 GB, 60011642880 bytes
+240 heads, 63 sectors/track, 7752 cylinders
+Units = cylinders of 15120 * 512 = 7741440 bytes
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sda1   *           1         109      824008+  83  Linux
+/dev/sda2             110        7752    57781080    f  W95 Ext'd (LBA)
+/dev/sda5             110         248     1050808+  82  Linux swap / Solaris
+/dev/sda6             249        2750    18915088+  83  Linux
+/dev/sda7            2751        5252    18915088+  83  Linux
+/dev/sda8            5253        7752    18899968+  83  Linux说明：我这里硬盘为sda。sda1为启动分区，大小800M；sda5是交换分区，大小1G；sda6是根分区，大小19G；sda7是home目录，大小19G；sda8是备份分区，大小19G。
+
+002. 在分区上应用文件系统
+
+代码:
+# mkreiserfs /dev/sda1
+# mkreiserfs /dev/sda6
+# mkreiserfs /dev/sda7
+# mkreiserfs /dev/sda8使用reiserfs格式文件系统。
+
+[color=purple]003. 创建与激活交换分区标志
+
+代码:
+# mkswap /dev/sda5
+# swapon /dev/sda5004. 创建与挂载分区
+
+代码:
+# mkdir /mnt/gentoo/
+# mount /dev/sda6 /mnt/gentoo/
+# mkdir /mnt/gentoo/boot
+# mkdir /mnt/gentoo/home
+# mount /dev/sda1 /mnt/gentoo/boot/
+# mount /dev/sda7 /mnt/gentoo/home/005. 使用从网上下载的Stage与Portage快照
+
+代码:
+# cd /mnt/gentoo然后从网上下载stage3-i686-2007.0.tar.bz2与portage-latest.tar.bz2文件，放在/mnt/gentoo目录下。
+
+校验stage tarball与Portage快照完整性的例子
+
+代码:
+# md5sum -c stage3-i686-2007.0.tar.bz2.DIGESTS
+stage3-i686-2007.0.tar.bz2: OK
+# md5sum -c portage-latest.tar.bz2.md5sum
+portage-latest.tar.bz2: OK006. 解开Stage Tarball
+
+代码:
+# tar xvjpf stage3-*.tar.bz2007. 安装Portage
+
+代码:
+# tar xvjf /mnt/gentoo/portage-latest.tar.bz2 -C /mnt/gentoo/usr008. 配置编译选项
+
+代码:
+# nano -w /mnt/gentoo/etc/make.confmake.conf内容,供参考。
+
+代码:
+# These settings were set by the catalyst build script that automatically
+# built this stage.
+# Please consult /etc/make.conf.example for a more detailed example.
+# CFLAGS="-O2 -march=i686 -pipe"
+# CXXFLAGS="${CFLAGS}"
+# This should not be changed unless you know exactly what you are doing.  You
+# should probably be using a different stage, instead.
+# CHOST="i686-pc-linux-gnu"
+
+  CFLAGS="-march=pentium-m -O2 -pipe -fomit-frame-pointer"
+  CXXFLAGS="${CFLAGS}"
+  CHOST="i686-pc-linux-gnu"
+  MAKEOPTS="-j2"
+
+  LDFLAGS="-Wl,-O1 -Wl,--as-needed"
+  INPUT_DEVICES="keyboard mouse"
+  VIDEO_CARDS="v4l vesa vga fbdev i810"
+  ALSA_CARDS="intel8x0"
+  LINGUAS="zh_CN zh en_US"
+
+  PORTDIR_OVERLAY="/usr/local/portage /usr/local/portage/xeffects/trunk /usr/portage/local/layman/gentoo-china /usr/portage/local/layman/enlightenment"
+  FEATURES="ccache parallel-fetch"
+  CCACHE_DIR="/var/tmp/ccache"
+  CCACHE_SIZE="2G"
+  ACCEPT_KEYWORDS="x86"
+
+  USE="X acpi alsa arts avi bluetooth bzip2 cdr cjk cups cvs dbus dvd esd ffmpeg flash ftp gif hal hdaps immqt-bc jpeg kde kdeenablefinal lirc mad midi mmx mmx2 mp3 mpeg mplayer msn nls nptl nptlonly ogg opengl oss png qt quicktime readline real samba spell sse sse2 svg svga truetype truetype-fonts udev unicode usb userlocales utf8 vcd win32codecs xine xv -doc -gtk -gtk2 -gnome -ipv6 -mozilla"
+
+  SYNC="rsync://rsync.gentoo.org/gentoo-portage"
+  GENTOO_MIRRORS="ftp://gentoo.anheng.com.cn/gentoo http://ftp.ncnu.edu.tw/Linux/Gentoo/ http://mirror.gentoo.gr.jp"
+
+  FETCHCOMMAND="/usr/bin/axel -a -n2 \${URI} -o \${DISTDIR}" #
+  RESUMECOMMAND="/usr/bin/axel -a -n2 \${URI} -o \${DISTDIR}"
+
+  source /usr/portage/local/layman/make.conf我的make.conf文件：CPU设置为 pentium-m，USE针对是KDE的。
+USE我是参考本论坛csfrank写的文章＜Gentoo 2005.1 完整的USE参数清单中文详解>
+连接：http://www.linuxsir.org/bbs/showthread.php?t=207242
+
+009. 拷贝DNS信息
+
+代码:
+# cp -L /etc/resolv.conf /mnt/gentoo/etc/resolv.conf从现在使用的系统/etc/resolv.conf拷贝DNS信息到/mnt/gentoo/etc/目录下。
+
+010. 挂载/proc和/dev文件系统
+
+代码:
+# mount -t proc none /mnt/gentoo/proc
+# mount -o bind /dev /mnt/gentoo/dev
+
+
+
+
+
+
+
+__________________
+^_^ 祝大家每天都快乐! 
+
+--------------------------------------------------------------------------------
+此帖于 07-10-06 01:05 被 hooong.jiang 编辑.  
+         
+
+hooong.jiang 
+查看公开信息 
+查找 hooong.jiang 发表的更多帖子 
+
+ 07-10-05, 19:24  第 2 帖  
+hooong.jiang  
+
+ 
+
+ 
+ 
+ 
+
+注册会员 
+
+  注册日期: May 2006
+  帖子: 76 
+  精华: 2
+ 
+  
+
+二、进入新的系统环境
+
+011. 进入新的系统环境
+
+代码:
+# chroot /mnt/gentoo /bin/bash
+# env-update
+>> Regenerating /etc/ld.so.cache...
+# source /etc/profile
+# export PS1="(chroot) $PS1"012. 更新Portage树
+
+代码:
+# emerge --sync013. 选择正确的Profile
+
+代码:
+# ls -FGg /etc/make.profile切换profile
+
+代码:
+# ln -snf /usr/portage/profiles/default-linux/x86/2007.0/desktop /etc/make.profile原系统默认为/x86/2007.0，系统提供了可用的desktop和server的子profile，我这里选择/x86/2007.0/desktop，这是针对桌面用户的，有更多的USE选项。
+
+014 可选：glibc Locales
+
+代码:
+# /etc/locale.gen: list all of the locales you want to have on your system
+#
+# The format of each line:
+# <locale> <charmap>
+#
+# Where <locale> is a locale located in /usr/share/i18n/locales/ and
+# where <charmap> is a charmap located in /usr/share/i18n/charmaps/.
+#
+# All blank lines and lines starting with # are ignored.
+#
+# For the default list of supported combinations, see the file:
+# /usr/share/i18n/SUPPORTED
+#
+# Whenever glibc is emerged, the locales listed here will be automatically
+# rebuilt for you.  After updating this file, you can simply run `locale-gen`
+# yourself instead of re-emerging glibc.
+
+# en_US ISO-8859-1
+# en_US.UTF-8 UTF-8
+# ja_JP.EUC-JP EUC-JP
+# ja_JP.UTF-8 UTF-8
+# ja_JP EUC-JP
+# en_HK ISO-8859-1
+# en_PH ISO-8859-1
+# de_DE ISO-8859-1
+# de_DE@euro ISO-8859-15
+# es_MX ISO-8859-1
+# fa_IR UTF-8
+# fr_FR ISO-8859-1
+# fr_FR@euro ISO-8859-15
+# it_IT ISO-8859-1
+
+  en_US ISO-8859-1
+  en_US.UTF-8 UTF-8
+  zh_CN GB18030
+  zh_CN.GBK GBK
+  zh_CN.GB2312 GB2312
+  zh_CN.UTF-8 UTF-8下一步我们运行locale-gen。它会产生所有你在/etc/locale.gen文件里指定的locale
+
+015. 设置时区信息
+
+代码:
+# cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime016. 安装源码
+
+代码:
+# USE="-doc symlink" emerge gentoo-sources017. 配置内核
+
+代码:
+# cd /usr/src/linux
+# make menuconfig018. 编译与安装
+
+代码:
+# make && make modules_install
+# cp arch/i386/boot/bzImage /boot/kernel-2.6.22-r5-20070911019. 内核模块
+
+代码:
+# find /lib/modules/2.6.22-gentoo-r5/ -type f -iname '*.o' -or -iname '*.ko' 您可以在/etc/modules.autoload.d/kernel-2.6中列出您需要自动加载的模块。
+
+020 编辑/etc/modules.autoload.d/kernel-2.6
+
+代码:
+# nano -w /etc/modules.autoload.d/kernel-2.6
+
+
+# /etc/modules.autoload.d/kernel-2.6:  kernel modules to load when system boots.
+#
+# Note that this file is for 2.6 kernels.
+#
+# Add the names of modules that you'd like to load when the system
+# starts into this file, one per line.  Comments begin with # and
+# are ignored.  Read man modules.autoload for additional details.
+
+# For example:
+# aic7xxx
+
+cpuid  lcd  tp_smapi  hdaps  sdhci  ntfs  ipw2200  bluetooth  bnep
+
+# nsc-ircc pl2303在这文件里你可加上您需要自动加载的模块。
+
+021. 文件系统信息
+/etc/fstab使用一种特殊语法格式。每行都包含六个字段。这些字段之间由空白键（空格键，tab键，或者两者混合使用）分隔。每个字段都有自己的含意： 
+第一个字段是对分区的描述，也就是设备文件的路径 
+第二个字段是分区挂载点，也就是分区应该挂载到的地方 
+第三个字段给出分区所用的文件系统 
+第四个字段给出的是挂载分区时mount命令所用的挂载选项。由于每个文件系统都有自己的挂载选项，我们建议你阅读mount手册（man mount）以获得所有挂载选项的列表。多个挂载选项之间是用逗号分隔的。 
+第五个字段是给dump使用的，用以决定这个分区是否需要dump。一般情况下，你可以把该字段设为0（零）。 
+第六个字段是给fsck使用的，用以决定系统非正常关机之后文件系统的检查顺序。根文件系统应该为1，而其它的应该为2（如果不需要文件系统自检的话可以设为0）。
+
+代码:
+# nano -w /etc/fstab
+
+# /etc/fstab: static file system information.
+#
+# noatime turns off atimes for increased performance (atimes normally aren't
+# needed; notail increases performance of ReiserFS (at the expense of storage
+# efficiency).  It's safe to drop the noatime options if you want and to
+# switch between notail / tail freely.
+#
+# The root filesystem should have a pass number of either 0 or 1.
+# All other filesystems should have a pass number of 0 or greater than 1.
+#
+# See the manpage fstab(5) for more information.
+#
+
+# <fs>                  <mountpoint>    <type>          <opts>          <dump/pass>
+
+# NOTE: If your BOOT partition is ReiserFS, add the notail option to opts.
+  /dev/sda1             /boot           reiserfs        noauto,noatime          1 2
+  /dev/sda5             none            swap            sw                      0 0
+  /dev/sda6             /               reiserfs        noatime                 0 1
+  /dev/sda7             /home           reiserfs        noatime                 0 2
+  /dev/sda8             /mnt/Backup      reiserfs        noatime                 0 0
+  /dev/cdrom            /mnt/cdrom      auto            auto,user               0 0
+# /dev/fd0              /mnt/floppy     auto            noauto                  0 0
+
+# glibc 2.2 and above expects tmpfs to be mounted at /dev/shm for
+# POSIX shared memory (shm_open, shm_unlink).
+# (tmpfs is a dynamically expandable/shrinkable ramdisk, and will
+# use almost no memory if not populated with files)
+  shm                   /dev/shm        tmpfs           nodev,nosuid,noexec     0 02007.0自带的fstab好像有点错误，加载光驱自动识别文件系统应该是auto的，它这里写成了audo。
+
+022. 主机名、域名等
+
+代码:
+# nano -w /etc/conf.d/hostname023. 配置你的网络
+
+代码:
+# nano -w /etc/conf.d/net/etc/conf.d/net 文件示例
+
+代码:
+# This blank configuration will automatically use DHCP for any net.*
+# scripts in /etc/init.d.  To create a more complete configuration,
+# please review /etc/conf.d/net.example and save your configuration
+# in /etc/conf.d/net (this file :]!).
+
+   dns_domain_lo="Gentoo-network"
+   nis_domain_lo="Gentoo-nisdomain"
+
+   modules=( "ifconfig" )
+   config_eth0=("192.168.1.2 netmask 255.255.255.0 brd 192.168.1.255")
+   routes_eth0=("default gw 192.168.1.1")024. 在启动时自动启用网络
+
+代码:
+# rc-update add net.eth0 default025. 记下网络信息
+
+代码:
+# nano -w /etc/hosts026. 可选：启用PCMCIA
+
+代码:
+# emerge pcmciautils
+# USE="-X" emerge pcmcia-cs027. Root密码
+
+代码:
+# passwd028. 系统信息
+
+代码:
+# nano -w /etc/rc.confGentoo使用/etc/rc.conf来做通用的、系统级的配置。
+
+029. 键盘设置
+
+代码:
+# nano -w /etc/conf.d/keymaps030. 设置时钟选项
+
+代码:
+# nano -w /etc/conf.d/clock031. 系统日志工具
+
+代码:
+# emerge syslog-ng
+# rc-update add syslog-ng default032. 可选：Cron守护进程
+
+代码:
+# emerge vixie-cron
+# rc-update add vixie-cron default033.可选：文件索引
+
+代码:
+# emerge slocate034. 文件系统工具
+
+代码:
+# emerge reiserfsprogs根据你所使用的文件系统的不同,选择安装必须的文件系统工具。
+
+035. 网络工具
+
+代码:
+# emerge dhcpcd036. 安装PPPoE客户端
+
+代码:
+# emerge ppp
+# USE="-X" emerge rp-pppoe037. 为日常使用添加一个用户
+
+代码:
+# useradd -m -G users,wheel,audio -s /bin/bash jiang
+# passwd jiang038. 磁盘清理
+
+代码:
+# rm /stage3-*.tar.bz2*
+# rm /portage-latest.tar.bz2*附上我的内核配置文件：
+上传的附件 config-2.6.22-gentoo-r5.txt (42.7 KB, 54 次查看)  
+ 
+
+--------------------------------------------------------------------------------
+此帖于 07-10-05 20:28 被 hooong.jiang 编辑.  
+         
+
+hooong.jiang 
+查看公开信息 
+查找 hooong.jiang 发表的更多帖子 
+
+ 07-10-05, 19:28  第 3 帖  
+hooong.jiang  
+
+ 
+
+ 
+ 
+ 
+
+注册会员 
+
+  注册日期: May 2006
+  帖子: 76 
+  精华: 2
+ 
+  
+
+三、安装引导程序
+
+039. 安装gfxboot主题
+参考连接：http://zh.gentoo-wiki.com/HOWTO_GRUB...nu_(SUSE_GRUB)
+
+代码:
+jiang@Hong ~ $ cat /etc/make.conf | grep PORTDIR_OVERLAY=
+ PORTDIR_OVERLAY="/usr/local/portage"在这里我使用 /usr/local/portage 。
+
+
+代码:
+# mkdir -p /usr/local/portage
+# tar -xvf /usr/portage/distfiles/gfxboot_overlay.tar.bz2 -C /usr/local/注：移动media-gfx、sys-boot 到 /usr/local/portage/文件夹下。
+
+重命名与安装
+
+代码:
+# mv /usr/local/portage/media-gfx/gfxboot/gfxboot-3.3.24.2.ebuild /usr/local/portage/media-gfx/gfxboot/gfxboot-3.3.34.6.ebuild
+# ebuild /usr/local/portage/media-gfx/gfxboot/gfxboot-3.3.34.6.ebuild digest
+# echo "media-gfx/gfxboot ~x86" >> /etc/portage/package.keywords
+# emerge -av gfxboot这里的gfxboot-3.3.24.2.ebuild 根据你要下载的gfxboo而重命名。可以从这里看到：http://download.opensuse.org/distrib...urce/suse/src/
+
+040. 安装GRUB引导程序
+
+代码:
+# emerge -av grub 创建/boot/grub/grub.conf
+
+代码:
+# nano -w /boot/grub/grub.conf[color=purple]041. 使用手动指令安装GRUB
+
+代码:
+# grub --no-floppy042. 将GRUB安装到硬盘主引导记录中
+
+代码:
+grub> root (hd0,0)
+grub> setup (hd0)
+grub> quit043. 安装HTML-Parser-3.35
+
+代码:
+# wget http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/HTML-Parser-3.35.tar.gz
+# tar xvzf HTML-Parser-3.35.tar.gz
+# cd HTML-Parser-3.35
+# perl Makefile.PL
+# make
+# make install我这里编译gentoo.org-Krystal-gfxsplash-theme时，要先安装HTML-Parser-3.35。
+
+044. 安装gentoo.org-Krystal-gfxsplash-theme
+
+代码:
+# tar -xjvpf /usr/portage/distfiles/gentoo.org-Krystal-gfxsplash-theme.tar.bz2 -C /var/tmp
+# cd /var/tmp/gentoo.org-Krystal 
+# make
+# cp /var/tmp/gentoo.org-Krystal/boot/message /boot/message045. 编辑grub.conf
+
+代码:
+gfxmenu       (hd0,0)/boot/message增加这行到grub.conf文件里
+
+046. 设置Framebuffer
+参考连接：[urlhttp://gentoo-wiki.com/HOWTO_fbsplash[/url]
+
+代码:
+# emerge -va splashutils
+# mv /home/jiang/temp/gentoo-grey/* /etc/splash/gentoo-grey/
+# cd /etc/splash/
+# splash_geninitramfs gentoo-grey -r 1024x768 -g /boot/fbsplash-gentoo-grey-1024x768 -v
+# splash_geninitramfs -g /usr/src/linux/usr/initramfs_data.cpio.gz -v -r 1024x768 gentoo-grey
+# nano -w /boot/grub/grub.conf我这里先前已准备好了网上下载的gentoo-grey主题，所以直接移动到/etc/splash/目录下。
+
+我的grub.conf文件：
+
+代码:
+# 默认选择哪个列表来引导。0表示第一个， 1表示第二个，以此类推。
+  default 0
+# 引导默认列表前等待多少秒。
+  timeout 3
+# 使用漂亮、“臃肿”的spalsh图像来增加一点趣味:)
+# 如果您没有安装显卡，请将这行注释掉。
+
+# splashimage=(hd0,0)/boot/grub/splash.xpm.gz
+# gfxmenu       (hd0,0)/boot/message
+
+  title         Kernel 2.6.22.r5 generic
+# 内核镜像（或者操作系统）所在分区。
+  root          (hd0,0)
+  kernel        /boot/kernel-2.6.22-r5-20070927 root=/dev/sda6 vga=0x317 video=intelfb:vram:4,xres:1024,yres:768,bpp:16,hsync1:30,hsync2:55,vsync1:50,vsync2:85,accel splash=silent,fadein,theme:gentoo-grey quiet CONSOLE=/dev/tty1
+  initrd        (hd0,0)/boot/fbsplash-gentoo-grey-1024x768
+
+  title         Kernel 2.6.22.r5 (recovery mode)
+# 内核镜像（或者操作系统）所在分区。
+  root          (hd0,0)
+  kernel        /boot/kernel-2.6.22-r5-20070912 root=/dev/sda6 vga=0x317 video=intelfb:mtrr:3,ywrap
+
+# 接下来的四行只有在您与Windows系统进行双启动的情况下才需要。
+# 本例中，windows系统位于/dev/sda8。
+# title=Windows XP
+# rootnoverify (hd0,7)
+# makeactive
+# chainloader +1这里我有两个内核，一个是正常使用的内核，同时也使用Framebuffer；另一个是备用的内核，不使用ramebuffer，因为有时就算内核是好的，如果ramebuffer出现问题也会有不能进入系统的情况。 
+         
+
+hooong.jiang 
+查看公开信息 
+查找 hooong.jiang 发表的更多帖子 
+
+ 07-10-05, 19:29  第 4 帖  
+hooong.jiang  
+
+ 
+
+ 
+ 
+ 
+
+注册会员 
+
+  注册日期: May 2006
+  帖子: 76 
+  精华: 2
+ 
+  
+
+四、更新基础系统
+
+047. 安装ccache工具，为以后重装软件是编译加速。
+
+代码:
+# emerge ccache048. 安装gentoolkit，里面包含很多有用软件。
+
+代码:
+# emerge gentoolkit049. 安装最新的gcc，并设置当前使用的gcc版本。
+
+代码:
+# emerge -av gcc
+# gcc-config 2gcc-config -l为显示当前所有的gcc，gcc-config （数字） 是设定你要使用的版本。
+
+050. 更新系统所有软件
+
+代码:
+# emerge --update --deep --newuse world
+# emerge --depclean
+# revdep-rebuild051. 重新编译一次系统
+
+代码:
+# emerge -e world呵呵，这个是看你自己是否需要啦！ 
+         
+
+hooong.jiang 
+查看公开信息 
+查找 hooong.jiang 发表的更多帖子 
+
+ 07-10-05, 19:31  第 5 帖  
+hooong.jiang  
+
+ 
+
+ 
+ 
+ 
+
+注册会员 
+
+  注册日期: May 2006
+  帖子: 76 
+  精华: 2
+ 
+  
+
+五、安装Xorg
+
+052. 安装Xorg
+
+代码:
+# emerge -av xorg-x11
+# env-update
+# source /etc/profile 
+         
+
+hooong.jiang 
+查看公开信息 
+查找 hooong.jiang 发表的更多帖子 
+
+ 07-10-05, 19:31  第 6 帖  
+hooong.jiang  
+
+ 
+
+ 
+ 
+ 
+
+注册会员 
+
+  注册日期: May 2006
+  帖子: 76 
+  精华: 2
+ 
+  
+
+六、安装声音系统
+
+053. 安装PCI查看工具
+
+代码:
+# emerge -av pciutils054. 查看声卡
+
+代码:
+# lspci -v | grep -i audio[color=purple]055. 编译内核，把声卡驱动编译成模块
+
+代码:
+# cd /usr/src/linux
+# make menuconfig
+# make && make modules_install这里可以参考我上面给出的内核配置文件声音部分。
+
+056. 我的内核配置
+
+代码:
+# grep SOUND .config
+CONFIG_SOUND=m
+# CONFIG_SOUND_PRIME is not set
+# grep SND .config
+CONFIG_SND=m
+CONFIG_SND_TIMER=m
+CONFIG_SND_PCM=m
+CONFIG_SND_RAWMIDI=m
+CONFIG_SND_SEQUENCER=m
+# CONFIG_SND_SEQ_DUMMY is not set
+CONFIG_SND_OSSEMUL=y
+CONFIG_SND_MIXER_OSS=m
+CONFIG_SND_PCM_OSS=m
+# CONFIG_SND_PCM_OSS_PLUGINS is not set
+CONFIG_SND_SEQUENCER_OSS=y
+CONFIG_SND_RTCTIMER=m
+CONFIG_SND_SEQ_RTCTIMER_DEFAULT=y
+# CONFIG_SND_DYNAMIC_MINORS is not set
+# CONFIG_SND_SUPPORT_OLD_API is not set
+# CONFIG_SND_VERBOSE_PROCFS is not set
+# CONFIG_SND_VERBOSE_PRINTK is not set
+# CONFIG_SND_DEBUG is not set
+CONFIG_SND_AC97_CODEC=m
+# CONFIG_SND_DUMMY is not set
+CONFIG_SND_VIRMIDI=m
+# CONFIG_SND_MTPAV is not set
+# CONFIG_SND_SERIAL_U16550 is not set
+# CONFIG_SND_MPU401 is not set
+# CONFIG_SND_AD1889 is not set
+# CONFIG_SND_ALS300 is not set
+# CONFIG_SND_ALS4000 is not set
+# CONFIG_SND_ALI5451 is not set
+# CONFIG_SND_ATIIXP is not set
+# CONFIG_SND_ATIIXP_MODEM is not set
+# CONFIG_SND_AU8810 is not set
+# CONFIG_SND_AU8820 is not set
+# CONFIG_SND_AU8830 is not set
+# CONFIG_SND_AZT3328 is not set
+# CONFIG_SND_BT87X is not set
+# CONFIG_SND_CA0106 is not set
+# CONFIG_SND_CMIPCI is not set
+# CONFIG_SND_CS4281 is not set
+# CONFIG_SND_CS46XX is not set
+# CONFIG_SND_CS5535AUDIO is not set
+# CONFIG_SND_DARLA20 is not set
+# CONFIG_SND_GINA20 is not set
+# CONFIG_SND_LAYLA20 is not set
+# CONFIG_SND_DARLA24 is not set
+# CONFIG_SND_GINA24 is not set
+# CONFIG_SND_LAYLA24 is not set
+# CONFIG_SND_MONA is not set
+# CONFIG_SND_MIA is not set
+# CONFIG_SND_ECHO3G is not set
+# CONFIG_SND_INDIGO is not set
+# CONFIG_SND_INDIGOIO is not set
+# CONFIG_SND_INDIGODJ is not set
+# CONFIG_SND_EMU10K1 is not set
+# CONFIG_SND_EMU10K1X is not set
+# CONFIG_SND_ENS1370 is not set
+# CONFIG_SND_ENS1371 is not set
+# CONFIG_SND_ES1938 is not set
+# CONFIG_SND_ES1968 is not set
+# CONFIG_SND_FM801 is not set
+# CONFIG_SND_HDA_INTEL is not set
+# CONFIG_SND_HDSP is not set
+# CONFIG_SND_HDSPM is not set
+# CONFIG_SND_ICE1712 is not set
+# CONFIG_SND_ICE1724 is not set
+CONFIG_SND_INTEL8X0=m
+# CONFIG_SND_INTEL8X0M is not set
+# CONFIG_SND_KORG1212 is not set
+# CONFIG_SND_MAESTRO3 is not set
+# CONFIG_SND_MIXART is not set
+# CONFIG_SND_NM256 is not set
+# CONFIG_SND_PCXHR is not set
+# CONFIG_SND_RIPTIDE is not set
+# CONFIG_SND_RME32 is not set
+# CONFIG_SND_RME96 is not set
+# CONFIG_SND_RME9652 is not set
+# CONFIG_SND_SONICVIBES is not set
+# CONFIG_SND_TRIDENT is not set
+# CONFIG_SND_VIA82XX is not set
+# CONFIG_SND_VIA82XX_MODEM is not set
+# CONFIG_SND_VX222 is not set
+# CONFIG_SND_YMFPCI is not set
+# CONFIG_SND_AC97_POWER_SAVE is not set
+# CONFIG_SND_USB_AUDIO is not set
+# CONFIG_SND_USB_USX2Y is not set
+# CONFIG_SND_USB_CAIAQ is not set
+# CONFIG_SND_VXPOCKET is not set
+# CONFIG_SND_PDAUDIOCF is not set
+# CONFIG_SND_SOC is not set057. alsa设置
+
+代码:
+# alsaconf
+# alsamixer
+# rc-update add alsasound boot058. 增加到用户组
+
+代码:
+# gpasswd -a jiang audio059. 安装播放工具与测试
+
+代码:
+# emerge mpg123
+# emerge vorbis-tools
+# mpg123 -v /home/jiang/Temp/cq.mp3060.安装MIDI工具
+
+代码:
+# emerge awesfx
+# emerge timidity++
+# eselect timidity list
+# eselect timidity set eawpatches
+# rc-update add timidity default
+# /etc/init.d/timidity start 
+         
+
+hooong.jiang 
+查看公开信息 
+查找 hooong.jiang 发表的更多帖子 
+
+ 07-10-05, 19:33  第 7 帖  
+hooong.jiang  
+
+ 
+
+ 
+ 
+ 
+
+注册会员 
+
+  注册日期: May 2006
+  帖子: 76 
+  精华: 2
+ 
+  
+
+七、安装设定字体
+
+061. 安装字体
+
+代码:
+# emerge arphicfonts wqy-bitmapfont corefonts ttf-bitstream-vera062. 设置文件夹按拼音排序
+下载locale-pinyin-0.1.tar.gz。
+
+代码:
+# tar -xzvf /home/jiang/Temp/locale-pinyin-0.1.tar.gz
+# cd locale-pinyin-0.1
+# make
+# cp zh_CN.hacked /usr/share/i18n/locales/zh_CN
+# cp iso14651_t1.pinyin /usr/share/i18n/locales/
+# locale-gen 
+# nano -w /etc/env.d/100i18nlocale-pinyin-0.1.tar.gz，可以从zhllg版主的精华贴找到！http://www.linuxsir.org/bbs/showthread.php?t=292660
+
+我的 /etc/env.d/100i18n文件
+
+代码:
+LANGUAGE=en_US
+LC_CTYPE=zh_CN.utf8
+LC_COLLATE=zh_CN.utf8
+LANG=en_US.utf8
+LC_NUMERIC="en_US.UTF-8"
+LC_TIME="en_US.UTF-8"
+LC_MONETARY="en_US.UTF-8"
+LC_MESSAGES="en_US.UTF-8"
+LC_PAPER="en_US.UTF-8"
+LC_NAME="en_US.UTF-8"
+LC_ADDRESS="en_US.UTF-8"
+LC_TELEPHONE="en_US.UTF-8"
+LC_MEASUREMENT="en_US.UTF-8"
+LC_IDENTIFICATION="en_US.UTF-8"063. 增加额外的字体
+复制你已准备好的字体文件到 /usr/share/fonts/TTF/ 目录。
+
+代码:
+# cd /usr/share/fonts/TTF/
+# mkfontdir
+# mkfontscale
+# c-cache -fv
+# emerge -av xlsfonts
+# fc-list 
+         
+
+hooong.jiang 
+查看公开信息 
+查找 hooong.jiang 发表的更多帖子 
+
+ 07-10-05, 19:34  第 8 帖  
+hooong.jiang  
+
+ 
+
+ 
+ 
+ 
+
+注册会员 
+
+  注册日期: May 2006
+  帖子: 76 
+  精华: 2
+ 
+  
+
+八、增加设定来宾用户
+
+064. 增加设定来宾用户
+
+代码:
+# useradd -m -G users,wheel,audio -s /bin/bash guest
+# passwd guest 
+         
+
+hooong.jiang 
+查看公开信息 
+查找 hooong.jiang 发表的更多帖子 
+
+ 07-10-05, 19:35  第 9 帖  
+hooong.jiang  
+
+ 
+
+ 
+ 
+ 
+
+注册会员 
+
+  注册日期: May 2006
+  帖子: 76 
+  精华: 2
+ 
+  
+
+九、安装网络软件
+
+065. 安装OPERA
+
+代码:
+# emerge -av opera066. 设置opera字体
+
+代码:
+jiang@Hong ~$  cd ~/.opera/styles/user/
+jiang@Hong ~/.opera/styles/user $ cat user.css
+html,body,*{
+font-family:"wqy-bimapfont"!important;}编辑你用户目录下的 user.css文件，把 wqy-bimapfont替换成你要用的字体。
+然后在opera菜单：“查看->样式->管理模式->显示标签->选择”选择刚才的user.css文件。
+
+067. 设置opera鼠标键
+我需要用ThinkPad的指点杆作鼠标手势，所以编辑standard_mouse.ini文件，去掉以下两行。
+
+代码:
+# nano -w /opt/opera/share/opera/ini/standard_mouse.ini
+       ;Button6
+       ;Button7068. 视频播放插件MplayerPlug-In
+如果你要为opera安装视频播放插件MplayerPlug-In，请看这里：
+http://gentoo-wiki.com/HOWTO_Make_mp...ork_with_Opera
+
+069. 安装axel下载工具，替代wget。
+
+代码:
+# emerge axel设置axel
+
+代码:
+# nano -w /etc/axelrc
+/*修改默认线程,我设置为5个线程，够了，太多了反而连接慢*/
+num_connections = 5
+/*修改下载进度界面，改成wget形式的，不要那种滚屏模式*
+alternate_output = 1/然后在 /etc/make.conf中加入以下两行：
+
+代码:
+# nano -w /etc/make.conf
+FETCHCOMMAND="/usr/bin/axel -a -n2 \${URI} -o \${DISTDIR}" #
+RESUMECOMMAND="/usr/bin/axel -a -n2 \${URI} -o \${DISTDIR}"070.安装samba,与Windows共享文件。
+
+代码:
+# USE＝“acl automount pam swat winbind” emerge -av samba071. 设置samba
+
+代码:
+# nano -w /etc/samba/smb.conf
+       [global]
+	  workgroup = Office	#这是你的工作组名
+	  netbios name = Hong	#你的主机名
+	  server string = Gentoo Share Server  #主机描述性文字
+	  security = share	#设置为共享级别
+
+       [jianghong]		#设置你的共享文件夹在局域网中所显示的名称
+	  path = /home/jiang/Temp	#这是你要共享的文件夹
+	  guest ok = yes		#设置为可匿名登陆
+	  browseable = yes	#设置为可浏览的文件夹模式072. 启用samba
+
+代码:
+# /etc/init.d/samba start073. 安装代理软件
+
+代码:
+# emerge -av tor privoxy设置tor与privoxy
+
+代码:
+# cp /etc/tor/torrc.sample /etc/tor/torrc
+# nano -w /etc/privoxy/config
+       /*添加这句，并注意句末的"."啊!*/
+       forward-socks4a / localhost:9050 .
+       /*注释掉以下三句*/
+       #logfile logfile
+       #jarfile jarfile
+       #debug 1 # show each GET/POST/CONNECT request074. 启动代理
+
+代码:
+# /etc/init.d/tor start
+# /etc/init.d/privoxy start如果想opera使用代理，请在opera菜单中：“工具－＞首选项->高级标签－＞网络－＞代理服务器” HTTP（打钩），填入：127.0.0.1，端口：8118就可以啦。 
+         
+
+hooong.jiang 
+查看公开信息 
+查找 hooong.jiang 发表的更多帖子 
+
+ 07-10-05, 19:37  第 10 帖  
+hooong.jiang  
+
+ 
+
+ 
+ 
+ 
+
+注册会员 
+
+  注册日期: May 2006
+  帖子: 76 
+  精华: 2
+ 
+  
+
+十、安装KDE
+
+075. 安装KDE界面
+
+代码:
+# emerge -av kdebase-meta kdenetwork-meta kmix kaffeine amarok ark kmilo在系统启动时自动启动KDM
+
+代码:
+# nano -w /etc/conf.d/xdm
+DISPLAYMANAGER="kdm"
+# rc-update add xdm default
+# env-update && source /etc/profile076. 安装中文环境
+
+代码:
+# export LINGUAS="zh_CN";emerge kde-i18n077. 安装图片浏览器
+
+代码:
+# USE="kipi" emerge gwenview
+# USE="png jpeg X" emerge imagemagick078. 安装屏幕截图软件
+
+代码:
+# emerge -av ksnapshot079. 安装KDE主题引擎
+
+代码:
+# emerge -av ksplash-engine-moodin080. 安装OFFICE软件
+
+代码:
+# emerge -av openoffice-bin081. 安装输入法
+
+代码:
+# emerge scim scim-pinyin scim-tables
+# scim -d[/color]082. 安装星际译王
+
+代码:
+# emerge -av stardict复制词典到~/.stardict/dic/目录
+
+代码:
+# cp 你下载的词典到 ~/.stardict/dic/083.安装KDE屏幕软件
+
+代码:
+# emerge -av kdeartwork-kscreensaver084. 安装设置kbfx为K菜单
+
+代码:
+# nano -w /etc/portage/package.keywords/jianghong.keywords
+   kde-misc/kbfx ~x86
+
+# emerge -av kbfx
+--------------------------------------------------------------------------------
+此帖于 07-10-14 00:37 被 hooong.jiang 编辑.  
+         
+
+hooong.jiang 
+查看公开信息 
+查找 hooong.jiang 发表的更多帖子 
+
+ 07-10-05, 19:38  第 11 帖  
+hooong.jiang  
+
+ 
+
+ 
+ 
+ 
+
+注册会员 
+
+  注册日期: May 2006
+  帖子: 76 
+  精华: 2
+ 
+  
+
+十一、安装E17
+
+085. 安装E17桌面
+参考连接：http://gentoo-wiki.com/HOWTO_e17
+
+代码:
+# emerge -av layman
+# echo "source /usr/portage/local/layman/make.conf" >> /etc/make.conf
+# layman --fetch
+# layman --list
+# layman -f -a gentoo-china
+# layman --add enlightenment
+# layman -S
+# cat /etc/make.conf | grep PORTDIR_OVERLAY=
+  PORTDIR_OVERLAY="/usr/local/portage /usr/local/portage/xeffects/trunk /usr/portage/local/layman/gentoo-china /usr/portage/local/layman/enlightenment"
+# mv /etc/portage/package.keywords /etc/portage/jianghong.keywords
+# mkdir /etc/portage/package.keywords
+# mv /etc/portage/jianghong.keywords /etc/portage/package.keywords
+# ln -s /usr/portage/local/layman/enlightenment/scripts/package.keywords.livecvs /etc/portage/package.keywords/
+# layman --sync=enlightenment
+# emerge -pv e这里的jianghong.keywords你可以改为任一名字。
+根据你的需要编辑/etc/make.conf文件的PORTDIR_OVERLAY项，我这里为PORTDIR_OVERLAY="/usr/local/portage /usr/local/portage/xeffects/trunk /usr/portage/local/layman/gentoo-china /usr/portage/local/layman/enlightenment ， 
+         
+
+hooong.jiang 
+查看公开信息 
+查找 hooong.jiang 发表的更多帖子 
+
+ 07-10-05, 19:39  第 12 帖  
+hooong.jiang  
+
+ 
+
+ 
+ 
+ 
+
+注册会员 
+
+  注册日期: May 2006
+  帖子: 76 
+  精华: 2
+ 
+  
+
+十二、安装3D桌面
+
+086. 安装 compiz-fusion
+参考连接：http://gentoo-wiki.com/HOWTO_compiz-fusion
+
+代码:
+# emerge -av subversion
+# cd /usr/local/portage
+# svn co svn://svn.gentoo-xeffects.org/xeffects
+# cat /etc/make.conf | grep PORTDIR_OVERLAY=
+       PORTDIR_OVERLAY="/usr/local/portage /usr/local/portage/xeffects/trunk /usr/portage/local/layman/gentoo-china /usr/portage/local/layman/enlightenment根据你的需要编辑/etc/make.conf文件的PORTDIR_OVERLAY项，我这里为PORTDIR_OVERLAY="/usr/local/portage /usr/local/portage/xeffects/trunk /usr/portage/local/layman/gentoo-china /usr/portage/local/layman/enlightenment ，
+
+087. 去掉compiz-fusion屏蔽
+
+代码:
+# nano -w /etc/portage/package.keywords/jianghong.keywords
+       dev-python/compizconfig-python **
+       x11-wm/compiz **
+       x11-wm/compiz-fusion **
+       x11-plugins/compiz-fusion-plugins-main **
+       x11-plugins/compiz-fusion-plugins-extra **
+       x11-plugins/compiz-fusion-plugins-unsupported **
+       x11-plugins/compiz-fusion-plugins-atlantis **
+       x11-plugins/compiz-fusion-plugins-threed **
+       x11-plugins/compiz-fusion-plugins-wallpaper **
+       x11-wm/emerald **
+       x11-themes/emerald-themes **
+       x11-apps/ccsm **
+       x11-libs/libcompizconfig **
+       x11-libs/compizconfig-backend-gconf **
+       x11-libs/compizconfig-backend-kconfig **
+       x11-libs/compiz-bcop **
+       x11-apps/fusion-icon **088. USE选项
+
+代码:
+# echo "x11-libs/libX11 xcb" >> /etc/portage/package.use
+# emerge -av1 x11-libs/libX11
+# echo "x11-libs/cairo glitz svg png" >> /etc/portage/package.use089. 安装compiz-fusion
+
+代码:
+# emerge -1av cairo
+# emerge -av compiz-fusion 如果失败，请用下面的命令
+
+代码:
+# emerge -v1a compiz compiz-bcop emerald libcompizconfig compiz-fusion-plugins-main compiz-fusion-plugins-extra compiz-fusion-plugins-unsupported compiz-fusion-plugins-atlantis compiz-fusion-plugins-threed compiz-fusion-plugins-wallpaper compizconfig-backend-kconfig compizconfig-backend-gconf compizconfig-python emerald-themes ccsm compiz-fusion fusion-icon090. 启动compiz-fusion
+
+代码:
+# fusion-icon
+# ccsm 
+         
+
+hooong.jiang 
+查看公开信息 
+查找 hooong.jiang 发表的更多帖子 
+
+ 07-10-05, 19:40  第 13 帖  
+hooong.jiang  
+
+ 
+
+ 
+ 
+ 
+
+注册会员 
+
+  注册日期: May 2006
+  帖子: 76 
+  精华: 2
+ 
+  
+
+十三、自动挂载储存设备
+
+091. 安装所需软件
+参考连接：http://gentoo-wiki.com/HOWTO_ivman
+
+代码:
+# emerge -avt kdebase-kioslaves
+# rc-update add dbus default
+# /etc/init.d/dbus start
+# rc-update add hald default
+# /etc/init.d/hald start092. 增加到用户组
+
+代码:
+# usermod -a -G plugdev jiang093. 安装pmount ivman
+
+代码:
+# emerge -av pmount
+# emerge -av ivman
+# ln -s /usr/bin/ivman ~/.kde3.5/Autostart/ivman
+# cd /etc/hal/fdi/policy/094. 编辑mountpolicies.fdi文件
+
+代码:
+# nano -w /etc/hal/fdi/policy/mountpolicies.fdi
+       <?xml version="1.0" encoding="ISO-8859-1"?>
+       <!-- -*- SGML -*- -->
+         <deviceinfo version="0.2">
+           <device>
+             <match key="info.category" string="storage">
+               <match key="storage.hotpluggable" bool="true">
+                 <merge key="storage.policy.should_mount" type="bool">true</merge>
+               </match>
+             </match>
+           </device>
+         </deviceinfo>095. 重启动hald
+
+代码:
+# /etc/init.d/hald restart 
+         
+
+hooong.jiang 
+查看公开信息 
+查找 hooong.jiang 发表的更多帖子 
+
+ 07-10-05, 19:41  第 14 帖  
+hayse2000 
+
+ 
+
+ 
+ 
+ 
+
+注册会员 
+
+  注册日期: Oct 2005
+  我的住址: 广州
+  帖子: 123 
+  精华: 0
+ 
+  
+
+过来学习一下。
+基本上按照手册去安装的。
+
+
+
+
+
+
+
+
+__________________
+不要在不该停留的地方停留太久！
+不要让等你的人等太久！  
+         
+
+hayse2000 
+查看公开信息 
+查找 hayse2000 发表的更多帖子 
+
+ 07-10-05, 23:00  第 15 帖  
+chinaxex 
+
+ 
+ 
+ 
+
+注册会员 
+
+  注册日期: Jul 2005
+  帖子: 14 
+  精华: 0
+ 
+  
+
+不错~~顶你屁股!!! 
+         
+
+chinaxex 
+查看公开信息 
+查找 chinaxex 发表的更多帖子 
+
+  第1页，共2页 1 2 >   
+ 
+
+
+? 上一主题 | 下一主题 ? 
+
+
+
+主题工具 
+ 显示可打印版本 
+ 邮寄本页给好友 
+
+ 发帖规则  
+您 [不可以] 发表新主题
+您 [不可以] 回复主题
+您 [不可以] 上传附件
+您 [不可以] 编辑您的帖子
+
+--------------------------------------------------------------------------------
+
+已 [启用] BB 代码
+已 [启用] 表情符号
+已 [启用] IMG 代码
+已 [禁用] HTML 代码 
+   [论坛跳转…]
+  用户控制面板 悄悄话 收藏夹 会员在线状态 搜索论坛 论坛首页   Linux 综合讨论区 —— LinuxSir.Org     Linux 基础建设讨论专版     Linux shell进阶应用与shell编程     Linux 专业英文精品技术文档专题         Gas中文小组讨论区     Linux 硬件及周边设备     Linux 网络与服务器架设     Linux 系统及网络安全讨论专版     Linux及计算机学科基础理论版 Linux 发行版讨论区 —— LinuxSir.Org     Linux 发行版SuSE专题     Linux 发行版Archlinux讨论区     Linux 发行版Debian专题     Ubuntu Linux 专题讨论     Linux 发行版Slackware专题     Linux 发行版 LFS 讨论区         Olive讨论区 （实验版）     Linux 发行版Mandriva专题     Linux 发行版Redhat/Fedora/CentOS专题     Linux 发行版Gentoo讨论区     Mini Linux 及准系统研究     Linux 发行版红旗专题     LoongSon-龙芯讨论区     Linux 发行版其他专题         Linux发行版 Turbolinux专题         Powerpc Linux 讨论区 Linux 软件应用讨论区 —— LinuxSir.Org     Linux 输入开发与研究     Linux 软件专题讨论         软件下载讨论区         即时通讯 Linux 高级应用讨论区 —— LinuxSir.Org     Linux 数据库专题讨论     Linux 认证考试学习与经验交流     Linux 内核研究小组     Linux 企业级应用专题讨论 编程开发讨论区 —— LinuxSir.Org     Linux 程序设计专题讨论     Java 程序设计开发讨论     Perl | PHP | Python 脚本程序开发     嵌入式Linux讨论区──实验田版 Unix 技术讨论区 —— LinuxSir.Org     BSD 讨论专题         BSD 新闻安全观察         RelaxBSD 讨论区     Solaris 讨论专题     MacOSX & Darwin 讨论专题 社区中心 —— LinuxSir.Org     LinuxSir 论坛管理         LinuxSir 论坛临时存放区     LinuxSir 文章管理系统和BBS程序研究小组     小企鹅新闻图书馆     LinuxSir.Org 同城行 ── 我的城市   
+ 
+
+
+
+所有时间均为[北京时间]。现在的时间是 22:35。
+
+网站首页 - 联系我们 - 返回顶端  
+
+
+Powered by vBulletin 版本 3.6.8
+版权所有 ?2000 - 2007, Jelsoft Enterprises Ltd.
+官方中文技术支持: vBulletin 中文 
+版权所有 ?2002 - 2007, LinuxSir.Org 
