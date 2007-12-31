@@ -119,6 +119,10 @@ void get_telnet_result(string words)
 {
   vector<s_result> result;
   query->query(words,result);
+  if(result.size() == 0){
+    output("No files found!\n");
+    return;
+  }
   string cuted = query->get_cuted();
   vector<s_result>::iterator it;
   for(it = result.begin(); it != result.end(); it++){
@@ -136,7 +140,15 @@ int main(int argc,char **argv){
   string iidx_file_name(argv[2]);
   string didx_file_name(argv[3]);
   rawfile.open(rawfile_name.c_str());
+  if(!rawfile){
+    cerr<<"[ERROR]:raw file "<<rawfile_name<<" cannot be opened!"<<endl;
+    return -1;
+  }
   didx_file.open(didx_file_name.c_str());
+  if(!didx_file){
+    cerr<<"[ERROR]:raw file "<<didx_file_name<<" cannot be opened!"<<endl;
+    return -1;
+  }
   query = new c_query(iidx_file_name);
 
   string tmp;

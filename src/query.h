@@ -55,11 +55,16 @@ public:
     string keywords;
     unsigned int i=0;
     while(i<m_words.length()){
+      keywords = "";
       for(;i<m_words.length();i++){/*cut words by space,and search one word each time*/
         if(m_words[i]==' ') break;
         keywords+=m_words[i];
       }
       string record=get_term(keywords);
+      if(record == ""){
+        res.clear();
+        return;
+      }
       vector<s_result> temp_vector;/*this temp is what i will give to your function*/
       process_term(record,temp_vector);
       res_merge(res,temp_vector);/*this maybe wrong*/
@@ -93,64 +98,84 @@ public:
     string words;
     map<string,int>::iterator item;
     item=map_word.find(word);
+    if(item == map_word.end())
+      return string("");
     int site=item->second;
     iidx_file.seekg(site);
     getline(iidx_file,words);
-    cout<<words<<endl;
+    cerr<<"[DEBUG]:find word "<<words<< " !"<<endl;
     return words;
   }
 
-  void process_term(const string record,vector<struct s_result> &sub_result)
+  void process_term(const string record,
+                    vector<struct s_result> &sub_result)
   {
-    int len;
-    len=record.length();
-    string words;
-    s_result temp;
-    string c_num1,c_num2;
-    int num1=-1,num2=-1;
-    int i=0;
-    while(record[i]==' ')i++;
-    for(;i<len;i++)
-      {
-        if(record[i]==' ') break;
-        words+=record[i];
+    istrstream rec(record.c_str());
+    s_result tmp_res;
+    int tmp;
+    sub_result.clear();
+    if(rec){
+      rec>>tmp;
+    }else{
+      cerr<<"[ERROR]:record "<<record<<" invalid"<<endl;
+      return;
+    }
+    rec>>hex>>tmp_res.docid;
+    tmp_res.weight = 1;
+    while(rec>>hex>>tmp){
+      if(tmp_res.docid == tmp){
+        tmp_res.weight++;
+      }else{
+        sub_result.push_back(tmp_res);
+        tmp_res.docid = tmp;
+        tmp_res.weight = 1;
       }
-    while(record[i]==' ') i++;
-    while(i<len)
-      {
-        for(int a=0;a<8;a++,i++)
-          {
-            c_num1+=record[i];
-          }
-        cout<<c_num1;
-        sscanf(c_num1.c_str(),"%x",&num2);
-        c_num1="";
-        if(num1==-1)
-          {
-            num1=num2;
-            temp.docid=num1;
-            temp.weight=0;
-            while(record[i]==' ') i++;
-            continue;
-          }
-        else if(num1==num2)
-          {
-            temp.weight++;
-          }
-        else
-          {
-            sub_result.push_back(temp);
-            num1=num2;
-            temp.docid=num1;
-            temp.weight=0;
-          }
-        while(record[i]==' ') i++;
-      }
-  }
-
+    }
+  }    
+    // int len;
+    // len=record.length();
+    // string words;
+    // s_result temp;
+    // string c_num1,c_num2;
+    // int num1=-1,num2=-1;
+    // int i=0;
+    // while(i<record.length() && record[i]==' ')i++;
+    // for(;i<len;i++){
+    //   if(record[i]==' ') break;
+    //   words+=record[i];
+    // }
+    // while(record[i]==' ') i++;
+    // while(i<len){
+    //   for(int a=0;a<8;a++,i++){
+    //     c_num1+=record[i];
+    //   }
+    //   sscanf(c_num1.c_str(),"%x",&num2);
+    //   c_num1="";
+    //   if(num1==-1)
+    //     {
+    //         num1=num2;
+    //         temp.docid=num1;
+    //         temp.weight=0;
+    //         while(record[i]==' ') i++;
+    //         continue;
+    //       }
+    //     else if(num1==num2)
+    //       {
+    //         temp.weight++;
+    //       }
+    //     else
+    //       {
+    //         sub_result.push_back(temp);
+    //         num1=num2;
+    //         temp.docid=num1;
+    //         temp.weight=0;
+    //       }
+    //     while(record[i]==' ') i++;
+    //   }
  
   void res_merge(vector<struct s_result> &final,
-                 vector<struct s_result> &sub_result){
+                 vector<struct s_result> &sub_result)
+  {
     sort(sub_result.begin(),sub_result.end(),comp_docid);
     if(final.size() == 0){
       final = sub_result;
