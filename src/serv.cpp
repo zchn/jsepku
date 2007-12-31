@@ -1,7 +1,18 @@
 #include<vector>
 #include<iostream>
 #include<strstream>
+#include<cstring>
 
+#include <sys/socket.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+
+#define SERVER_PORT 7891 // define the defualt connect port id
+#define LENGTH_OF_LISTEN_QUEUE 10 //length of listen queue in server
+#define BUFFER_SIZE 255
+#define WELCOME_MESSAGE "Welcome to J Search Engine 1.0 \nJuat input your query word then Enter\n"
 
 using namespace std;
 
@@ -17,6 +28,7 @@ public:
 c_query *query;
 ifstream rawfile;
 ifstream didx_file;
+int servfd,clifd;
 
 void output(string str){
   cout<<str;
@@ -162,6 +174,54 @@ void get_telnet_result(string words)
   }
 }
 
+void start_serv()
+{
+  struct sockaddr_in servaddr,cliaddr;
+ 
+  if ((servfd = socket(AF_INET,SOCK_STREAM,0)) < 0){
+    cerr<<"[ERROR]:Create socket error"<<endl;
+    return;
+  }
+  
+  memset(&servaddr,0,sizeof(servaddr));
+  servaddr.sin_family = AF_INET;
+  servaddr.sin_port = htons(SERVER_PORT);
+  servaddr.sin_addr.s_addr = htons(INADDR_ANY); 
+
+  if(bind(servfd,(struct sockaddr*)&servaddr,sizeof(servaddr))<0){
+    cerr<<"[ERROR]:Fail to bind~"<<endl;
+    return;
+  }
+
+  if (listen(servfd,LENGTH_OF_LISTEN_QUEUE) < 0){
+    cerr<<"[ERROR]:Fail to listen~"<<endl;
+    return;
+  }
+  
+  while (1){
+    char buf[BUFFER_SIZE];
+    socklen_t length = sizeof(cliaddr);
+    cerr<<"[LOG]: Start listening on port 7891...."<<endl;
+    clifd = accept(servfd,(struct sockaddr*)&cliaddr,&length);
+
+    if(clifd < 0){
+      cerr<<"[ERROR]:Fail to accept~! continuing"<<endl;
+      continue;
+    }
+    strcpy(buf,WELCOME_MESSAGE);
+    cerr<<"[LOG]:Receive conn from IP:("<<inet_ntoa(cliaddr.sin_addr)<<":"<<ntohs(cliaddr.sin_port)<<')'<<endl;
+    send(clifd,buf,strlen(buf)+1,0);
+    recv(clifd,buf,BUFFER_SIZE,0);
+    while(string(buf) != "@bye"){
+      get_telnet_result(buf);
+      recv(clifd,buf,BUFFER_SIZE,0);
+    }
+    close(clifd);
+    }//exit
+  close(servfd);
+}
+
+
 int main(int argc,char **argv){
   if(argc != 4){
     cout<<argv[0]<<" raw iidx didx"<<endl;
@@ -181,13 +241,6 @@ int main(int argc,char **argv){
     return -1;
   }
   query = new c_query(iidx_file_name);
-
-  string tmp;
-  getline(cin,tmp);
-  while(tmp != "@!"){
-    if(tmp != "")
-      get_telnet_result(tmp);
-    getline(cin,tmp);
-  }
+  start_serv();
   return 0;
 }
