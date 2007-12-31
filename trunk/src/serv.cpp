@@ -12,9 +12,24 @@
 #define SERVER_PORT 7891 // define the defualt connect port id
 #define LENGTH_OF_LISTEN_QUEUE 10 //length of listen queue in server
 #define BUFFER_SIZE 255
-#define WELCOME_MESSAGE "Welcome to J Search Engine 1.0 \n\rJust input your query word then Enter\n\r"
-
-using namespace std;
+const char WELCOME_MESSAGE[] =
+  "88888888888888888888888888888888888888888888888888888888888888888888888\n\r"
+  "                                                                       \n\r"
+  "   ####      ####   ######    ##    #####     ###   ##  ##             \n\r"
+  "    ##      #    #  ##  ##   #  #   ##  ##   ## ##  ##  ##             \n\r"
+  "    ##      #       ##      ##  ##  ##  #   ##      ##  ##             \n\r"
+  "    ##  ##   ####   #####   ######  ####    ##      ######   Happy     \n\r"
+  "    ##  ##       #  ##      ##  ##  ## ##   ##      ##  ##      New    \n\r"
+  " ## ##      #    #  ##  ##  ##  ##  ##  ##   ## ##  ##  ##        Year!\n\r"
+  "  ###        ####   ######  ##  ##  ##   #    ###   ##  ##             \n\r"
+  "                                                    ----by Joyan     \n\r"
+  "                                                          & Jiezhong \n\r"  
+  "88888888888888888888888888888888888888888888888888888888888888888888888\n\r"
+  "\n\r"
+  "Just input your query then ENTER.(^@^)(input \"@bye\" to quit)\n\r";
+  
+ 
+  using namespace std;
 
 #include"query.h"
 
@@ -156,6 +171,7 @@ void make_rec(string cuted, s_result res,c_raw_record &rec)
 
 void get_telnet_result(string words)
 {
+  output("\n\rThe files including words : "+words+"\n\r");
   cerr<<"[DEBUG]Now I'm in get_telnet_result"<<endl;
   vector<s_result> result;
   query->query(words,result);
@@ -168,10 +184,15 @@ void get_telnet_result(string words)
   for(it = result.begin(); it != result.end(); it++){
     c_raw_record record;
     make_rec(cuted,*it,record);
-    output(record.title+"\n\r");
+    output("\n\r++++++TITLE:"+record.title+"\n\r");
+    output("-----------------------------------------------\n\r");
     output(record.digest+"\n\r");
-    output(record.url+"\n\r\n\r");
+    output("-----------------------------------------------\n\r");
+    output("++++++"+record.url+"\n\r\n\r");
   }
+  char buf[10];
+  sprintf(buf,"%d",result.size());
+  output("Find files containing "+words+" In total : "+buf+"\n\r");
 }
 
 void start_serv()
