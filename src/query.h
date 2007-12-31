@@ -28,20 +28,22 @@ bool comp_docid(const struct s_result &a,const struct s_result &b){
 }
 
 class c_query{
- private:
+private:
   CDict iDict;
   CHzSeg iHzSeg;
   string cuted;
   map<string,int> map_word;
   ifstream iidx_file;
- public:
-  c_query(const string path){
+public:
+  c_query(const string path)
+  {
     iidx_file.open(path.c_str());
-    if(!iidx_file.is_open())
-      {
-        cerr<<"[ERROR]:file "<<path<<" can't be opened"<<endl;
-      }
+    if(!iidx_file.is_open()){
+      cerr<<"[ERROR]:file "<<path<<" can't be opened"<<endl;
+    }
+    creat_map();
   }
+  
   ~c_query(){
     iidx_file.close();
   }
@@ -50,21 +52,18 @@ class c_query{
   {
     string m_words;
     m_words=cut_words(words);
-    creat_map();
     string keywords;
     unsigned int i=0;
-    while(i<m_words.length())
-      {
-        for(;i<m_words.length();i++)/*cut words by space,and search one word each time*/
-          {
-            if(m_words[i]==' ') break;
-            keywords+=m_words[i];
-          }
-        string record=get_term(keywords);
-        vector<s_result> temp_vector;/*this temp is what i will give to your function*/
-        process_term(record,temp_vector);
-        res_merge(temp_vector,res);/*this maybe wrong*/
+    while(i<m_words.length()){
+      for(;i<m_words.length();i++){/*cut words by space,and search one word each time*/
+        if(m_words[i]==' ') break;
+        keywords+=m_words[i];
       }
+      string record=get_term(keywords);
+      vector<s_result> temp_vector;/*this temp is what i will give to your function*/
+      process_term(record,temp_vector);
+      res_merge(res,temp_vector);/*this maybe wrong*/
+    }
   }
  
   string get_cuted(){
@@ -82,14 +81,11 @@ class c_query{
     string word;
     int site;
     while(!iidx_file.eof()){
-      iidx_file>>word;
       site=iidx_file.tellg();
-      site-=word.length();
+      iidx_file>>word;
       map_word.insert(pair<string,int>(word,site));
       getline(iidx_file,word);
-      word="";
-    }
-     
+    }     
   }
 
   string get_term(const string word)

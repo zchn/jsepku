@@ -29,119 +29,87 @@ CMD5 CMD5::operator +(CMD5::operator +312,8676
 bool CMD5::operator ==(CMD5::operator ==320,8843
 string CMD5::ToString(330,9020
 
-DocSegment.cpp,118
-CDict iDict;14,220
-const unsigned int HEADER_BUF_SIZE 18,256
-const unsigned int MAX_DOC_ID 20,382
-int main(22,422
+Dict.cpp,96
+CDict::CDict(5,41
+CDict::~CDict(10,79
+void CDict::OpenDict(15,123
+bool CDict::IsWord(34,536
 
-txtfile/Md5.cpp,765
-#define GET_UINT32(11,221
-#define PUT_UINT32(19,628
-void CMD5::md5_starts(29,1076
-void CMD5::md5_process(39,1314
-#define S(60,1995
-#define P(62,2057
-#define F(72,2337
-#undef F91,3051
-#define F(93,3063
-#undef F112,3777
-#define F(114,3793
-#undef F133,4499
-#define F(135,4511
-#undef F154,5220
-void CMD5::md5_update(162,5337
-static uint8 md5_padding[md5_padding199,6173
-void CMD5::md5_finish(207,6425
-void CMD5::GenerateMD5(227,7010
-CMD5::CMD5(235,7226
-CMD5::CMD5(241,7287
-int _httoi(245,7356
-  struct CHexMap247,7390
-    char chr;CHexMap::chr249,7413
-    int value;CHexMap::value250,7428
-CMD5::CMD5(295,8394
-CMD5 CMD5::operator +(CMD5::operator +312,8676
-bool CMD5::operator ==(CMD5::operator ==320,8843
-string CMD5::ToString(330,9020
+HzSeg.cpp,310
+const unsigned int MAX_WORD_LENGTH 6,57
+const unsigned int MAX_EWORD_LENGTH 7,97
+CHzSeg::CHzSeg(10,196
+CHzSeg::~CHzSeg(14,218
+string CHzSeg::SegmentHzStrMM 19,301
+bool CHzSeg::good_char(43,785
+string CHzSeg::SegmentSentenceMM 57,1049
+void CHzSeg::Translate(141,3347
+string CHzSeg::SegmentURL(179,4048
 
-txtfile/DocSegment.cpp,118
-CDict iDict;14,220
-const unsigned int HEADER_BUF_SIZE 18,256
-const unsigned int MAX_DOC_ID 20,382
-int main(22,422
+#query.h#,922
+#define _QUERY_H_2,18
+using namespace std;14,181
+struct s_result{s_result16,203
+  int docid;17,220
+  int weight;18,233
+bool comp_weight(22,252
+bool comp_docid(26,354
+class c_query{c_query30,453
+  CDict iDict;c_query::iDict32,477
+  CHzSeg iHzSeg;c_query::iHzSeg33,492
+  string cuted;c_query::cuted34,509
+  map<c_query::map35,525
+  map<string,int> map_word;c_query::map_word35,525
+  ifstream iidx_file;c_query::iidx_file36,553
+  c_query(c_query::c_query38,583
+  ~c_query(c_query::~c_query47,771
+  void query(c_query::query51,813
+  string get_cuted(c_query::get_cuted69,1402
+  string cut_words(c_query::cut_words73,1447
+  void creat_map(c_query::creat_map79,1581
+  string get_term(c_query::get_term94,1859
+  void process_term(c_query::process_term106,2114
+  void res_merge(c_query::res_merge155,3158
+        for( ;(*it_final).docid > (*it_sub).docid;c_query::s_result::docid165,3553
 
-txtfile/crawl.cpp,79
-const char RAWFILENAME[RAWFILENAME10,119
-int crawl(12,164
-int main(55,1352
+HzSeg.h,77
+#define _HZSEG_H_040415_2,25
+using namespace std;9,127
+class CHzSeg11,149
 
-txtfile/.svn/text-base/Md5.cpp.svn-base,765
-#define GET_UINT32(11,221
-#define PUT_UINT32(19,628
-void CMD5::md5_starts(29,1076
-void CMD5::md5_process(39,1314
-#define S(60,1995
-#define P(62,2057
-#define F(72,2337
-#undef F91,3051
-#define F(93,3063
-#undef F112,3777
-#define F(114,3793
-#undef F133,4499
-#define F(135,4511
-#undef F154,5220
-void CMD5::md5_update(162,5337
-static uint8 md5_padding[md5_padding199,6173
-void CMD5::md5_finish(207,6425
-void CMD5::GenerateMD5(227,7010
-CMD5::CMD5(235,7226
-CMD5::CMD5(241,7287
-int _httoi(245,7356
-  struct CHexMap247,7390
-    char chr;CHexMap::chr249,7413
-    int value;CHexMap::value250,7428
-CMD5::CMD5(295,8394
-CMD5 CMD5::operator +(CMD5::operator +312,8676
-bool CMD5::operator ==(CMD5::operator ==320,8843
-string CMD5::ToString(330,9020
+invert.cpp,157
+const int TERM_LEN=7,94
+struct word_info8,117
+	string words;word_info::words10,136
+	string id;word_info::id11,151
+int invert(13,166
+int main(53,1190
 
-txtfile/.svn/text-base/Md5.h.svn-base,345
-#define _MD5_H2,16
-using namespace std;8,90
-class CMD513,140
-	#define uint8 16,165
-	#define uint32 17,196
-	struct md5_contextCMD5::md5_context19,233
-		uint32 total[CMD5::md5_context::total21,258
-		uint32 state[CMD5::md5_context::state22,278
-		uint8 buffer[CMD5::md5_context::buffer23,298
-	unsigned long m_data[CMD5::m_data56,1080
-
-txtfile/.svn/text-base/crawl.cpp.svn-base,105
-using namespace std;5,55
-const char RAWFILENAME[RAWFILENAME10,119
-int crawl(12,164
-int main(55,1352
-
-txtfile/.svn/text-base/DocSegment.cpp.svn-base,146
-CDict iDict;14,220
-using namespace std;16,234
-const unsigned int HEADER_BUF_SIZE 18,256
-const unsigned int MAX_DOC_ID 20,382
-int main(22,422
-
-txtfile/Md5.h,345
-#define _MD5_H2,16
-using namespace std;8,90
-class CMD513,140
-	#define uint8 16,165
-	#define uint32 17,196
-	struct md5_contextCMD5::md5_context19,233
-		uint32 total[CMD5::md5_context::total21,258
-		uint32 state[CMD5::md5_context::state22,278
-		uint8 buffer[CMD5::md5_context::buffer23,298
-	unsigned long m_data[CMD5::m_data56,1080
+query.h,922
+#define _QUERY_H_2,18
+using namespace std;14,181
+struct s_result{s_result16,203
+  int docid;17,220
+  int weight;18,233
+bool comp_weight(22,252
+bool comp_docid(26,354
+class c_query{c_query30,453
+  CDict iDict;c_query::iDict32,478
+  CHzSeg iHzSeg;c_query::iHzSeg33,493
+  string cuted;c_query::cuted34,510
+  map<c_query::map35,526
+  map<string,int> map_word;c_query::map_word35,526
+  ifstream iidx_file;c_query::iidx_file36,554
+  c_query(c_query::c_query38,585
+  ~c_query(c_query::~c_query45,761
+  void query(c_query::query49,803
+  string get_cuted(c_query::get_cuted70,1445
+  string cut_words(c_query::cut_words74,1490
+  void creat_map(c_query::creat_map80,1624
+  string get_term(c_query::get_term95,1902
+  void process_term(c_query::process_term107,2157
+  void res_merge(c_query::res_merge156,3201
+        for( ;(*it_final).docid > (*it_sub).docid;c_query::s_result::docid166,3596
 
 chseg/Dict.cpp,96
 CDict::CDict(5,41
@@ -219,10 +187,85 @@ CDict::~CDict(10,79
 void CDict::OpenDict(15,123
 bool CDict::IsWord(34,536
 
-crawl.cpp,79
-const char RAWFILENAME[RAWFILENAME10,119
-int crawl(12,163
-int main(55,1361
+Dict.h,222
+#define _DICT_H_040401_2,25
+using namespace std;9,130
+class CDict22,278
+	bool GetFreq(CDict::GetFreq29,337
+	void AddFreq(CDict::AddFreq31,414
+	map<CDict::map34,457
+	map<string, int> mapDict;CDict::mapDict34,457
+
+crawl.cpp,63
+string RAWFILENAME;11,137
+int crawl(13,158
+int main(56,1358
+
+serv.cpp,445
+class c_raw_record{c_raw_record10,99
+  string title;c_raw_record::title12,127
+  string digest;c_raw_record::digest13,143
+  string url;c_raw_record::url14,160
+c_query *query;query17,178
+ifstream rawfile;18,194
+ifstream didx_file;19,212
+void output(21,233
+int docid2offset(25,274
+void get_content(36,465
+void get_title_url(53,892
+void get_digest(68,1192
+void make_rec(107,2074
+void get_telnet_result(118,2330
+int main(133,2708
+
+Cpp1.cpp,286
+class c_query12,140
+	struct s_resultc_query::s_result15,165
+		int docid;c_query::s_result::docid17,185
+		int weight;c_query::s_result::weight18,198
+	string cut_words(c_query::cut_words23,287
+	void creat_map(c_query::creat_map28,352
+	string get_term(c_query::get_term50,800
+
+.svn/text-base/docoff.cpp.svn-base,60
+using namespace std;5,72
+int docoff(6,93
+int main(41,769
+
+.svn/text-base/HzSeg.cpp.svn-base,310
+const unsigned int MAX_WORD_LENGTH 6,57
+const unsigned int MAX_EWORD_LENGTH 7,97
+CHzSeg::CHzSeg(10,196
+CHzSeg::~CHzSeg(14,218
+string CHzSeg::SegmentHzStrMM 19,301
+bool CHzSeg::good_char(43,785
+string CHzSeg::SegmentSentenceMM 57,1049
+void CHzSeg::Translate(141,3347
+string CHzSeg::SegmentURL(179,4048
+
+.svn/text-base/serv.cpp.svn-base,471
+using namespace std;6,58
+class c_raw_record{c_raw_record10,99
+  string title;c_raw_record::title12,127
+  string digest;c_raw_record::digest13,143
+  string url;c_raw_record::url14,160
+c_query *query;query17,178
+ifstream rawfile;18,194
+ifstream didx_file;19,212
+void output(21,233
+int docid2offset(25,274
+void get_content(36,465
+void get_title_url(53,892
+void get_digest(68,1192
+void make_rec(107,2074
+void get_telnet_result(118,2330
+int main(133,2708
+
+.svn/text-base/preinvert.cpp.svn-base,89
+using namespace std;6,73
+const int TERM_LEN=7,94
+int preinvert(8,117
+int main(43,826
 
 .svn/text-base/Md5.cpp.svn-base,765
 #define GET_UINT32(11,221
@@ -254,6 +297,60 @@ CMD5 CMD5::operator +(CMD5::operator +312,8676
 bool CMD5::operator ==(CMD5::operator ==320,8843
 string CMD5::ToString(330,9020
 
+.svn/text-base/query.h.svn-base,922
+#define _QUERY_H_2,18
+using namespace std;14,181
+struct s_result{s_result16,203
+  int docid;17,220
+  int weight;18,233
+bool comp_weight(22,252
+bool comp_docid(26,354
+class c_query{c_query30,453
+  CDict iDict;c_query::iDict32,478
+  CHzSeg iHzSeg;c_query::iHzSeg33,493
+  string cuted;c_query::cuted34,510
+  map<c_query::map35,526
+  map<string,int> map_word;c_query::map_word35,526
+  ifstream iidx_file;c_query::iidx_file36,554
+  c_query(c_query::c_query38,585
+  ~c_query(c_query::~c_query45,761
+  void query(c_query::query49,803
+  string get_cuted(c_query::get_cuted70,1445
+  string cut_words(c_query::cut_words74,1490
+  void creat_map(c_query::creat_map80,1624
+  string get_term(c_query::get_term95,1902
+  void process_term(c_query::process_term107,2157
+  void res_merge(c_query::res_merge156,3201
+        for( ;(*it_final).docid > (*it_sub).docid;c_query::s_result::docid166,3596
+
+.svn/text-base/Cpp1.cpp.svn-base,313
+using namespace std;8,116
+class c_query12,140
+	struct s_resultc_query::s_result15,165
+		int docid;c_query::s_result::docid17,185
+		int weight;c_query::s_result::weight18,198
+	string cut_words(c_query::cut_words23,287
+	void creat_map(c_query::creat_map28,352
+	string get_term(c_query::get_term50,800
+
+.svn/text-base/Dict.h.svn-base,222
+#define _DICT_H_040401_2,25
+using namespace std;9,130
+class CDict22,278
+	bool GetFreq(CDict::GetFreq29,337
+	void AddFreq(CDict::AddFreq31,414
+	map<CDict::map34,457
+	map<string, int> mapDict;CDict::mapDict34,457
+
+.svn/text-base/HzSeg.h.svn-base,77
+#define _HZSEG_H_040415_2,25
+using namespace std;9,127
+class CHzSeg11,149
+
+.svn/text-base/test.cpp.svn-base,41
+using namespace std;4,37
+int main(6,59
+
 .svn/text-base/Md5.h.svn-base,345
 #define _MD5_H2,16
 using namespace std;8,90
@@ -266,18 +363,34 @@ class CMD513,140
 		uint8 buffer[CMD5::md5_context::buffer23,298
 	unsigned long m_data[CMD5::m_data56,1080
 
-.svn/text-base/crawl.cpp.svn-base,105
-using namespace std;5,55
-const char RAWFILENAME[RAWFILENAME10,119
-int crawl(12,163
-int main(55,1355
+.svn/text-base/invert.cpp.svn-base,152
+using namespace std;6,73
+const int TERM_LEN=7,94
+struct word_info8,117
+	string words;10,136
+	string id;11,151
+int invert(13,166
+int main(53,1190
 
-.svn/text-base/DocSegment.cpp.svn-base,146
-CDict iDict;14,220
-using namespace std;16,234
-const unsigned int HEADER_BUF_SIZE 18,256
-const unsigned int MAX_DOC_ID 20,382
-int main(22,422
+.svn/text-base/Dict.cpp.svn-base,96
+CDict::CDict(5,41
+CDict::~CDict(10,79
+void CDict::OpenDict(15,123
+bool CDict::IsWord(34,536
+
+.svn/text-base/rawseg.cpp.svn-base,133
+CDict iDict;12,208
+CHzSeg iHzSeg;13,221
+using namespace std;15,237
+int main(22,428
+void clean(120,2779
+bool good_char(132,3003
+
+.svn/text-base/crawl.cpp.svn-base,89
+using namespace std;6,73
+string RAWFILENAME;11,137
+int crawl(13,158
+int main(56,1358
 
 md5/Md5.cpp,765
 #define GET_UINT32(11,221
@@ -375,9 +488,28 @@ class CMD513,140
 		uint8 buffer[CMD5::md5_context::buffer23,298
 	unsigned long m_data[CMD5::m_data56,1080
 
-rawseg.cpp,0
+preinvert.cpp,63
+const int TERM_LEN=7,94
+int preinvert(8,117
+int main(43,826
+
+docoff.cpp,34
+int docoff(6,93
+int main(41,769
+
+test.cpp,15
+int main(6,59
+
+rawseg.cpp,105
+CDict iDict;12,208
+CHzSeg iHzSeg;13,221
+int main(22,428
+void clean(120,2779
+bool good_char(132,3003
 
 semantic.cache,0
+
+.svn/text-base/semantic.cache.svn-base,0
 
 chseg/semantic.cache,0
 
