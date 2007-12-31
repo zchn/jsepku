@@ -52,11 +52,14 @@ void get_content(int offset,string &content){
   }
   content += tmp+'\n';
   getline(rawfile,tmp);
-  while(rawfile && tmp != "verson:1.0"){
+  while(rawfile && tmp != "version:1.0"){
     content += tmp + '\n';
     //cerr<<"[DEBUG]:read from rawfile offset "<<tmp<<endl;
+    //cerr<<"[DEBUG]:CONTENT:"<<tmp<<endl;
     getline(rawfile,tmp);
   }
+  content += tmp + '\n';
+
   cerr<<"[DEBUG]:Now I'm leaving get_content"<<endl;
 }
 
@@ -111,8 +114,8 @@ void get_digest(const string cuted,const string &content,istrstream &cont,c_raw_
   for(j = 0; j < content.size(); j++){
     print += beg[j];
     print -= end[j];
-    if(print){
-      if(content[j] < ' ')
+    if(print){ 
+      if((unsigned char)content[j] < ' ')
         rec.digest += ' ';
       else
         rec.digest += content[j];
