@@ -75,6 +75,7 @@ public:
       res_merge(res,temp_vector);/*this maybe wrong*/
       while(i < m_words.length() && m_words[i] == ' ') i++;
     }
+    sort(res.begin(),res.end(),comp_weight);
   }
  
   string get_cuted(){
