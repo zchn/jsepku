@@ -46,7 +46,20 @@ string CHzSeg::SegmentSentenceMM 57,1049
 void CHzSeg::Translate(141,3347
 string CHzSeg::SegmentURL(179,4048
 
-#query.h#,922
+HzSeg.h,77
+#define _HZSEG_H_040415_2,25
+using namespace std;9,127
+class CHzSeg11,149
+
+invert.cpp,157
+const int TERM_LEN=7,94
+struct word_info8,117
+	string words;word_info::words10,136
+	string id;word_info::id11,151
+int invert(13,166
+int main(53,1190
+
+query.h,967
 #define _QUERY_H_2,18
 using namespace std;14,181
 struct s_result{s_result16,203
@@ -62,54 +75,16 @@ class c_query{c_query30,453
   map<string,int> map_word;c_query::map_word35,525
   ifstream iidx_file;c_query::iidx_file36,553
   c_query(c_query::c_query38,583
-  ~c_query(c_query::~c_query47,771
-  void query(c_query::query51,813
-  string get_cuted(c_query::get_cuted69,1402
-  string cut_words(c_query::cut_words73,1447
-  void creat_map(c_query::creat_map79,1581
-  string get_term(c_query::get_term94,1859
-  void process_term(c_query::process_term106,2114
-  void res_merge(c_query::res_merge155,3158
-        for( ;(*it_final).docid > (*it_sub).docid;c_query::s_result::docid165,3553
-
-HzSeg.h,77
-#define _HZSEG_H_040415_2,25
-using namespace std;9,127
-class CHzSeg11,149
-
-invert.cpp,157
-const int TERM_LEN=7,94
-struct word_info8,117
-	string words;word_info::words10,136
-	string id;word_info::id11,151
-int invert(13,166
-int main(53,1190
-
-query.h,922
-#define _QUERY_H_2,18
-using namespace std;14,181
-struct s_result{s_result16,203
-  int docid;17,220
-  int weight;18,233
-bool comp_weight(22,252
-bool comp_docid(26,354
-class c_query{c_query30,453
-  CDict iDict;c_query::iDict32,478
-  CHzSeg iHzSeg;c_query::iHzSeg33,493
-  string cuted;c_query::cuted34,510
-  map<c_query::map35,526
-  map<string,int> map_word;c_query::map_word35,526
-  ifstream iidx_file;c_query::iidx_file36,554
-  c_query(c_query::c_query38,585
-  ~c_query(c_query::~c_query45,761
-  void query(c_query::query49,803
-  string get_cuted(c_query::get_cuted70,1445
-  string cut_words(c_query::cut_words74,1490
-  void creat_map(c_query::creat_map80,1624
-  string get_term(c_query::get_term95,1902
-  void process_term(c_query::process_term107,2157
-  void res_merge(c_query::res_merge156,3201
-        for( ;(*it_final).docid > (*it_sub).docid;c_query::s_result::docid166,3596
+  ~c_query(c_query::~c_query47,761
+  void out_debug(c_query::out_debug51,803
+  void query(c_query::query55,873
+  string get_cuted(c_query::get_cuted78,1546
+  string cut_words(c_query::cut_words82,1591
+  void creat_map(c_query::creat_map88,1725
+  string get_term(c_query::get_term107,2200
+  void process_term(c_query::process_term124,2657
+  void res_merge(c_query::res_merge190,4267
+        for( ;(*it_final).docid > (*it_sub).docid;c_query::s_result::docid201,4665
 
 chseg/Dict.cpp,96
 CDict::CDict(5,41
@@ -216,7 +191,7 @@ void get_title_url(53,892
 void get_digest(68,1192
 void make_rec(107,2074
 void get_telnet_result(118,2330
-int main(133,2708
+int main(137,2783
 
 Cpp1.cpp,286
 class c_query12,140
@@ -259,7 +234,7 @@ void get_title_url(53,892
 void get_digest(68,1192
 void make_rec(107,2074
 void get_telnet_result(118,2330
-int main(133,2708
+int main(137,2783
 
 .svn/text-base/preinvert.cpp.svn-base,89
 using namespace std;6,73
@@ -306,22 +281,22 @@ struct s_result{s_result16,203
 bool comp_weight(22,252
 bool comp_docid(26,354
 class c_query{c_query30,453
-  CDict iDict;c_query::iDict32,478
-  CHzSeg iHzSeg;c_query::iHzSeg33,493
-  string cuted;c_query::cuted34,510
-  map<c_query::map35,526
-  map<string,int> map_word;c_query::map_word35,526
-  ifstream iidx_file;c_query::iidx_file36,554
-  c_query(c_query::c_query38,585
-  ~c_query(c_query::~c_query45,761
-  void query(c_query::query49,803
-  string get_cuted(c_query::get_cuted70,1445
-  string cut_words(c_query::cut_words74,1490
-  void creat_map(c_query::creat_map80,1624
-  string get_term(c_query::get_term95,1902
-  void process_term(c_query::process_term107,2157
-  void res_merge(c_query::res_merge156,3201
-        for( ;(*it_final).docid > (*it_sub).docid;c_query::s_result::docid166,3596
+  CDict iDict;c_query::iDict32,477
+  CHzSeg iHzSeg;c_query::iHzSeg33,492
+  string cuted;c_query::cuted34,509
+  map<c_query::map35,525
+  map<string,int> map_word;c_query::map_word35,525
+  ifstream iidx_file;c_query::iidx_file36,553
+  c_query(c_query::c_query38,583
+  ~c_query(c_query::~c_query47,771
+  void query(c_query::query51,813
+  string get_cuted(c_query::get_cuted74,1486
+  string cut_words(c_query::cut_words78,1531
+  void creat_map(c_query::creat_map84,1665
+  string get_term(c_query::get_term96,1900
+  void process_term(c_query::process_term110,2240
+  void res_merge(c_query::res_merge176,3850
+        for( ;(*it_final).docid > (*it_sub).docid;c_query::s_result::docid187,4248
 
 .svn/text-base/Cpp1.cpp.svn-base,313
 using namespace std;8,116

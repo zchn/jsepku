@@ -1,2622 +1,0 @@
-SFtp 10.0ËÑË÷½á¹û:
-ËÑË÷Ê±¼ä:2003-3-14  10:39:29
-ËÑË÷·¶Î§:162.105.0.0--162.105.255.255
-Total:65536
-Finished:13499
-FindServer:101
-	#162.105.10.244
-		@PORT1
-	#162.105.100.214
-	#162.105.101.221
-		@incoming
-		@pub
-	#162.105.104.144
-	#162.105.109.6
-		@Download
-		$DownloadÊÇÎÒÕıÔÚÏÂÔØµÄÎÄ¼ş£¬Çë²»ÒªÏÂÔØ.txt
-		@Incoming
-		$IncomingÊÇÌá¹©ÉÏ´«µÄÄ¿Â¼£¬Ò²¿ÉÒÔÏÂÔØ.txt
-		@Pub
-		$PubÊÇÌá¹©ÏÂÔØµÄÄ¿Â¼.txt
-		$ServerLog.txt
-		$×¢Òâ£¬±¾ftpÒÑ¾­¹Ø±Õ´ó²¿·ÖipµÄÄäÃûÏÂÔØ¡£Èç¹ûĞèÒªÏÂÔØ£¬Çë½«ip·ÅÔÚincomingÁôÑÔ£¬ÎÒ»á¶¨Ê±¼ä¸üĞÂipÔÊĞíÁĞ±í.txt
-	#162.105.11.215
-	#162.105.110.11
-		@=ebooks=
-		@=games=
-		@=imgfile=
-		@=incoming=
-		@=music=
-		@=tools=
-		$welcome.msg
-		$Á÷ĞÇÓê.scr
-		$ÏÂÔØÕÊºÅdownload ÃÜÂëheaven
-	#162.105.110.6
-	#162.105.110.9
-		@12.23.02.The.Untold.Story.1992.DVDRip.DivX-lefanter
-		$2002-Yamazaki-03.rm
-		$2002-Yamazaki-04.rm
-		@cheating death 2.2
-		$DISKEDIT.exe
-		$diskgen.exe
-		$diskgen.rar
-		$DISKMAN.exe
-		$DiskManager20001.exe
-		@Dweep
-		@eCos
-		$ecos-1.3.1-1.i386.rpm
-		$FinalData.NT.zip
-		$Happy tune.mp3
-		@Iptv32
-		@Lance
-		$linboot.li
-		$NTOSKRNL.EXE
-		@Recover98
-		$Recover98.zip
-		@recovernt-dem420o
-		$recovernt-dem420o.zip
-		$setup.txt
-		@Silent_Hill_2
-		@´òÔÉÊ¯
-		@µÛ¹úÊ±´úIIÖ®Õ÷·şÕßµ¥¶ÀÔËĞĞ°æ
-		@¿´Ë­ÊØµÃ×¡
-		$Áº¾²Èã-ÓÂÆø.mp3
-		$ÅİÅİÁú III.exe
-		$Èİ×æ¶ù - Á÷É³.mp3
-		$Í¬Ñ§Â¼.xls
-		@Ğ¡ÓÎÏ·
-		$Ğ¡×é½éÉÜ.doc
-		$×ÔÓÉ.mp3
-	#162.105.112.36
-	#162.105.12.93
-	#162.105.137.38
-	#162.105.137.40
-		@etc
-		@incoming
-		@pub
-		@teachers
-	#162.105.137.42
-	#162.105.138.178
-	#162.105.138.198
-		@English
-		@Incoming
-		@Multimedia
-		@Software
-	#162.105.138.199
-		@reference
-	#162.105.139.54
-		$_»¶Ó­ÉÏ´«,Çë×Ô¼ÓËµÃ÷ÎÄ¼ş,ÖĞ×ª±£ÁôÒ»ÖÜ
-		@2055121cn
-		$21.txt
-		@diske
-		@incoming
-		@Movie
-		@mp3
-		$regsnap.exe
-		@Software
-		@vs.net
-		$ÄäÃû½öÏŞ±±´óÇå»ª
-	#162.105.14.239
-	#162.105.14.86
-		$9isql plsql v1.pdf
-		$9isql plsql v2.pdf
-		$Adobe Acrobat Reader 5.01¼òÌåÖĞÎÄ°æ.exe
-		@Daemon 3.26
-		@dreamweaver4.0
-		$j2sdk-1_4_1-windows-i586.exe
-		@java1.3.1
-		@Jbuilder7.0
-		@LeapFTP
-		@office
-		@weblogic
-		@winzip81r
-		$xmlcxjj.zip
-		@´úÀí
-		@µçÓ°³¬Á´
-		@½ğÉ½´Ê°Ô 2002ÕıÊ½°æ
-		@É¨ÃèÖ¸¶¨IP·¶Î§ÄÚµÄFTP
-		@Éù¿¨Çı¶¯
-		@ÌÚÑ¶ QQ2000c Build 0630c Éºº÷³æÂÌÉ«°²×°°æ v2.0
-		@ÏÔ¿¨Çı¶¯
-	#162.105.14.87
-	#162.105.140.202
-	#162.105.153.160
-	#162.105.159.196
-	#162.105.16.103
-	#162.105.167.115
-	#162.105.168.120
-	#162.105.169.249
-		@bimba
-		@ChenPing
-		@driver
-		@gangyi
-		@mxp
-		@nliang
-		@pchen
-		@pub
-		@temp
-		@Training2000
-		@wenhai
-		@zhaoyaohui
-	#162.105.177.35
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.177.40
-		@bin
-		@databases
-		@dev
-		@etc
-		$ftp
-		@incoming
-		@lib
-		@pub
-		@usr
-		$welcome.msg
-	#162.105.195.128
-	#162.105.202.100
-		@BSDs
-		@ISOs
-		@Linux
-		@pub
-	#162.105.204.185
-	#162.105.204.79
-	#162.105.21.2
-		@pub
-	#162.105.213.100
-	#162.105.216.128
-		@0-------------=====pkulpp.3322.org=====-------------
-		@1------===»¶Ó­¹âÁÙpkulppµÄ¸öÈËFTP·şÎñÆ÷===------
-		@2-----===Ô­ÔòÉÏÃ¿ÖÜÌá¹©Á½µ½Èı²¿Ó°Æ¬ÏÂÔØ===-----
-		@3-------------====ÄäÃûµÇÂ½½ö¹©ä¯ÀÀ====-------------
-		@4-----------===ÏÂÔØÕÊºÅÃÜÂë¾ùÎªpkulpp===-----------
-		@5--------===ÉÏ´«ÇëÓÃupload  uploadµÇÂ¼===--------
-		@6----------------=====download=====----------------
-		@7------------------=====upload=====------------------
-		@8-------------------=====delete=====-------------------
-		@9------------------=====ÁôÑÔ²¾=====------------------
-	#162.105.216.131
-	#162.105.216.24
-	#162.105.216.250
-	#162.105.216.253
-		@2001Ì«¿ÕÂşÓÎ---By Justinlee
-		@Finding Nemo---By Justinlee
-		$Matlab6setup.rar
-		$RealOnePlayerV2GOLD.exe
-		@±¾ÄÜ»¨Ğõ---By Justinlee
-		@±ùºÓÊÀ¼Í»¨Ğõ--By Justinlee
-		@¹ÖÎï¹«Ë¾NG¾µÍ·---By Justinlee
-		@¹íÍŞÏµÁĞÔ¤¸æÆ¬--By Justinlee
-		@½ğÉ½´Ê°Ô2003pro.Crack
-		@½ğÉ½´Ê°Ô2003ËãºÅÆ÷
-		@ÂŞÂí¼ÙÈÕ»¨Ğõ--By Justinlee
-		@ÄÏ·½¹«Ô°Ô¤¸æÆ¬
-		@ÍòÁøÉú»î
-		@Õü¾È´ó±øÈğ¶÷Ô¤¸æÆ¬--By Justinlee
-	#162.105.22.150
-	#162.105.22.156
-	#162.105.22.39
-		$005.rar
-		@Backup
-		@c
-		@d
-		@DATA
-		@Downloads
-		@KingSoft
-		@Program Files
-		@RECYCLED
-		@Rescue
-		@temp
-		@ÇúÏßÄâºÏ
-		$ÇúÏßÄâºÏ.zip
-	#162.105.221.16
-	#162.105.230.100
-		@incoming
-		@pub
-		$½ûÖ¹ÉÏ´«»ÆÉ«ÎÄ¼ş£¬·ñÔò·âÆäIP.TXT
-		$Çë´ó¼Ò×Ô¾õ×ñÊØ¸÷Ïî·¨ÂÉ¹æ¶¨.TXT
-	#162.105.246.56
-	#162.105.246.64
-		@³¬ĞÇÍ¼Êéä¯ÀÀÆ÷ 3.62 ÍêÈ«ÆÆ½â°æ
-		@¶­¿ÂµÜÖ®·¶ó»¾È×Ó
-		@·¶Èğ¾êÂÀÈğÓ¢Ö®´ò½ğÖ¦
-		@·¶Èğ¾êÂÀÈğÓ¢Ö®ÉòÔ°¾ø³ª
-		@·½ÑÇ·ÒÖ®Á«»¨Å®
-		@¸µÈ«ÏãÖ®ÇéÌ½
-		@º«æÃæÃ·½ÑÇ·ÒÖ®ºûµû´«Ëµ
-		@Á«»¨ÂäÖ®´óÄêÈıÊ®
-		@ÆİÑÅÏÉ±Ï´º·¼Ö®ÑªÊÖÓ¡
-		@Ç®»İÀöµ¥ÑöÆ¼Ö®Ë«·ï»¹³²
-		@ÉÜ¾çÖ®ÈıÇë·®Àæ»¨
-		$Ïë¿´Ç®»İÀöµÄË«·ï»¹³²£¬Çë·½±ãµÄÊ±ºò´«Ò»ÏÂ£¬Ğ»Ğ»£¡.txt
-		$ÒòÎªÓ²ÅÌ¿Õ¼äÓĞÏŞ£¬ÒÔÉÏÄ¿Â¼¶¼ÊÇ¿ÕµÄ£¬Ïë¿´ÍêÕû¸ñÊ½µÄÇë¸æÖª.txt
-		@Ô¬Ñ©·Ò·¶Èğ¾êÕÅ¹ğ·ïÂÀÈğÓ¢Ö®ÁºÉ½²®Óë×£Ó¢Ì¨
-		@Ô¬Ñ©·ÒÕÅ¹ğ·ï½ğ²É·ïÖ®ÏéÁÖÉ©
-		@ÕÔÖ¾¸ÕÓ¦¹úÓ¢Ö®ºÎÎÄĞã
-		@ÕÔÖ¾¸ÕÖ®É³Ä®Íõ×Ó
-		@óÃË®ÕĞóãË®ÕĞ¸ß·¼³¼Ö®ÁøÒã´«Êé
-		@óÃĞ¡ÕĞÖ®Äª³îÅ®
-	#162.105.26.158
-	#162.105.26.161
-	#162.105.27.51
-		@Andy_Lau
-		@Incoming
-		@Music
-	#162.105.27.52
-		@Chemistry
-		@Incoming
-		@Software
-	#162.105.30.60
-	#162.105.30.97
-	#162.105.31.221
-	#162.105.36.100
-		$3ÔÂ14ÈÕÃÜÂë½«±ä¸ü£¬ÏêÇéÇëµÇÂ½ÂÛÌ³
-		@Book
-		@Movie1
-		@Movie2
-		@movie3
-		@movie4
-		@Music
-		@Software
-		$±¾Õ¾Èí¼şÖĞÌá¹©³¬ĞÇÆÆ½â°æ£¬´Ó´ËÏÂÊé²»ÇóÈË.txt
-		$ÉÏ´«ÎÄ¼şÇëÏÈ·ÅÈë¡°ÉÏ´«ÖĞ×ªÎÄ¼ş¡±ÖĞ.txt
-		@ÉÏ´«ÖĞ×ªÎÄ¼ş
-		$ÏÂÔØÃÜÂëÇëµ½ÂÛÌ³²éÑ¯£¬ÂÛÌ³µØÖ·ÔÚÎÄ¼şÖĞ.txt
-	#162.105.36.246
-	#162.105.38.238
-	#162.105.49.196
-	#162.105.5.198
-	#162.105.52.80
-	#162.105.53.64
-		$Incoming
-		@pub
-		@RECYCLER
-		@System Volume Information
-	#162.105.53.74
-		@canon
-		@pub
-	#162.105.53.75
-		$desktop.ini
-		@iop
-		@pub
-		$readme¶­°®ÇÙ.txt
-		$rna.doc
-		@sd
-		@SD3000Pro
-		$SD3000Pro.zip
-		@SPAA
-		@SST
-		$superset.zip
-		$TR.jpg
-		@xdict
-		$²ÂÃÕÓï£º.ppt
-		@´´Òµ´óÈü¾öÈü
-		$¸ĞÑÔ.doc
-		$º®·çÆ®Ñ©ÖĞµÄËı.jpg
-		@ºØ¿¨Ïà¹Ø
-		$ÄÔ½î¼±×ªÍä.ppt
-		@ÆÀ½±×Ü½á²ÄÁÏ
-		$ÈÆ¿ÚÁî.ppt
-		$ÈËÊÂ¹ÜÀíÏµÍ³¿ª·¢.doc
-		$Ï·.ppt
-		@ĞÂ¶ÓÔ±Ãûµ¥
-		@ĞÂÎÄ¼ş¼Ğ
-		@Ğû´«ÊÖ²á
-		@Ñ§Éú·şÎñ×Ü¶ÓÍøÕ¾×¨ÓÃÄ¿Â¼
-		$ÑİÊ¾ÎÄ¸å01.ppt
-		@ÔÂ±¨ ×îĞÂ
-		$ÖÇÊ¤°ì¹«×Ô¶¯»¯ÏµÍ³.zip
-	#162.105.68.155
-	#162.105.70.160
-	#162.105.70.170
-		$162.105.70.170.url
-		@incoming
-		@Java
-		@pub
-	#162.105.70.174
-	#162.105.70.35
-		@incoming
-		@pub
-	#162.105.70.36
-	#162.105.71.164
-	#162.105.71.166
-		@computervision
-	#162.105.71.171
-		@ArthEnc
-		$BMBXK.TDF
-		@Cd_Movies
-		@Entertainments
-		@Movies
-		@Programming Space
-		@Softwares
-		$twoff.txt
-		@ÂÒÆß°ËÔã
-		$ĞÂ½¨ ÎÄ±¾ÎÄµµ.txt
-	#162.105.71.177
-	#162.105.73.60
-		@download
-		$hero.rm
-		@soft
-		@winxpµÇÂ½½çÃæ
-		@ÉäµñÓ¢ĞÛ´«ÑëÊÓ°æ
-		@×ÊÁÏ
-	#162.105.74.192
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.76.201
-		@anonymous ÓÃ»§Ö»ÄÜlist,ÏÂÔØÇëÓÃidle,ÃÜÂëidle
-		$field.zip
-		$jackshow-°´Ä¦Å®ÀÉ.rm
-		$jackshow-±¦³µĞ¡½ã.rm
-		$jackshow-éÄÀÆÎ÷Ê©.rm
-		$jackshow-¹ã¸æÃÀÅ®.rm
-		$jackshow-Àî°½VSÎâ×ÚÏÜ.rm
-		$jackshow-ÇéÉ«ÎÄ»¯.rm
-		$jackshow-ÌåÌ³ÃÀÅ®07.rm
-		$jackshow-ÍÆ³µÃÀÉÙÅ®.rm
-		$jackshow-ÍÑÒÂÎèÄï.rm
-		$jackshow-Íá¸è´óÍõ.asf
-		@jackyshow by hongmingzhou
-		$rmvb¸ñÊ½Éı¼¶²å¼şRealPlay8_upto_RealVideo9_v1.2.zip
-		@upload by wangyhjerry
-		$·¨ÍøÃÔÇéA.rm
-		@ÇëÉÏÔØjack show
-		@ÇëÉÏÔØÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â
-		$ÇëÏÈ¶Á¡°ÍøÕ¾ËµÃ÷¡°
-		@ÉÏÔØÇëÓÃÓÃ»§,ÃÜÂëupload,²»ÏŞËÙ
-		@ÍøÕ¾ËµÃ÷
-		@ÎÒ²Â by sanpato
-		@ÎÒ²Â11ÔÂ·İ¼°ÒÔÇ°
-		@ÎÒ²Âby hu3feng
-		@ÎÒ²Âby wangyanwen
-		@ÎÒ²ÂbyHoverEagle
-		@ÎÒ²Âupload by jiangjun
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2002-11-23.avi
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2002-11-30.asf
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2002-12-07.wmv
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2002-12-14.asf
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2002-12-21.rmvb
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2002-12-28.rmvb
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2003-01-04byhu3feng.avi
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2003-01-11(¹ã¸æ°æ).rm
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2003-01-19.rm
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2003-01-25.rmvb
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2003-02-01.rmvb
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2003-02-08A.rmvb
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2003-02-08B.rmvb
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2003-02-15.rmvb
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2003-02-22by¶¾µÄÊéÉÙ.rmvb
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2003-03-01A-bypengxiaowen.rm
-		$ÎÒ²ÂÎÒ²ÂÎÒ²Â²Â²Â2003-03-01B-bypengxiaowen.rm
-		@Ö»ÓĞÉùÒôÃ»ÓĞÍ¼ÏóµÄ¿´¹ıÀ´
-	#162.105.76.205
-	#162.105.76.66
-	#162.105.78.106
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.78.110
-		@PORT1
-	#162.105.78.227
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.78.240
-	#162.105.78.253
-		@DreamWaver_Avi
-		@English
-		@¹ÜÀí½²×ù
-		@¹ã¸æÆ¬
-		@Ã½½é²ß»®½²×ù
-		@ÈÕ±¾¹ã¸æË«ÄêÕ¹_Æ½Ãæ
-		@ÉãÓ°½Ì²Ä
-		@Í¼Æ¬
-	#162.105.79.111
-		$help
-		$info
-		$install
-		$prnlog
-		$stat
-		$syslog
-	#162.105.81.112
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.81.113
-	#162.105.81.116
-		@incoming
-		@video
-		@ÀúÄêµÇÉ½
-		@ÀúÄê¿Æ¿¼
-		@ÅÊÑÒ×ÊÁÏ
-		@É½ÄÑ
-		@É½Ó¥µÄ¸è
-		@Õã½­±ÈÈü
-		@ÖÜÄ©»î¶¯
-	#162.105.81.251
-	#162.105.86.155
-		@BELIEF
-		@eric
-		@like
-		@Recycled
-		@TEMP
-		@WS-FTP
-	#162.105.87.2
-		@5.01
-		$810815win20001.zip
-		$810815win9xM61.zip
-		$ACDSee30.exe
-		$Awin98.zip
-		$cet6test.zip
-		$cnpf.exe
-		$CTerm2000.exe
-		$daemon329.rar
-		$divx_311alpha.exe
-		@Dreamweaver 4 Install Cs4.03
-		@editplus
-		$Flash5.0 ºº»¯.exe
-		$flashget12.exe
-		$ha_leapftp.exe
-		$icq2002a.exe
-		@iptv30
-		@Iptv32
-		$Iris310.exe
-		$iSetup.EXE
-		@leapftp
-		@log
-		$Macromedia Flash5.0ÕıÊ½°æ.exe
-		$MacromediaFirework4.0ÕıÊ½°æ.exe
-		$mp71.exe
-		$mpsetup.exe
-		$msnsetup_min.exe
-		$nimo50build8.exe
-		$qq0630c_Coral.exe
-		$qq0825_Coral.exe
-		$qq2000c1230beta2patch.exe
-		@realplayer8_cn
-		@server-u
-		$speaksetup.exe
-		$sqlexec.rar
-		$sterm.exe
-		@winamp
-		$windowsmdiap71.exe
-		$wrar300sc.exe
-		$xyslt.exe
-		$¾ÖÓòÍøÖÕ½áÕß1.0.zip
-		@ÍÃ×ÓÄ§·¨
-		@×Ï¹âÊäÈë·¨2.3
-	#162.105.90.21
-		@dhcd1
-		@down
-		@welcom upload
-	#162.105.90.30
-	#162.105.91.200
-		$[will]SaintSeiya_the_Hades_Chapter_Sanctuary_09.avi
-		$1.rm
-		$2.rm
-		$Saint_Seiya_the_Hades_Chapter_Sanctuary_07(NoSub).avi
-		$Saint_Seiya_the_Hades_Chapter_Sanctuary_08.avi
-		@The.Sixth.Sense.1999
-		@Triple.X.Proper.DVDrip.DivX-PosTX
-		@uploads
-		@wangbinglin
-		@¸¸×ÓÎä×´Ôª
-		@ºÍÆ½·¹µê
-		@ÀÏ·ò×Ó2001
-		@ÃÀÀöÈËÉú
-		@Îå°æÒĞÌìÍÀÁú¼ÇÖ®±È½Ï
-		@ÏÉ½£2
-		@ÖĞ¹úµØÍ¼
-		@×ÀÃæ
-		@×÷ÄĞÈË²»ÈİÒ× - ÄĞÈËÏµÁĞĞ¡ÓÎÏ·
-	#162.105.91.201
-	#162.105.91.25
-	#162.105.91.41
-	#162.105.91.51
-	#162.105.92.161
-	#162.105.92.169
-	#162.105.95.46
-ÑéÊÒÍøÕ¾.rar
-		@Í¼¿â
-		$×÷Òµ.ppt
-	#162.105.177.35
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.177.40
-		@bin
-		@databases
-		@dev
-		@etc
-		$ftp
-		@incoming
-		@lib
-		@pub
-		@usr
-		$welcome.msg
-	#162.105.182.215
-	#162.105.184.46
-		@wangwei123
-		@yaoruina
-	#162.105.188.88
-		$default.asp
-		$default.htm
-		$index.asp
-		$index.htm
-	#162.105.19.100
-		@--==Homepage FTP==--
-		$about.txt
-		@incoming
-		@pub
-		$Readme_HomepageFTP.txt
-	#162.105.19.126
-		@¸öÈËÎÄµµ
-		@Ó¦ÓÃÈí¼ş
-	#162.105.19.19
-		@--==Homepage FTP==--
-		$about.txt
-		@incoming
-		@pub
-		$Readme_HomepageFTP.txt
-	#162.105.20.109
-		@drivers
-		@pub
-		$study
-		@swl
-		@system
-		$user
-		@zcc
-		@Î÷ÄÏ-»ª¶«È«²¨ÁĞ
-	#162.105.20.129
-		@9.0a
-		$Cterm2000_Gb.exe
-		@Daemon
-		$DX81NTchs.exe
-		@EditPlus2.1
-		@explore2fs-1.00-pre4
-		$explore2fs-1.00-pre4.zip
-		@FlashGet v1.3 ×îÖÕÍêÃÀ×¢²á°æ
-		$fm41ch.exe
-		@FTP.Serv-U.v4.0.0.4
-		@incoming
-		$JPadPro4.zip
-		$LeapFTP.zip
-		@LeapFTP2.72.592
-		$myie31dc.zip
-		$Nav2002en_98_Me_NT4_2K_XP.zip
-		@nero
-		@pqmagic_pro7.0--×îĞÂ×îÇ¿´óµÄ´ÅÅÌ¹¤¾ß
-		@QQ510_noAD_with_IP
-		@qq510×îĞÂÉºº÷³æÍêÕû°æ
-		@RealPlayer8
-		$sterm.rar
-		@VMware.Workstation.v3.0.WiN32-oDDiTy
-		@VMware.Workstation.v3.0.WinNT2kXP.Keymaker.Only-DAMN
-		@WinRAR.30.Final
-		@Winzip
-		@½ğÉ½´Ê°Ô2002
-		@×Ï¹â
-	#162.105.20.18
-		@incoming
-		@software
-	#162.105.20.212
-	#162.105.20.22
-	#162.105.20.229
-	#162.105.21.107
-		@BOOK
-		@GAME
-		@INCOMING
-		@multimedia
-		@software
-		@TEMP
-	#162.105.21.113
-		@hlwang
-		@incoming
-		@lish
-		@pub
-		@qi
-	#162.105.21.117
-		@upload
-	#162.105.21.2
-		@pub
-	#162.105.21.215
-		$3-net.OPJ
-		@brsl
-		@brsl1
-		@brsl2
-		@brsl3
-		@delphi
-		@jackie lin
-		@Lisihao
-		@ll
-		@noflow
-		@noflow2
-		@noflowRK
-		@picture
-		@yyf
-		@zhang
-		$ÌÀ³¬.doc
-		$Í¨Öª.doc
-	#162.105.22.30
-	#162.105.24.100
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.24.11
-		@PORT1
-	#162.105.24.251
-	#162.105.25.14
-		@acdsee961
-		$amzi_6-2-7_winnt.exe
-		@ansys5.7
-		$Cterm2000_Gb.exe
-		$dynamic.ppt
-		@Flash5.0¼òÌåÖĞÎÄÕıÊ½°æ
-		@Fortran_powerstation_4.0
-		@IMail6.04ÕıÊ½°æ
-		@Internet Explorer 5.5 ¼òÌåÖĞÎÄ°æ
-		@Internet Explorer 6 ÖĞÎÄ°æ
-		@leapftp
-		@Leapftp2.72cn
-		@maple7
-		@Math4
-		@PartitionMagic6.0
-		$qq2000c0510.exe
-		@realplayerplus8.6.0.9.665ÖĞÓ¢ÎÄ
-		@regester
-		@serve-u
-		@turboc30
-		@ultra
-		@UltraEdit 8.0
-		@virtualCD & ISO
-		@VirtualCDROM
-		@visualforthan
-		@winamp
-		$windows mediaplayer 8.0ÖĞÎÄ°æ.EXE
-		@WinRAR2.90
-		$winzip800909.exe
-		@½ğÉ½´Ê°Ô 2002
-		@½ğÉ½´Ê°Ô²å¼ş
-		@½ğÉ½¶¾°Ô2002ÕıÊ½±ê×¼°æ
-		@Çå»ª×Ï¹âÊäÈë·¨
-		$ÍòÄÜÎå±Êwnwb2kaa.exe
-	#162.105.25.28
-		@Income
-		@MP3
-		@±ÏÒµÁôÓ°
-	#162.105.25.75
-		@Incoming
-		@Private
-		@Pub
-	#162.105.25.76
-		$kiss_woman_1stmv.asf
-		@not another teen movie
-		@Realplay
-		@Scindler's List(ĞÁµÂÀÕµÄÃûµ¥)
-		@The Shawshank Redemption(Ğ¤Éê¿ËµÄ¾ÈÊê,´Ì¼¤1995)
-		@²éÌ©À³·òÈËµÄÇéÈË
-		$´óÊ·¼Ç.rm
-		$´óÒ»ÄĞÉúÑÛÖĞµÄÇå»ªÅ®Éú.mpg
-		$µçÊÓÁ÷Ã¥×Ô¼ºµÄ¹ÊÊÂ£¨Ç¿ÁÒÍÆ¼ö£¬±©¸ãĞ¦£©.mpg
-		@¶ÀÁ¢Ê±´ú
-		$½­Ö÷Ï¯Å­³âÏã¸Û¼ÇÕßÍêÈ«°æ.asf
-		$À­µÇ.rm
-		$Á÷ÄêÆ®Æ®.rm
-		$ÈÕÎŞÂë(¸ßÇåÎú).ram
-		@É±ÊÖ¡¤ºûµû¡¤ÃÎ
-		@Í¯ÄêÍùÊÂ(ºîĞ¢ÏÍ)
-		@ÍòÓÕÅ®º¢
-		$ÎÔÌ¸»á.rm
-	#162.105.25.79
-	#162.105.26.156
-	#162.105.27.100
-		@Asf
-		@Divx & normal avi
-		$movie farewell.txt
-		@movie incoming
-		$movie welcome.txt
-		@RM
-		@Ç¹°æ
-		@ÏàÉù
-	#162.105.27.254
-		@bin
-		@etc
-		@incoming
-		@lib
-		@pub
-		$welcome.msg
-		$¸ĞĞ»±¾ÎÄÖĞËùÁĞIP.txt
-		$ÒÑ±»·â½ûÖ®IP.txt
-	#162.105.29.144
-	#162.105.29.156
-	#162.105.29.251
-	#162.105.30.100
-		$22.avi
-		$23.avi
-		$24.avi
-		$25.avi
-		$26.avi
-		$27.avi
-		$28.avi
-		@±¯Çé³ÇÊĞ
-		@¹¬Æé¿¡
-		@¼àÓü·çÔÆ2ÌÓ·¸£¨·¢¸ç£©
-		$ÆëÌì´óÊ¥ËïÎò¿Õ05.RM
-		$ÆëÌì´óÊ¥ËïÎò¿Õ06.RM
-		$ÆëÌì´óÊ¥ËïÎò¿Õ07.RM
-		$ÆëÌì´óÊ¥ËïÎò¿Õ08.RM
-		$ÆëÌì´óÊ¥ËïÎò¿Õ09.RM
-		$ÆëÌì´óÊ¥ËïÎò¿Õ10.RM
-		$ÆëÌì´óÊ¥ËïÎò¿Õ11.RM
-		$ÆëÌì´óÊ¥ËïÎò¿Õ12.RM
-		$ÆëÌì´óÊ¥ËïÎò¿Õ13.RM
-		$ÆëÌì´óÊ¥ËïÎò¿Õ14.RM
-		$ÆëÌì´óÊ¥ËïÎò¿Õ15.RM
-		$ÆëÌì´óÊ¥ËïÎò¿Õ16.RM
-		$ÆëÌì´óÊ¥ËïÎò¿Õ17.RM
-		$ÆëÌì´óÊ¥ËïÎò¿Õ18.RM
-		$ÆëÌì´óÊ¥ËïÎò¿Õ19.RM
-		$ÆëÌì´óÊ¥ËïÎò¿Õ21.RM
-		@ÉÙÊıÅÉ±¨¸æ
-		$ÍòÁø.mpg
-		$ÖĞÎÄÏµÅ®ÉúÈÈÎè.mpg
-	#162.105.30.127
-		@music
-		@soft
-		@video
-	#162.105.30.136
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.30.143
-		@5.3beta
-		$bibtex.zip
-		$bibtex2.zip
-		$data2.CAB.001
-		$data2.CAB.002
-		$data2.CAB.003
-		$data2.CAB.004
-		$data2.CAB.005
-		$data2.CAB.006
-		$data2.CAB.007
-		$data2.CAB.008
-		$data2.CAB.009
-		$data2.CAB.010
-		$data2.CAB.011
-		$data2.CAB.012
-		$data2.CAB.013
-		$data2.CAB.014
-		$data2.CAB.014x
-		$data2.CAB.015
-		$data2.CAB.016
-		$data2.CAB.017
-		$data2.CAB.018
-		$data2.CAB.019
-		$data2.CAB.020
-		$data2.CAB.021
-		$data2.CAB.022
-		$data2.CAB.023
-		$data2.CAB.024
-		$data2.CAB.025
-		$data2.CAB.026
-		$data2.CAB.027
-		$data2.CAB.028
-		$data2.CAB.029
-		$data2.CAB.030
-		$data2.CAB.031
-		$data2.CAB.032
-		$data2.CAB.033
-		$data2.CAB.034
-		$data2.CAB.035
-		$data2.CAB.036
-		$data2.CAB.037
-		$data2.CAB.038
-		$data2.CAB.039
-		$data2.CAB.040
-		$EDCIS20020508.doc
-		@hjsplit
-		$latex3.zip
-		@WinTeX2000
-		$zm3.bmp
-		$´óÀÁ³æºÍĞ¡ÃÛ·äµÄ¹ÊÊÂ.eml
-		$ÌìÉÏµÄĞ¡²©Ê¿.eml
-		$ÎÒÃÇµÄĞ¡²©Ê¿.eml
-	#162.105.30.195
-	#162.105.30.197
-		@asl
-		@EnGarde
-		@FreeBSD
-		@GNATBox
-		@incoming
-		@lost+found
-		@OpenBSD
-		@pub
-		@tly
-		@trustix
-	#162.105.30.49
-		@Incoming
-		@Pub
-	#162.105.30.60
-		@bin
-		@etc
-		@incoming
-		@pub
-	#162.105.30.73
-		@Predator
-		@sorry
-		@Ïã²İµÄÌì¿Õ
-	#162.105.30.79
-		@¡òleon£­Ï²¡ò
-		$07. Have You Ever Really Loved A Woman.mp3
-		@2002 FIFA World Cup Official Album
-		@88¼«Æ·ÀèÃ÷¾«Ñ¡
-		$allstar.mp3
-		@Beautiful Mind(ÃÀÀö¾³½çScore)
-		@Cannot touch, Cannot hold, Cannot be together Cannot love.files
-		$Cannot touch, Cannot hold, Cannot be together Cannot love.htm
-		@Fall_in_Love
-		@fifaÒôÀÖ
-		@FinePix¾«Ñ¡£¨1£©
-		$Forever love.MP3
-		$Hove replica.MP3
-		$Howcaninotloveyou-1.rm
-		$hurlPNM.ram
-		@Leave
-		@Leo's Lyrics - Kay Starr - If You Love Me Really Love Me lyrics.files
-		$Leo's Lyrics - Kay Starr - If You Love Me Really Love Me lyrics.htm
-		$love,day after tomorrow(Chinese).mp3
-		@M vs M
-		@MD¾«Ñ¡£¨1£©
-		@My.sassy.girl.Mp3Ô­Éù@Reinhard
-		@Only_Love
-		@SD¾«Ñ¡£¨1£©
-		@SD¾«Ñ¡£¨2£©
-		@Shades of Purple
-		$Silent Night.mp3
-		@The Line Up
-		$to be number one£¨Òâ´óÀûÖ®ÏÄ£©.mp3
-		@U-Turn 180 ×ªÍä
-		@°®ÇéÁéÒ©µçÓ°Ô­Éù´óµú
-		@°²¸è16Ê×
-		@²£Á§Ö®³Ç
-		@µ¥Çú
-		@·µè±¹éÕæ
-		@¹ÅÌìÀÖ-ÀÖÌì
-		@¹ã¶«´Ö¸è£¬ºÇºÇ
-		@»Ä·ÏµÄÀÖÔ°
-		@¾­µä×÷Æ·
-		@¿¨À­OK
-		@Áî100¶àÈË×ÔÉ±£¬Ôø¾­±»½û¹ıµÄ´«ËµÖĞµÄÉË¸Ğ¸èÇú¡¶ºÚÉ«ĞÇÆÚÌì¡·
-		@Çã³ÇÖ®×î
-		@ÇéÇ£°Ù×Ó¹ñ
-		@ÈíÓ²ÌìÊ¦
-		@ËïÑà×Ë - Ò»Æğ×ßµ½(µ¥Çú)e
-		@ÌìµØÇéÔµ-ÀèÃ÷1994
-		@Íõ·Æ-Íõ·Æ(2001)
-		@ĞíÖ¾°²-½èÄã¶ú¶äÌıĞíÖ¾°²
-		@ĞíÖ¾°²-ÀÃÄà
-		@Ñ§ÓÑ×¨¼­·âÃæ´óÈ«
-		@Ò»Ğ©mp3
-		@ÓÎÏ·ÒôÀÖ
-		@ÕâÒ»Ãë£¬ÄãºÃ²»ºÃ
-		@×ãÇòÒôÀÖ
-	#162.105.30.83
-		@bin
-		@etc
-		@lib
-		@pub
-		$welcome.msg
-	#162.105.31.201
-	#162.105.31.211
-		@98start
-		@incoming
-		$index.txt
-		@mtv
-		@music
-		@photo
-		@software
-		@wishbone
-		@ÂÛÎÄÄ£°æ
-		@Ã×ÀÕÉ½×¯ÒÉ°¸
-	#162.105.31.222
-		@boards
-		@etc
-		@pub
-	#162.105.31.225
-		@bin
-		@etc
-		@lib
-		@pub
-		$welcome.msg
-	#162.105.31.254
-		@acm
-		@incoming
-	#162.105.36.159
-	#162.105.36.201
-	#162.105.36.222
-	#162.105.36.226
-	#162.105.36.58
-		@1.ÄäÃûÓÃ»§Ã¿¸öIPÏŞ2¸öÏß³Ì£¬Ö»ÄÜÏÂÔØÒôÀÖºÍÈí¼ş
-		@2.ÏÂÔØµçÓ°ÇëÓÃMovie,MovieµÇÂ½£¬ÏŞµ¥Ïß³Ì
-		@3.¸´µ©ÓÃ»§ÇëÓÃfudan,fudanµÇÂ½£¬ÔÊĞí5ÈË
-		@4.¶à´ÎÖØ¸´³¢ÊÔÁ¬½Ó½«±»×Ô¶¯·â½ûIPÊ®·ÖÖÓ
-		@5.ÍíÉÏ12µãÒª¶ÏµçµÄ£¬·¨¶¨½Ú¼ÙÈÕÇ°Ò»Ìì³ıÍâ
-		@6.ËÙ¶ÈÌ«Âı¾Í±ğºÄ×ÅÁË£¬¸ø±ğÈËÒ»¸ö»ú»á
-		@7.¿ÉÒÔÈ¥www.sheenk.comËÑË÷¸üÊÊºÏÄãµÄFTP
-		@Deleted
-		@Movies1
-		@Movies2
-		@Movies3
-		@Musics
-		@Softwares
-		@Òâ¼û·´À¡
-	#162.105.37.108
-		@setup
-	#162.105.37.25
-		$¡°¶ú»ú¡±.jpg
-		$0.jpg
-		$162.105.36.10--162.105.37.10.txt
-		$162.105.36.1--162.105.37.1.txt
-		@brood
-		@callus
-		$irunin.bmp
-		$irunin.dat
-		$irunin.ini
-		$irunin.lng
-		@ll
-		$netvideo.exe
-		$sftp.exe
-		@skin
-		@starcraft
-		$tvdate.dbf
-		$tvdate.mdx
-		$update.htm
-		@weiquanfu
-		@wqf
-		$±ğ¶¯£¬È«²¿¶¼¾ÙÆğÊÖÀ´£¡.jpg
-		$³Ô.txt
-		@¶«¾©°®Çé¹ÊÊÂ
-		$»ÆºÓÍøÊÓ.exe
-		$ÎªÁËÌî±¥¶Ç×Ó£¬²»ÅÂËÀÑ½£¡.jpg
-		$Î´±êÌâ-1 ¸±±¾.jpg
-		$Î´±êÌâ-2 ¸±±¾.jpg
-		$Î´±êÌâ-3 ¸±±¾.jpg
-		$Î´±êÌâ-4 ¸±±¾
-	#162.105.37.72
-	#162.105.38.207
-		@Incoming
-		@³ª´Ê
-		@´«Í³¾©¾ç¾­µä³ª¶Î
-		@¾­µäÃû¾ç
-		@ÏÖ´úÏ·³ª¶Î
-		@ÏÖ´úÏ·È«³¡
-		@ÔÓÏî
-	#162.105.38.66
-	#162.105.39.105
-		@incoming
-		@pub
-	#162.105.39.2
-		@incoming
-		@pub
-	#162.105.39.20
-		@autocad×÷Òµ
-		@game
-		@incoming
-		$readme.txt
-		@reference
-		@software
-		$xz.zip
-		$²©Ê¿µãÆÀÉó×¨¼Ò.zip
-		@×÷Æ·
-	#162.105.41.87
-	#162.105.42.217
-		@907_·ÅÇáËÉ,ËæÒâ×ö
-		$aa.mpg
-		@discovery
-		@dongjiliange
-		@entertain
-		$Iptv3.zip
-		@movie
-		$P J Harvey-This Mess We're In.MP3
-		$PJ Harvey - This Is Love.mp3
-		@Scindler's List(ĞÁµÂÀÕµÄÃûµ¥)
-		@Universal Mother
-		@upload
-		$zheng.txt
-		@zhujie
-		$º«¹úÇéÈË.rm
-		$Âô³µ.rm
-		$Âô¹Õ.rm
-		@ÄĞÈËËÄÊ®
-		$ã¥Ç®¼Ò×å01.rm
-		$ã¥Ç®¼Ò×å02.rm
-		@ÇéÉ«
-		@Ê®ÆßËêµÄµ¥³µ-Ç¿ÁÒÍÆ¼ö
-		@ËÕÖİºÓ
-		@Í¯ÄêÍùÊÂ
-		@Íµ¿úÎŞ×ï
-		$ÎÒµÄºÚµÀÀÏÆÅ01.avi
-		@ÎÒÃÇÕæµÄ°®¹ıÂğ£¿
-	#162.105.42.22
-		$´úÀí.txt
-	#162.105.45.39
-		$07.Bee Gees-Alone.au
-		$Bee Gees - How Deep Is Your Love.au
-		@Beegees
-		@cartoon
-		@eagles
-		$Eagles - Hotel California.mp3
-		$EndlessLove.mp3
-		$Hotel California.txt
-		$LoveIsAllAround.mp3
-		$LoveWillKeepUsAlive.mp3
-		$MelodiesOfLife.mp3
-		$Nothing'sGonnaChangeMyLoveForYou.MP3
-		$SBPCI128Setupus_w2k.exe
-		$SomewhereSomehow.mp3
-		@WetWetWet
-		$Ã¿Ìì°®Äã¶àÒ»Ğ©.mp3
-		$Ä§½äÖ®Ö÷1--»ô±ÈÌØÀúÏÕ¼Ç.zip
-		$Éú»¯Î£»ú2002A.rm
-		$ÌïÕğ-Ö´×Å.mp3
-		$Ï¦Ñô×íÁË.mp3
-	#162.105.46.199
-		@incoming
-		@pub
-	#162.105.49.196
-		$music
-	#162.105.49.97
-		@Incoming
-		@IRC
-		$ReadMe.txt
-		$ĞÂÓÃ»§ÇëÏÈ¿´ReadMeÎÄ¼ş
-	#162.105.50.51
-		@chinapostcode
-		@fsy
-		$ftpÕ¾µã.txt
-		@homework
-		@movie
-		@mp3
-		@mtv
-		@picture
-		$poem3ks.zip
-		@sms¶ÌÏûÏ¢Èí¼ş
-		@tv
-		@Ãâ·Ñ·¢¶ÌĞÅ
-		@Ï·Çú
-		@Ğ¡Æ·¾«Ñ¡
-		@ÓÊ±àÇøºÅ²éÑ¯2.1
-		$×îĞÂ´úÀí.txt
-	#162.105.52.141
-	#162.105.52.15
-	#162.105.52.216
-		$[³ÂĞ¡´º]-Å®ÈË²»¸ÃÈÃÄĞÈËÌ«ÀÛ.avi
-		$[³ÂÏş´º]-Ã»ÄÇÖÖÃü.avi
-		$[Àîè¡]-´°Íâ.avi
-		$[ÂŞ°Ù¼ª]-»ú³µÅ®º¢.avi
-		$[ÈÎÙtıR]-ÎÒÊÇÓĞåXÈË.mpg
-		$[ËÕĞ¡Ã÷]-¾ü¸ÛÖ®Ò¹.mp3
-		$1.arj
-		$2002051601.rm
-		$aptiva.bmp
-		$Clock.exe
-		$Cpp1.zip
-		$cuteftppro2.01.zip
-		@deskpen
-		$deskpen.zip
-		$feature selection - L4c.ppt
-		$GeForce2MX 400Çı¶¯.rar
-		$I Swear.mp3
-		$i swear.txt
-		@jsj07M
-		$jsj07M.rar
-		@KTV µã¸èÌ¨
-		$mqz.rar
-		$msgghost.rar
-		@OpenGL
-		@pepsi×ÀÃæÖ÷Ìâ
-		$QQmac-os½çÃæ.zip
-		$QQ¹ú»­½çÃæ.zip
-		$QQÆû³µ½çÃæ.zip
-		$Remote.Administrator.v2.1.zip
-		$sayforever.mp3
-		$setColor.cpp
-		$topic.ppt
-		@treemark
-		$treemark.zip
-		$winampÆ¤·ôsilverXP.zip
-		@zds
-		$°®½­É½¸ü°®ÃÀÈË.MP3
-		$³ÉÓïËÙ²é.zip
-		$³æ¶ù·É£­Í¯Éù.mp3
-		$µ¥Î»»»Ëã±¦µä.exe
-		$½ğÓ¹.chm
-		@Â¹¶¦¼Ç
-		$Ã»ÄÇÖÖÃü.txt
-		@ÄÇÊ±»¨¿ª
-		$ÄÍ¿Ë¹ã¸æ.mpg
-		$Å®ÈË²»¸ÃÈÃÄĞÈËÌ«ÀÛ.txt
-		$ÇĞ´Ê.rar
-		$ÇĞ´Ê66.zip
-		@ÇåÒ»µÄÍøÖ·ÊÕ²Ø V2.6°æ
-		$ÈºÄ§ÂÒÎè.avi
-		@Èı¹ú
-		@Èı¹úÑİÒå
-		$ÉúÓëËÀ½á¾Ö¶¯»­.mpa
-		$Ê¢ÏÄµÄ¹ûÊµ.mp3
-		@Ë®¾§Êó±êÖ¸Õë
-		@ÌåÓı¸èÇú
-		@Î¢ÈíÆ´Òô V4.0 ÍêÕû°æ
-		@Îå×ÓÆå
-		@ĞÂ½¨ÎÄ¼ş¼Ğ
-		$Ò»¸ö¾øºÃµÄcpu½µÎÂ£¬ÏµÍ³¼ì²âÈí¼ş£¡.rar
-		$ÓÑÒêµØ¾ÃÌì³¤.mp3
-		@×ÀÃæÖ÷Ìâ
-		@×ãÇò¹ã¸æ
-	#162.105.52.26
-		$cdrom.rar
-		$CoralQQ0510.exe
-		$CtermSetup.exe
-		@daemon3.16
-		@Driver
-		@FlashFXP2.0.862
-		$fm42ch.exe
-		$icq2000b.exe
-		@Magicset
-		$mp8_2526.exe
-		$netant125.exe
-		$qq2000c0510.exe
-		@Quicktime5.0.1Pro
-		@ServU4004ÕıÊ½°æ
-		$smartdrv.exe
-		@UltraEdit9.0
-		$VobSub_2.16.exe
-		@WDL_reader
-		$winamp280_full.exe
-		@WinISO
-		@WINRAR3.00×¢²á°æ
-	#162.105.52.3
-		$aaa.zip
-		@binbin
-		$db1.mdb
-		$defaultroot.rar
-		$DefaultWebApp.rar
-		$distance learning20020602.rar
-		$error2.zip
-		@PowerWebChat
-		$PowerWebChat.zip
-		@web
-		$web.zip
-		$Weblogic6.1µÄ°²×°ºÍÅäÖÃ.doc
-		$¹¹¼ş¿â7ÔÂ·İ¼Æ»®°²ÅÅ.doc
-		$¹¹¼ş¿âDBÉè¼Æ·½°¸.doc
-		$¹ØÓÚuddiÖĞ°²È«»úÖÆµÄÉè¼Æ.doc
-		@¼àÊÓÏµÍ³
-		@ÍøÂç¼¼ÊõÆÚÄ©ÂÛÎÄ
-		$ĞÂ½¨ ÎÄ±¾ÎÄµµ.txt
-	#162.105.53.157
-		$bandscan43.zip
-		$CS1.5
-		$csgcfg_ua121.zip
-		$csguard_8_00.zip
-		@D2GS
-		$d2gs.rar
-		$d2-v109-d2loader.zip
-		$Diablo2 Exp
-		$flashget 1.3.zip
-		$FTPsearch.exe
-		$gs.zip
-		$primer.wri
-		$PvPGN114b3.tar.tar
-		@result
-		$unispim23.zip
-		$vnc-3.3.3r9_x86_win32.zip
-		$Warcraft III
-	#162.105.53.49
-		@incoming
-		@pub
-	#162.105.53.60
-		@_¾­¼ÃÖĞĞÄ½²Òå
-		@_¿¼ÑĞÊÔÌâ
-		@_ÉúÎïÏµ¿Î¼ş
-		$¡¶»ùÒò VII¡·µç×Ó°æ.chm
-		@basic_pronunciation
-		@GPA¼ÆËãÈí¼ş
-		$quiz.doc
-		@Special English upload by 001(update everyday)
-		@·¨ÓïÑ§Ï°
-		@¼ÄÍĞÏ£Íû
-		@Éú»¯Êé
-		@ÍĞ¸£ÌıÁ¦
-		@Ó¢ÓïÌıÁ¦
-	#162.105.53.66
-	#162.105.53.74
-		@pub
-	#162.105.53.86
-		@ebook
-		@game
-		@movie
-		@mtv
-		@music
-		@study
-		@temp
-		@upload
-		$ÏŞËÙ200k ·¢´ôÒ»·ÖÖÓkick  ÏŞµ¥Ïß³ÌÏÂÔØ.txt
-		$ÓĞÎÊÌâÇëµ½Î´Ã÷bbs game°æÌá³ö.txt
-	#162.105.54.17
-		@Blood
-		@incomings
-		@WarCraft_3
-	#162.105.54.70
-		$0296.exe
-		@dweep
-		$Eggs.swf
-		@FCÍõ³¯
-		@houdini
-		$jimi_leftright.ppt
-		$MagicCards_1.pps
-		@miller
-		@Steppenwolf
-		@VOS
-		$·¢Ğ¹¹¤¾ß.EXE
-		@¿´Ë­ÊØµÃ×¡
-		@ÃÎÓÎ
-		@ÅİÅİÁú
-		@ÉÏÓÎ
-		@ÊÌ»ê2
-		$ÊÇÄĞÈË¾Í³Å¹ı20Ãë.exe
-		@ÍøÂçÓÎÏ·
-		$Ğ¡ÅóÓÑÏÂ˜ÇÌİ.EXE
-		@ÕÒ±ğÅ¤
-		@ÖĞÓÎ
-	#162.105.55.83
-		@ÖĞÎÄ¸èÇú ÄĞ
-		@ÖĞÎÄ¸èÇú Å®
-	#162.105.60.37
-		@ETS
-		@GMAT
-		@GRE
-		@IELTS
-		@jijing
-		@LSAT
-		@SMTH
-		@software
-		@TOEFL
-		@TSE
-		@VISA
-	#162.105.62.49
-	#162.105.67.106
-		@AntiVirus
-		@Mulitimedia
-		@NetworkTool
-		@Programming
-		@Security
-		@SystemTool
-		$test.sql
-		@TextGraph
-	#162.105.67.230
-		@PORT1
-	#162.105.67.39
-		@±±´óÎ´ÃûBBS¾«»ªÇø
-	#162.105.68.155
-		@PORT1
-	#162.105.68.241
-		@book
-		@daemon288
-		$daemon288.zip
-		@SVR
-		@test
-	#162.105.68.62
-		@PORT1
-	#162.105.69.120
-		@incoming
-		@pub
-		$welcome.msg
-	#162.105.69.121
-		@bailm
-		@baiwr
-		@baozq
-		@bizm
-		@caijx
-		$ch1.gif
-		$ch2.gif
-		$ch3.gif
-		$ch4.gif
-		$ch5.gif
-		$ch6.gif
-		@chendy
-		@chengqs
-		@chengsh
-		@chenjd
-		@chensl
-		@chenwh
-		@chenyz
-		@chenzy
-		@daimin
-		@daizw
-		@dayue
-		@dengmh
-		@dengxt
-		@dingf
-		@dingss
-		@dingtr
-		@dingwy
-		@dingyg
-		@dongzx
-		@duanhb
-		@duanxf
-		@dujh
-		@fangqq
-		@fangxg
-		@fangxz
-		@fangz
-		@fansm
-		@fengrq
-		$ftp_manul.htm
-		@gansb
-		@gaohx
-		@gaol
-		@gaowx
-		@gaox
-		@gengz
-		@gonggl
-		@guomz
-		@guq
-		@hejm
-		$help.htm
-		$help1.htm
-		@hesy
-		@huangd
-		@huangh
-		@huangk
-		@huangm
-		@huangsy
-		@huangwz
-		@hudk
-		@huj
-		@hulz
-		@huy
-		$index.htm
-		$index3.htm
-		@jiangbj
-		@jiangjc
-		@jiangm
-		@jiangmy
-		@jiangsg
-		@jiangzp
-		@jing
-		@jwma
-		@lanyz
-		@leigy
-		@lengsm
-		@licz
-		@lidf
-		@lifl
-		@ligq
-		@lilt
-		@linyq
-		@linzq
-		@lir
-		@liub
-		@liuhp
-		@liuhr
-		@liujm
-		@liujq
-		@liull
-		@liulp
-		@liuls
-		@liupd
-		@liurq
-		@liuwr
-		@liuxf
-		@liuxh
-		@liuy
-		@liuyl
-		@liuzj
-		@liwg
-		@liz
-		@lizp
-		@lizy
-		@louyr
-		@luanyh
-		@luoxc
-		@lyq
-		@mas
-		@mengzz
-		@moxh
-		@mxw
-		@nielz
-		@pancb
-		@panjz
-		@panwj
-		@penglz
-		@qianm
-		@qianmp
-		@qiuws
-		@qiuzy
-		@shanhx
-		@shaosm
-		@shaoyf
-		@shipd
-		@shiqy
-		@shism
-		@shisz
-		@shiyg
-		@shizh
-		@shizp
-		@shud
-		@sunj
-		@sunl
-		@sunsz
-		@sunwl
-		@sunwx
-		@sunxc
-		@tanxj
-		@Templates
-		@tengzh
-		$thome.htm
-		@tiangl
-		@tianlq
-		@tianmy
-		@tianqc
-		@wangcm
-		@wangcp
-		@wangd
-		@wangef
-		@wangfz
-		@wanggx
-		@wanghq
-		@wangj
-		@wangm
-		@wangpw
-		@wangqh
-		@wangsc
-		@wangwb
-		@wangyd
-		@wangyz
-		@wangzd
-		@wangzq
-		@weizg
-		@wengc
-		@wenlan
-		@wenli
-		@wulan
-		@wulc
-		@wusj
-		@xiabc
-		@xiangkn
-		@xiaoj
-		@xietp
-		@xiezj
-		@xucw
-		@xucx
-		@xumy
-		@xuqh
-		@xusf
-		@xuxy
-		@xuyl
-		@xuzq
-		@yangbh
-		@yangjp
-		@yangjs
-		@yangl
-		@yanglj
-		@yangy
-		@yansd
-		@yeks
-		@yingla
-		@youcy
-		@yuansc
-		@zhangc
-		@zhanggq
-		@zhangjp
-		@zhangjy
-		@zhangnx
-		@zhangpw
-		@zhangsy
-		@zhangxc
-		@zhangxd
-		@zhangzf
-		@zhangzs
-		@zhangzx
-		@zhanxz
-		@zhaocl
-		@zhaoq
-		@zhaosw
-		@zhaoxa
-		@zhengzg
-		@zhengzm
-		@zhjn
-		@zhoujy
-		@zhoumq
-		@zhoush
-		@zhousl
-		@zhout
-		@zhouzy
-		@zhuangdw
-		@zhus
-		@zhuxh
-		@zhuxx
-		@zsy
-	#162.105.69.193
-		@Chromosome
-		@database
-		$Doc1.doc
-		$drawLine.zip
-		@epd50
-		@EST
-		$guigogene.txt
-		@HairPin_Proka
-		$hmrfasta.txt
-		@transfac35
-	#162.105.69.212
-	#162.105.69.213
-		@0711ÕÕÆ¬
-		@dd
-		@pub
-		$readings.pdf
-		$tutorial1_basic.pdf
-		$tutorial2_seq.pdf
-		$tutorial3_array.pdf
-		@ÉúÎïĞÅÏ¢
-	#162.105.69.242
-		@bin
-		@etc
-		@incoming
-		@lib
-		@pub
-	#162.105.70.133
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.70.137
-	#162.105.70.139
-		@VRCM
-	#162.105.70.174
-	#162.105.70.2
-		@gmat
-		@incoming
-		@software
-	#162.105.70.240
-		@Csmar
-		@incoming
-		@software
-	#162.105.70.36
-		$¡î¡ïĞ´¸øÏë¿ªFTPµÄÅóÓÑ(×ªÔØ).txt
-		@Books
-		@Flash
-		@Games
-		@GRE
-		@Incoming
-		@Movie
-		@Mp3
-		@MTV
-		@Soft
-		$±±´óÓÃ»§ÇëÓÃpku£¬sillycat·ÃÎÊ£¬ÏŞ1¸öÓÃ»§£¬200Ks.txt
-		$±¾Õ¾²»ÔÊĞíÄäÃûÏÂÔØ.txt
-		$¶ÔµÈÕÊºÅĞèÒª¶Ô·½¹²Ïí¿Õ¼ä10GÒÔÉÏ£¬ÁªÏµºó£¬ÎÒ»áµÇÂ¼FTP²é¿´ÄÚÈİÊÇ·ñĞèÒª£¬ÔÙ¾ö¶¨ÊÇ·ñ¿ª·ÅÌØÊâÕÊ»§.txt
-		$»¶Ó­·¢ĞÅÇëÇóÁÙÊ±ÕÊ»§£¬Çë×¢Ã÷×Ô¼ºµÄIP£¬¼°ÏëÒªÏÂÔØµÄÄÚÈİ£¬¾ßÌåµ½µçÓ°Ãû³Æ»òÕßÊÇÄ³¸öÒÕÈË.txt
-		$»¶Ó­Óë¹ã´óFTP¹ÜÀíÔ±½¨Á¢¶ÔµÈÕÊºÅ£¬ÇëÓÃemailÁªÏµ.txt
-		$Çå»ªÓÃ»§ÇëÓÃtsu£¬sillycat·ÃÎÊ£¬ÏŞ1¸öÓÃ»§£¬100Ks.txt
-		$ÓĞĞèÒªÇë·¢ĞÅÖÁsillycat@vip.sina.comÁªÏµÕ¾³¤.txt
-	#162.105.70.85
-	#162.105.71.137
-		@DIVX Software
-		@DIVX_incoming
-		@doudouer
-		@incoming
-		@movie
-		@mp3
-	#162.105.71.149
-		@ebook
-		@friends
-		@game
-		@listen
-		@others
-		@StoneStory
-		@µçÓ°
-		@¿¼ÊÔ
-		$ĞÂ½¨ÎÄ¼ş¼Ğ (2).rar
-		$ÓÉÓÚÓ²ÅÌ¿Õ¼äÓĞÏŞ£¬ÉÏ´«ÎÄ¼şÇëÏÈÍ¨ÖªÎÒ.txt
-		@×îÖÕ°æ±¾
-	#162.105.71.164
-	#162.105.71.166
-		$ACDSee_Serial.no
-		@incoming
-		@nsf5
-		$¶«±±ÈË.swf
-		$¶«±±ÈË1.swf
-	#162.105.71.233
-		@Movie
-		@Music
-	#162.105.71.46
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.71.65
-	#162.105.71.94
-	#162.105.73.137
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.73.49
-		@lily'sÃ¿ÈÕÒ»¸è
-		@stonestory
-		@upload
-	#162.105.74.131
-		@books
-		@football
-		@for ¶Õ¶Õ
-		@incoming
-		$Legends of the Fall.txt
-		@Microsoft Visual FoxPro 6.0 ¼òÌåÖĞÎÄ°æ
-		@movie
-		@pub
-		$Top 100 Web Site.htm
-		@upload
-		@³¤³Ç
-		$»¶Ó­·ÃÎÊsmallrµÄÉãÓ°Ö®¼Ò!.txt
-		$Å®ÕşÎ¯Ó°ÆÀ.txt
-		@ÎÒµÄÉú»îÓë°®ÓĞ¹Ø
-		$ĞÂÔöÃÀ¹ú¹ú¼ÒµØÀíÍ¼Æ¬.txt
-		$Ö÷ÒªÄÚÈİÎªÍ¼Æ¬ÉãÓ°ºÍµçÓ°ÉãÓ°.txt
-	#162.105.74.178
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.74.182
-		@incoming
-		@Robotech
-	#162.105.74.193
-		$CTerm III.rar
-		$menu.c
-		@nero5572
-		@Real_¸ñÊ½ÎÄ¼şÑ¹ËõÖÁ×ğ1.3
-		@realproduer8.5
-		$·ÉÄñ.mp3
-		@¹¦·òĞı·ç¶ù
-		@ºó½Ö¾«Ñ¡
-		$ÕÅÎÀ½¡-ĞÅÍ½(µçÊÓ¾çÆëÌì´óÊ¥ËïÎò¿ÕÆ¬Î²Çú).mp3
-	#162.105.74.204
-		$01.PDF
-		$02.PDF
-		$03.PDF
-		$04.PDF
-		$05.PDF
-		$06.PDF
-		$07.PDF
-		$08.PDF
-		$09.PDF
-		$10.PDF
-		$11.PDF
-		$12.PDF
-		$13.PDF
-		$14.PDF
-		$15.PDF
-		$16.PDF
-		$17.PDF
-		$18.PDF
-		$19.PDF
-		$20.PDF
-		$21.PDF
-		$22.PDF
-		$23.PDF
-		$24.PDF
-		$25.PDF
-		@C51±à³Ìkeil c6_20c Ö±½ÓÇ¶Èë»ã±àµÄ·½·¨!!! £¨À´×ÔC51BBSÍøÓÑcuiwei£©.files
-		$C51±à³Ìkeil c6_20c Ö±½ÓÇ¶Èë»ã±àµÄ·½·¨!!! £¨À´×ÔC51BBSÍøÓÑcuiwei£©.htm
-		$OP07_a.pdf
-	#162.105.74.21
-	#162.105.74.234
-		@Default
-		@home
-		@incoming
-		@pub
-	#162.105.74.48
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.74.89
-		@¡înotice for anonymous user
-		@incoming
-		@leslie
-		@Movie
-		@MTV
-		@music
-		@MusicShow
-	#162.105.74.91
-		$7ÔÂ29ÈÕ12.TXT
-		@Data_Sheet
-		@²Î¿¼ÎÄÏ×
-		@´®¿Ú
-	#162.105.74.97
-		$Doc2.doc
-		@flashftp
-		$±¨¸æ.ppt
-		@½ğÉ½ÏµÁĞ
-		$ÂÛÎÄ.doc
-		$ÆÚÄ©ÂÛÎÄ.doc
-		@ĞÅÏ¢ÂÛÓë±àÂë
-	#162.105.75.232
-		$7ÔÂ18ÈÕ~8ÔÂ10ÈÕÎÒ²»ÔÚ±±¾©.txt
-		@incoming
-		$ÀÏFTPµÄÎÄ¼şÁĞ±í.txt
-		$Èç¹ûÍ£µçµÄ»°»ú·şÎñÆ÷¾ÍÆğ²»À´ÁË.txt
-		@Êé¼®½²Òå
-		@Í¨ĞÅÎÄÏ×
-		@Í¨ĞÅĞ­Òé
-		@Ó¦ÓÃ³ÌĞò
-	#162.105.75.42
-		$8850000000107772.doc
-		@liubo
-		@ã¥Ç®¼Ò×å
-		@Ò»ÎİÌ°Ç®ÈË
-		@Õâ¸öÏÄÌìÓĞÒìĞÔ(ÍÆ¼ö--twins  Íõ½ÜÖ÷Ñİ)
-	#162.105.76.161
-		@ICdatasheet
-		@liu
-		@order
-		@others
-		@papper
-		@photoelectric diode
-		$°ëµ¼Ìå¹â·Å´óÆ÷.doc
-		$°ëµ¼Ìå¹â·Å´óÆ÷¿ª¹Ø.ppt
-		$³ö·ÃÉêÇë.doc
-		@Ğ¦»°
-	#162.105.76.201
-		$02070120403601499.pdf
-		$02070120473801858.pdf
-		$02070120592702705.pdf
-		$02070121021102904.pdf
-		$02070121051303097.pdf
-		$02070121072503241.pdf
-		$02070121171503902.pdf
-		$02070121215304339.pdf
-		@anonymous ÓÃ»§Ö»ÄÜlist,ÉÏÔØÏÂÔØÇëÓÃidle,ÃÜÂëidle
-		@movie
-	#162.105.76.242
-		@Incoming
-		@Linux
-		@Softwares
-	#162.105.77.45
-	#162.105.78.103
-		@PORT1
-	#162.105.78.110
-		@PORT1
-	#162.105.78.14
-		@Games
-		@incoming
-		@Letters_For_Going_Abroad
-		@pub
-		@VOAÖĞ¼¶
-		@ÓÊ±àÇøºÅ²éÑ¯2.1
-	#162.105.78.167
-		@arcinfo
-		@incoming
-		$jlpower.rar
-		$lb.zip
-		@MOVIE
-		@Pwin98
-	#162.105.78.190
-		@PORT1
-	#162.105.78.88
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.78.96
-		@Ebook
-		@music
-		@pub
-		@pub1
-		$pub1Îª½Ï´óÈí¼ş
-		$pubÎªÊµÓÃĞ¡Èí¼ş
-		$µ¥Ïß³ÌÏÂÔØ
-		$»¶Ó­»·¿ÆÖĞĞÄÍ¬ÈÊ×¨ÓÃÕÊ»§µÇÂ¼
-		$ÓÃ»§ÃûlywÃÜÂëlyw
-		$ÓòÃû£ºoto.dhs.org
-	#162.105.80.168
-		@film_f
-		@incoming
-	#162.105.80.207
-		@comic
-		@doc
-		@Incoming
-		@mov
-		@Music
-	#162.105.80.25
-		@@»¶Ó­Ê¹ÓÃÓòÃû·ÃÎÊ£ºpkudance.dhs.org
-		@4.19×¨³¡Ñİ³ö¡ª¡ªÏà¹Ø×ÊÁÏ
-		@incoming
-		@Îèµ¸×ÊÁÏ
-	#162.105.80.254
-		@ftp_root
-	#162.105.80.50
-	#162.105.80.56
-		@incoming
-		@pub
-	#162.105.80.60
-	#162.105.80.77
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.80.90
-		@bin
-		@etc
-		@incoming
-		@lib
-		@pub
-	#162.105.81.112
-		@bin
-		@etc
-		@lib
-		@pub
-	#162.105.81.116
-		@incoming
-		@learn to climb
-		@´óÑ©±À
-		@¹ú¼ÒµØÀí°ÙÄê¼ÍÄî
-		@ÅÊÑÒ¶ÌÆ¬
-		@É½Ó¥µÄ¸è
-		@ÖØ·µÏ²ÂíÀ­ÑÅ
-	#162.105.81.34
-		$index.txt
-	#162.105.82.111
-		@game
-		@incoming
-		@mov
-		@music
-		@soft
-		@study
-	#162.105.82.163
-		@_upload
-		@a
-		$agent-sourcebook.tgz
-		$applied-speech-technology.tgz
-		$artificial-intelligence-and-expert-systems-for-engineers.tgz
-		@Brood
-		$c++-neural-networks-and-fuzzy-logic.tgz
-		@Callus
-		$CalTech.zip
-		$computational-intelligence-an-introduction.tgz
-		$ComputationEvolutionary.rar
-		$computation-over-fuzzy-quantities.tgz
-		$constructing-intelligent-agents-with-java.tgz
-		@cs
-		@CS1.4Ãâ°²×°°æ
-		$fpe2000.zip
-		$fusion-of-neural-networks-fuzzy-systems-and-genetic-algorithms.tgz
-		$fuzzy-and-neuro-fuzzy-systems-in-medicine.tgz
-		$fuzzy-control-systems.tgz
-		$fuzzy-sets-engineering.tgz
-		$guide-to-buiding-intelligent-web-sites-with-javascript.tgz
-		@Heroes3
-		$hybrid-architectures-for-intelligent-systems.tgz
-		$IEEE.tar.gz
-		@IL2_Sturmovik
-		$IMAGE.BAK
-		$IMAGE.DAT
-		$IMAGE.IDX
-		@kof2000È­»Ê
-		$Machine Learning, Neural and Statistical Classification.pdf
-		$neural-network-modeling.tgz
-		$neurocomputing-for-design-automation.tgz
-		@nfs
-		$nfs5.zip
-		$pattern-recognition-with-neural-networks-in-c++.tgz
-		$practical-applications-of-computational-intelligence-for-adaptive-control.tgz
-		@RECYCLED
-		@SAVE
-		@SilentHunter2
-		@Support Vector Machines
-		$verification-and-validation-of-rule-based-expert-systems.tgz
-		@xtom3d
-		$xtom3d.rar
-		@·è¿ñ»úÆ÷3
-		@Âí¿ËË¼Åå¶÷
-	#162.105.82.218
-		@ebook
-		@game
-		@incoming
-		@movie
-		@music
-		@software
-	#162.105.82.56
-		$acdsee.exe
-		@diskman
-		$diskman.zip
-		$iconsnat361.exe
-		@iDuBa2002
-		$iDuBa2002.zip
-		$lry15.mp3
-		$netants_gb2312.zip
-		@NtBBS
-		$NtBBS.zip
-		$qq0630_Coral_095.zip
-		$readme.txt
-		$realplayer8plus.exe
-		$winamp277_full.exe
-		$winzip8.1.4331.exe
-		$wrar300sc.exe
-		$xp-ico.exe
-		$yahoomessagers.exe
-	#162.105.83.123
-		@Crimes.and.Misdemeanors(°®Óë×ï£­Woody Allen£© by ultra
-		@FLASH
-		@Fuck Me by ÎÒ
-		@movie
-		@°ËÓÖ¶ş·ÖÖ®Ò»Å®ÈË£­by ultra
-		@°ÍÀèÒ°Ãµ¹å£­by ultra
-		$¸´¼ş (2) ÓÃ»§ÃûºÍÃÜÂëÇëµÇÂ¼www.dixia.net.txt
-		$¸´¼ş (3) ²»Ìá¹©ÄäÃûÏÂÔØ£¡.txt
-		$¸´¼ş (3) ÓÃ»§ÃûºÍÃÜÂëÇëµÇÂ¼www.dixia.net.txt
-		$¸´¼ş (4) ²»Ìá¹©ÄäÃûÏÂÔØ£¡.txt
-		$¸´¼ş (4) ÓÃ»§ÃûºÍÃÜÂëÇëµÇÂ¼www.dixia.net.txt
-		$¸´¼ş (5) ²»Ìá¹©ÄäÃûÏÂÔØ£¡.txt
-		$¸´¼ş (6) ²»Ìá¹©ÄäÃûÏÂÔØ£¡.txt
-		$¸´¼ş ²»Ìá¹©ÄäÃûÏÂÔØ£¡.txt
-		$¸´¼ş ÓÃ»§ÃûºÍÃÜÂëÇëµÇÂ¼www.dixia.net.txt
-		$¸Ğ¹ÙÊÀ½ç.rm
-		$ÁÒ»ğ·ÙÇé.avi
-		@È¥166.111.174.10ÏÂÔØ³şÃÅµÄÊÀ½ç
-		@ËïÑà×Ë
-		@ÎçºóÖ®°®
-		@Ò°À¼»¨ by ÎÒ
-	#162.105.83.124
-		@=COMIC=
-		@=FIFA=
-		@=FLASH=
-		@=GRE=
-		@=MOVIE=
-		@=MUSIC=
-		@=SOFT=
-		@=TOEFL=
-	#162.105.83.13
-		@==Incoming==
-		@==Pub==
-	#162.105.83.233
-		@Incoming
-		@Mp3
-		@MTV
-		@¸è´Ê
-	#162.105.83.241
-		@airsupply
-		@backstreetboy
-		@beyond
-		@britney
-		@m2m
-		@Mid
-		@specia_girl
-		@temp
-		@west_life
-		@WHITNEY
-		@µÏ¿ËÅ£×Ğ
-		@¸ÖÇÙÇú
-		@¸è´Ê
-		@¾­µä
-		@ÂíĞŞ.Á¬¶÷
-		@ÃñÀÖ
-		@Ãñ×åÀÖÆ÷
-		@ÆäËû
-		@Èø¿ËË¹
-		@Ë¹ÇÙ¸ñÀöÀÖ
-		@ĞÂ½¨ÎÄ¼ş¼Ğ
-		@ÑÅÄá
-		@Ó¢ÎÄclassic
-		@ÕÅÓêÉú
-		@ÖÜ»ª½¡
-	#162.105.84.177
-	#162.105.84.229
-		@cs
-		@Sango3
-		@yzms
-		@´óº½º£Ê±´ú4¼ÓÇ¿°æ
-		@ÈÎÌìÌÃ
-		@Èı¹ú8¼ÓÇ¿°æ
-	#162.105.85.222
-		@AI
-		@Casablanca
-		@Forrest Gump
-		@God Father I
-		@Incoming
-		@Life is Beautiful
-		@Roman Holiday
-		@ShawshakRedemption
-		@Star War
-		@The Lord Of TheRings
-	#162.105.85.238
-		@Game
-		@Movie
-		@Software
-		@stu
-	#162.105.86.122
-		$¡¶·´¿Ö¾«Ó¢¡·ÈËÖÊÃÀÃ¼6ºÏ1£¨¸½Í¼£©.zip
-		@1
-		$2[1].ram
-		$3[1].ram
-		$3333.htm
-		$3657252.jpg
-		$acdsee-mac.hqx
-		$acdwin_3.1.exe
-		$COUNTER-STRIKE1.dat
-		@CS map
-		$CS1.3ÍêÈ«°²×°Éı¼¶°æfull¡£
-		$CS1.exe.5ÖĞÎÄ°²×°Ó²ÅÌ°æ
-		$cs10031004.exe
-		$cs1005.exe
-		$cs103cn.exe
-		$cs201-0105.jpg
-		$cscn1.3.exe
-		$CSCN15.exe
-		$darkroad.doc
-		$gaokao.txt
-		$gw016_1.jpg
-		$gw016_2.jpg
-		$ip.txt
-		$jjd4save_02_05_15.zip
-		$lftp272.exe
-		@ll
-		@ly
-		@My eBooks
-		@My Pictures
-		$neo.zip
-		@neogeo
-		$neogeo.zip
-		@New Oriental Soft
-		$pd4_0914.zip
-		@phone card
-		$phoplay3.exe
-		$PODBOT 2.5.exe
-		$powerdvd30_trial.exe
-		@RECYCLED
-		@rzhh
-		@shihun
-		$sing_dis_mickey_pr.jpg
-		$sing_snoopy.jpg
-		$t3vvj2tv
-		$t3vvj2tv.1
-		$t3vvneff.1
-		$unispim23.zip
-		@wg
-		@www
-		@xxx
-		@yzhp
-		@zw
-		$°®ÒªÔõÃ´×ö.rm
-		@·´¿Ö¾«Ó¢ÖĞÎÄÕ¾CS1.5ÖĞÎÄÓ²ÅÌ°æ
-		@·ÉÔ¾Ó¢ÓïÆÆ½â
-		$·ÉÔ¾Ó¢ÓïÆÆ½â.tgz
-		$¼ÛÄ¿.txt
-		$É¢¿¨.txt
-		$ÎŞ±êÌâ.bmp
-		$ĞÂ½¨ ACDSee PSD Image.psd
-		@ĞÂÎÄ¼ş¼Ğ
-	#162.105.86.207
-		@ÆÚ¿¯ºÏ¼¯
-		@ÆäËû
-		@ÈËÎÄÉç»á
-		$Êé¼®Çåµ¥.txt
-		@Ë¼ÏëµÄ¾³½ç
-		@Ğ¡Ëµ¡¢Éñ»°
-		@ÒÕÊõ
-		@ÖĞ»ª¹Å¼®
-		@×ÔÈ»¿ÆÑ§
-	#162.105.86.55
-		@incoming
-		$login.msg
-		@pub
-	#162.105.87.154
-	#162.105.87.188
-		@°¢·ÉÕı´«
-		$²¼À­¸ñÖ®Áµ02.rm
-		$²¼À­¸ñÖ®Áµ03.rm
-		$´¥²»µ½µÄÁµÈË.rm
-		@´º¹âÕ§Ğ¹
-		$´óÌÓÉ±.rm
-		@¶«³ÉÎ÷¾Í
-		@¶«·½²»°Ü
-		@¶«¹¬Î÷¹¬
-		@·Ñ³Ç¹ÊÊÂ
-		@·çÓïÕß
-		@¹²Í¬¾¯±¸Çø
-		@¹í×ÓÀ´ÁË
-		@¾Õ´ÎÀÉÖ®ÏÄ
-		@Ã¨ºÍÀÏÊó
-		@ÄÇÊ±»¨¿ª
-		@ÄĞÈËËÄÊ®
-		@Æß×Ú×ï
-		@ÈË¹íÇéÎ´ÁË
-		@Ê¥Å®ÕêµÂ
-		@ËÕÖİºÓ
-		@ÌìÌÃÓ°Ôº
-		@ÎÒµÄºÚµÀÀÏÆÅ
-		@ÎÒÃÇ¶¼ÊÇÕâÑù³¤´óµÄ
-		$ÎÒÃÇÔøÊÇ¾üÈË01.avi
-		$ÎÒÃÇÔøÊÇ¾üÈË02.avi
-		@ĞÂÔúÊ¦ÃÃ
-		@ĞÇÔ¸
-		@Ñô¹â²ÓÀÃµÄÈÕ×Ó
-		@ÓĞ»°ºÃºÃËµ
-		@Õâ¸öÏÄÌìÓĞÒìĞÔ
-		@ÖĞÑë³µÕ¾_Central_Station
-		@ÖØÇìÉ­ÁÖ
-	#162.105.87.26
-		@CS1.5
-	#162.105.87.89
-		@=funny=
-		@=moive=
-		@=music=
-		@=soft=
-		$Desktop.ini
-		$kiss1.jpg
-		$kiss2.jpg
-		$kiss3.jpg
-		$Thumbs.db
-		$xp¼¤»î.zip
-		$±±´óÈËµÄ¹ÊÊÂ-Á÷ÄêÆ®Æ®.rm
-		$¼ÆËã»ú.zip
-		$Á÷ÄêÆ®Æ®(mtv).mpg
-	#162.105.88.100
-		@game
-		@papers
-		@video
-		@±äÖÊÑÒ
-		@ÊµÏ°±¨¸æ
-	#162.105.88.103
-		@ETS
-		@film
-		@GAME
-		@Incomings
-		@MP3
-		@software
-		$±¾Õ¾¿ÉÒÔÄäÃûÏÂÔØ£¬ÏŞËÙ200k£¬5ÈË.txt
-		@¾­µämtv£¨Ç¿ÁÒÍÆ¼ö£¡£©
-	#162.105.88.131
-		@-=[ divx ]=-
-		@-=[others]=-
-		@-=[rm]=-
-		@=[software]=
-		$desktop.ini
-		$folder.htt
-		$Thumbs.db
-		$»úÆ÷ÀÃÁËµãanonymousÏŞËÙ50K upload200k,°üº­£¡.txt
-		$Ã»¿Õ¼äÁË incomingÄ¿Â¼ÔİÊ±È¡Ïû ÏÂÑ§ÆÚÓĞmimiÁËÌíÓ²ÅÌ.txt
-	#162.105.88.154
-		@688_bookmgr
-		@asdi-iuoasdhasd
-		@ASPack21
-		$content.htm
-		$CoolDesktop(i).EXE
-		@cs1.4
-		$DiskCleaner.exe
-		@ePSXe151
-		@fileMon
-		@gpa
-		@images
-		$mem3.exe
-		$MoviePlayer.exe
-		@nec_wireless_nic
-		@nikefootball_final_180_hi
-		@ntpadXPbeta5
-		@pictures
-		$Project1.exe
-		$Project4.exe
-		@regMon
-		@regsrc
-		$SystemInfo.exe
-		$trillian-v0.723.exe
-		$wxp-radeon-6-13-10-6094-efg.exe
-		$ÃÀ´óÑ§ÅÅÃû.zip
-		@ÄÚ´æÕûÀí
-		$ÄÚ´æÕûÀí.zip
-		$Í¼Êé¹İ¹ÜÀíÏµÍ³Ô´´úÂë.zip
-		$Î´ÃüÃû.bmp
-		@×¨Òµ·ÖÀà
-		@×ÀÃæ¹¤¾ß
-	#162.105.88.188
-		@_ºì±¦Êé´Ê»ãÀÊ¶Á
-		@Application
-		$ck.zip
-		$config.cfg
-		$cs-movie_high.zip
-		@eBook
-		@listen4
-		@MyProject
-		$Office_XP ÍêÈ«¼¤»î£¨Ö®Ç°ÆÆ½â¹ı£©.exe
-		$readme.txt
-		@Recycled
-		@System
-		@System Volume Information
-		$WC-NoKiSS.iso
-		@WUTemp
-		@¸ß¼¶ÌıÁ¦¼°¿ÎÎÄ
-		@ĞÂ¸ÅÄîÓ¢Óï¶şÂ¼Òô
-		@Ó¢ÓïÖĞ¼¶ÌıÁ¦
-		@ÖĞ¼¶ÃÀ¹úÓ¢Óï
-	#162.105.88.199
-		@°µÕ½1
-		$±±´óÈËµÄ¹ÊÊÂ-Á÷ÄêÆ®Æ®.rm
-		@±äÁ³
-		@¶«³ÉÎ÷¾Í
-		@Èı¹úÑİÒå
-		@É±ÊÖÀ³°º
-		@ÌğÃÛÃÛ
-		@ÓºÕıÍõ³¯
-	#162.105.88.202
-	#162.105.88.204
-		@incoming
-		@pub
-		@temp
-		$±±´óFTPÁªÃË³ÉÔ±.txt
-		$³É¸å.doc
-		$Í¼°æ3.psd
-	#162.105.88.55
-		$2000¼¶Êı¾İ¿âÏµÍ³¿Î³ÌÊı¾İ¿âÉè¼ÆÃûÂ¼.doc
-		@cisco×¨Ìâ
-		$crossgate.chm
-		@movies
-		@mtv
-		@temp(Ã¿ÖÜÒ»ÇåÀí)
-		@½²Òå¼°ÆäËû
-		$¾«Ñ¡ÍøÖ·.htm
-		$ĞÇÆÚÒ»ÌìÆøÇçÎÒÀë¿ªÄã.mp3
-	#162.105.89.113
-		$¡ìWelcome to Yooyoo's Ftp Site.txt
-		@incoming
-		@pub
-	#162.105.90.137
-		$03.RM
-		$GULONG.ZIP
-		$gÅÌ»¹ÓĞÈí¼ş.txt
-		@Music
-		@PHOTO
-		@spider man
-		$Verilog.rar
-		@Warcraft III
-		$³ÂÇàÔÆ.chm
-		@¿ªÍù´ºÌìµÄµØÌú
-		@ÂÃÓÎ
-		@ÄĞÈËËÄÊ®
-		@Ê®ÆßËêµÄµ¥³µ
-		@ÎÒµÄÒ°ÂùÅ®ÓÑ
-		$ÔÚÏßÓ°Ôº.txt
-	#162.105.90.247
-		$Baby, Welcome to  'ajo.ods.org' .txt
-		@income
-		@mtv
-		$»¶Ó­½»Á÷,emailto----jiaoqj@263.net.txt
-		$Çë²»ÒªÉÏ´«ÓĞº¦½¡¿µµÄ¶«¶«.txt
-		$ÕâÀïÊÕ¼¯mtv£¬ÎªÁË±£³Ö·şÎñÖÊÁ¿£¬±¾Õ¾ÏŞÖÆÈËÊı.txt
-	#162.105.90.248
-		$¡î¡î¡î¸«Í·°ï³ÉÔ±ÇëÓÃÄÚ²¿ÕÊºÅµÇÂ½¡î¡î¡î.txt
-		$¡î¡îÍíÉÏ23µã-Áè³¿7µãËŞÉáÍ£µçµÄËµ.txt
-		$¡î¡îÏŞÖÆÍ¬Ê±µÇÂ½ÊıÎª24¡î¡î.txt
-		$¡î¡ïĞ´¸øÏë¿ªFTPµÄÅóÓÑ(×ªÔØ).txt
-		$¡î½¨ÒéÊ¹ÓÃµÄFTPÏÂÔØÈí¼ş- LeapFTP, CuteFTP.txt
-		$¡îÃ¿¸öIPµØÖ·ÔÊĞíÁ½¸öÏß³Ì,½¨Òéµ¥Ïß³ÌÏÂÔØ.txt
-		$¡îÄäÃûÎŞ·¨µÇÂ½Ê±±±´óÍø¶ÎÇëÓÃÓÃ»§pkuÃÜÂëpkuµÇÂ½.txt
-		$¡îÔÚ30ÃëÄÚ³¢ÊÔÁ¬½Ó15´ÎÒÔÉÏ½«±»×Ô¶¯Ìß³ö5·ÖÖÓ.txt
-		$AllowIP.txt
-		@BurnCD
-		@incoming
-		@music_incoming
-		@³£ÓÃµÄFTPÕ¾µã
-		$ÈíÅÌĞŞ¸´.txt
-	#162.105.90.250
-		$¡î¡ïĞ´¸øÏë¿ªFTPµÄÅóÓÑ(×ªÔØ).txt
-		$¡îFTB³ÉÔ±ÇëÓÃÄÚ²¿ÕÊºÅµÇÂ½¡î.txt
-		$¡î½¨ÒéÊ¹ÓÃµÄFTPÏÂÔØÈí¼ş- LeapFTP, CuteFTP.txt
-		$¡îÁè³¿1µã-Ôç³¿6µãËŞÉáÍ£µçµÄËµ.txt
-		$¡îÃ¿¸öIPµØÖ·ÔÊĞíÁ½¸öÏß³Ì,½¨Òéµ¥Ïß³ÌÏÂÔØ.txt
-		$¡îÄäÃûÎŞ·¨µÇÂ½Ê±±±´óÍø¶ÎÇëÓÃÓÃ»§pkuÃÜÂëpkuµÇÂ½.txt
-		$¡îÔÚ30ÃëÄÚ³¢ÊÔÁ¬½Ó15´ÎÒÔÉÏ½«±»×Ô¶¯Ìß³ö5·ÖÖÓ.txt
-		$¡ï¡ï¡ïÏÂÔØÇëÓÃÓÃ»§Ãûxidu£¬ÃÜÂëÇëµ½xidu.netÍøÕ¾ÉÏ²éÑ¯¡ï¡ï¡ï.txt
-		$AllowIP.txt
-		@incoming
-		@movie
-		@MTVs
-		@music
-	#162.105.90.4
-		@Pub
-		@upload
-		$±¾ftpµÄÄ¿±ê.txt
-		$±¾Õ¾µÄËùÓĞ×ÊÁÏ¾ùÖ»ÓëÆæ»ÃÓĞ¹Ø.txt
-		$»¶Ó­´ó¼ÒÉÏÔØÓĞ¹ØÆæ»ÃµÄºÃ¶«Î÷.txt
-		$ÉÏ´«ÇëÓÃupload upload.txt
-		$ÉÏÔØ´óÎÄ¼şÇëÏÈËµÃ÷.txt
-		$×¢Òâ£ºÏÂÔØÓÎÏ·ÇëÓÃÕÊ»§game£¬ÃÜÂëfantasy.txt
-	#162.105.90.55
-		@!_ÏÂÔØÕËºÅ¹«²¼ÔÚBTBBS.3322.org(ÓÃtelnet·½Ê½)
-		@--==419==--
-		@--==DivxÏà¹Ø¹¤¾ßÈí¼ş==--
-		@--==Here is 162.105.90.55==--
-		@--==Powered By Laofuzihere==--
-		@--==Welcome to 419==--
-		@--==±¾Õ¾ÌØÉ«-ÌìÌì¸üĞÂ,Ö»ÓĞÒ»¸ö,Ö»·ÅÒ»Ò¹==--
-		@--==¸üĞÂ¼ÇÂ¼==--
-		@--==ËµÃ÷==--
-		$419.txt
-		@BURN_CD_Incoming
-	#162.105.90.6
-		@Entertaiment
-		@Games
-		@SoftWare
-	#162.105.90.7
-		@audio
-		$DivXPlayer.dbf
-		@library
-		@pictures
-		@software
-		@video
-	#162.105.90.71
-		@Incoming
-		@Mtv
-		@Music
-		$welcome.txt
-	#162.105.90.99
-		@Books
-		@Games
-		@Learning
-		@MultiMedia
-		@Tools
-		@Upload
-		$welcome.msg
-		@ÃØÃÜ
-	#162.105.91.167
-		$c287_jpg.jpg
-		@DirectX8.1beta1
-		@forfun
-		@forzhh
-		@game
-		$KISSÏÖ³¡°æ(´ø×ÖÄ»).good.avi
-		@Master Matlab
-		@MatLAB6.1
-		@music
-		@novel
-		@software
-		@upload
-		@ÁºĞÖ
-		$ĞÂ½¨ Microsoft Word ÎÄµµ.doc
-	#162.105.91.171
-		@games
-		@movies
-		@musics
-		@tools
-		@ÉÏÔØµ½ÕâÀï£¬ÎÒÀ´ÕûÀí
-		$ÏÂÔØÇëÓÃchenjia@pkuµÇÂ½.txt
-		$ÓĞÊ²Ã´ºÃ¶«¶«ÇëÉÏÔØ£¬¶àĞ»£¡.txt
-		$ÓĞÎÊÌâÇëE-MailÖÁchenjiamg007@water.pku.edu.cn.txt
-		$ÔÚÏÂQQºÅ£º29718949£¬·Ç³£Ï£ÍûÄÜºÍÕæ³Ï¶ÔÈËµÄÍ¬Ñ§½»ÅóÓÑ£¬Ò»ÆğÌ¸ÂÛ´ó¼Ò¸ĞĞËÈ¤µÄÊÂÇé.txt
-	#162.105.91.42
-		@brood
-		$brood.zip
-		@callus
-		@cs1.4
-		@d2
-		$D2-NoCd-all.zip
-		@daoxiangju
-		@FOUND.000
-		@Half-Life
-		$Half-Life.zip
-		@homepage
-		$Iptv3.zip
-		@iptvsetup
-		@neogeogame
-		@OICQ
-		@pikaqiu
-		@Program Files
-		@SAMURAI2
-		@SAVE
-		$shopbg.mdb
-		@SWD3E
-		$t25g
-		@vos
-		$vos.zip
-		@WORM
-		@Ğ¡Ëµ
-		@ĞÂ½¨ÎÄ¼ş¼Ğ
-	#162.105.91.75
-	#162.105.92.139
-		@023QQ
-		@8738win1095d
-		@ACDSee 4.02 PowerPack Suite
-		$AcrobatReader5.00_chs.exe
-		$apache_1_3_12_win32.exe
-		$casp341_2K_apache.exe
-		$Display.ace
-		@GaimQQ58
-		@Linux for Win
-		@linuxboot
-		$lodlin16.tgz
-		$mirtools.zip
-		$nvreffix-setup1.exe
-		$powerstrip 3.20 final.exe
-		@pqmagic
-		$RealOnePlayer.ace
-		$rideway-setup.exe
-		@SmartFdisk2.06
-		$teld4_x86_unltddemo.exe
-		$tr.zip
-		$unispim23.zip
-		$via4in1_434.exe
-		@VOS
-		$wace211.exe
-		$winrar300.exe
-		$µç×Ó³ÉÓï´Êµä.zip
-		@½ğÉ½¶¾°Ô2002
-		@Ê«´Ê³ÉÓï´óÈ«
-		$ÎÒÒ²°®±³µ¥´Ê.zip
-		@×·²¶
-	#162.105.92.215
-		@game
-		@mp3
-		@study
-		@tools
-		@upload
-		$±¾Õ¾ÓòÃûben.bingle.org.cn.txt
-		@ÁúÖé1
-		@ÆßÁúÖé2
-		$Õ¾³¤ĞÅÏäzhei@water.pku.edu.cn.txt
-		$ÕâÀïÊÇÎïÀíÏµµÄben.txt
-	#162.105.92.34
-		$bad - I believe.mp3
-		$CS1.5.zip
-		@games
-		@incoming1
-		@music
-		@tools
-		$Twins-ÑÛ¼t¼t.mpg
-		@video
-		$welcome.txt
-		@±±´óÇå»ª±±Ò½µÄÓÃ»§ÓÃÓÃ»§ÃûÃÜÂëminc
-		@±¾ftpÓòÃûÎªminc.dhs.org
-		$·çóİ_ÂÌ¹â.mpg
-		@¸ãĞ¦flash
-		$¿ÌÂ¼¹âÅÌ×¢ÒâÊÂÏî.txt
-		$¿ÌÅÌ5Ôª.txt
-		@Ä§ÊŞÕù°Ô
-		@ÆäËüÓÃ»§ÓÃÓÃ»§ÃûÃÜÂëminc@pku
-		$ÌØ±ğÌá¹©Á÷ĞÇ»¨Ô°¿ÌÅÌ·şÎñ.txt
-		$ÎÒ²Â0713.avi
-		$ÓĞÊ²Ã´ÊÂÇëÕÒ±±´óÎ´ÃûbbsµÄminc.txt
-		@Õâ¸öÏÄÌìÓĞÒìĞÔ(ĞÂÆ¬)
-	#162.105.92.36
-		$±¾Õ¾³¤ÓàçùandÁÖ±óÑåĞ»Ğ»´ó¼ÒµÄ¹âÁÙ£¬Çë´ó¼ÒÏÂÔØÊ±µÇÂ½ÓÃ»§Ãûxia   ÉÏ´«Ê±µÇÂ½ÓÃ»§Ãûshang  ÓÎÏ·µÇÂ½youxi   ±±´óÓÃ»§µÇÂ½xy  ¾ùÎŞÃÜÂë.txt
-		$±¾Õ¾·Ç³£¸ĞĞ»Ğí¶àÈÈĞÄµÄÓÃ»§ÉÏ´«µçÓ°£¬µ«ÓÉÓÚÓĞĞ©µçÓ°Ã»ÓĞ´«Íê£¬¹ÊÖ»ÄÜÈÌÍ´É¾µô£¬Ï£Íû´ó¼ÒÁÂ½â.txt
-		$´ÅÅÌ¿Õ¼ä»¹ÓĞ731m£¬µ½7ÔÂ17ÈÕ03£º07Ö¹.txt
-		$´ó¼ÒÈç¹ûÓĞÊ²Ã´ÌØÊâÒªÇó£¬Çë·¢E-Mail£ºlinbinyan@ccermail.net
-		@¶ùÍ¯¸èÇú
-		@¸öÈËÎÄ¼şÖĞ×ªÇø
-		@ºÃµçÓ°
-		@ÁíÀàµÄ¶«Î÷
-		$Ç¿ÁÒÍÆ¼ökiss.asf
-		@Êé¼®
-		@Ñ§Ï°Çø
-		$ÖĞ¹úÈË±ØĞë¿´µÄ£¨ÈÏÊ¶ÈÕ±¾ÍöÎÒÖ®ĞÄ£©.txt
-	#162.105.92.5
-		$14.mws
-		$in.mws
-		@My Documents
-		@My Downloads
-		@My eBooks
-		@My Music
-		@My Pictures
-		@Ring
-		$Thumbs.db
-		@µçÓ°
-		$È·ÈÏĞÅ.doc
-	#162.105.92.63
-		@Atoo's selected
-		@Pop
-		@Pure
-		@Rock
-		$welcome.msg
-	#162.105.92.86
-		@incoming
-		@pub
-		$»¶Ó­À´µ½°ÙÕ½µÄzipºÏ¼¯ÏÂÔØÇø
-		$Ã¿¸öipÖ»×¼Á½¸ö½ø³Ì
-		$ÄäÃûÖ»ÄÜlist
-		$ÏÂÔØÇëÓÃbaizhan,baizhanµÇÂ½
-		$Ğ¡µÜ¸öÈË»úÆ÷ÄÜÁ¦ÓĞÏŞ£¬ÓÃ»§ÉÙ¡¢ËÙ¶ÈÂıÇë¼ûÁÂ
-	#162.105.93.192
-	#162.105.95.148
-		@Recycled
-		@software
-		@video
-	#162.105.95.244
-		$ÎÒ²Â0727.asf
-	#162.105.96.12
-		@bookbook
-		@free
-		@interesting dongdong
-		@little games
-		@movie
-		@mtv
-		@music
-		@Recycled
-		@System Volume Information
-		@wonderful pictures
-		@ÊµÏ°¡ª¡ª³Ç»·02Êî¼Ù
-	#162.105.99.111
-		@ftp2
-		@µçÓ°
-		@µçÓ°2
-		@µçÓ°3
-		@¹í¹ÊÊÂ
-		$»¶Ó­À´µ½162.105.99.111£¬ÕâÀïÊÇ±±¾©´óÑ§45¼×522.txt
-		@¿É°®¶¯»­
-		@Èí¼ş
-		@ÎÄ¼şÉÏÔØ
-		@ÎÄ¼şÖĞ×ª_¿É¶ÁĞ´
-		@Ğ¦»°¶ÌÆª
-		@ÒôÀÖ
-Í:ïß#fR¥S-vúû²áë§;s[°„\”K9œE2/šM{M<¡A†a¤És¨iÑzÖU½|ŒPE©Úœ,âœ‚¡RS)¤ÚbI¤ D©JŠ£ŠéT£RC[KÉTåRe&\·-èìJÈe*–5B!©ÆjÕ3Œí»HA ÿı¤ f33DDDD3DDDm¶Ò$       ªªªªú¥¯ú‘uÇ}ø`Š¡Š(f†Y%–Yªšª'Š˜©’˜éx¦®)«"¢ep1ëY•™\G6œ’ÜuÙcö{7.K6	p€Z0ğ˜!Åªš Ä$jF¤b˜)…±½X–$õ=[È\-ÊpVVİjZ¡TªF7” ®œx]ï©"!Z¡jZ•¥hÿV–¥®7ƒ%ÔØåsÜôêt´Zn7+>œØòtvRâ³”‰X‰˜™Fñ¼v]±lI"—g[P”I$Òh´›M«˜Ã)NŞ§0ÙM”Ö`–ÅÔ¹0›æùaXju5Õu1µÕuV+M9lĞ‰µm¢¶e»;X¥ƒ™9’¼¯DÑ4­+—eÙˆËG5‰ºZM‡FƒF)€íJkãCÀ&Ùß]ùİo[ÎDµq\]§FE±lIRVÓiæóÂa:õk_1eâÍ1X…ˆhV…FÑµ­kEEí{I¤Ñ¤i2Jò½Æãi´ÙÒ*R­ªµ­™!’áŞD­+’duâxIdºÊ`DÑ5ÙvF#b´Òj6µMcİÑÖH¨‰‰z§£PƒBQ(6Æ›MDUµmF›ˆÄ`Ba­IJQÍş/kåmÕb¡©6Mœ—%Bàè:7DV©û[Vİ¦ÖG½kX~µ(•(C<Ài†™•¥k
-Â7Æım-–’sU_WÕ¥DV+v;j8ÚÕÿı¤ ˆD3UUUEDEDD‘²I        úUªªªªªôDççİŠ_Š¢’I$–Idšiç¢Ši®Šèv4!¦|Å¯OD)C•vWgˆw‡7ruşn%y\fT2 €5VÊ)¤ªÆ¶?[Æakæ¾mt†8£Bh"b&"UZÄ·mZÆ­’W5Ğı?WõşkXÆÎ/¬İ¿prÆák¦¹h–‰æ­jªj¶sšá-KQKe[ÃØö[–è¤2úµ½gWy˜LÜ™¹]‰øŞøïN‘(Í,kjÊ³–)pÂDàØY¼oO"ÍÇ#T(ìj-LX›j¶¬z·˜ÈŒ‡zg§ö××8 †i#—åö¥©h´P‡½è¬A¼.Éœ‹q"ÖdòXõ“MĞÕ•7•¥eÕáÜW,HÂ¥"’„ÒX¨T2ƒ\¶¹l†(b1C$åmV×®{0¥M2[Y g!ÉXÖ(Ôi­„ëÈ‰!e«V¼Şâí.ÑõŸ˜ÕRWÇ2Ôƒ5 à5§l\2#›ÚqT¾vâµÇWšx¨œ‰¶EdS—)zê§gY—f¡K’è'N©ZÒ+Ààj»}¨¥ĞS)`*˜íĞÜÍÖØvjš¤±©LSF“$Êå³„Ê´)«c†3èçÑÎÁ;>cÖÕœh…HTŠ§,Ş7‚vq26­«]—{¥²seW¶  º!xí€—  àîÿÿÿÿÿÿÿÿÿ`8ğµ²¨#ø¨ ™!Ä{i–ÜöÆ’%¨Ë*m–d¥¨ş6<´ÁuäÔÍ®°(¼ÿ>5—¤Óz"¬‡(5,¿d”Ù¶p%!<³»“â8oXÜp5lº†B@7BC60£…èAˆøà’¸KötŠHI7”l½±j4ğ”;-IUZuÉ@U)È €¡È"4„PÒR@lPjÜ{>Ç›ğ ¨g'§™'9è,•Å«8
-Šl³’IÛ( E ÃòÿHjÆîJáÇ74ˆ¸ÈÉ¤ÀQ˜òQgš0`T„$”ÉÈ&†œØ0šYÀ{rÓ‰{ ‘Ğøçˆ|šl„KK¨b5=À¶û$j€j“—½Q©™-(O0×Á@D;Ë'Á¥•Éå P€ş|rpş_ä'ÉH?„–‡e’ŠwË<§ACİSeNñIìéa¸z~"ÀP ¤(I7†r¸Nnƒ&İy(ÄŒ1(-'‚H!„qQe¤ŞÀ,@Ä†ìod#nÒg†/®€@P‰© ;@ÉƒCĞ/ÔAâ^ß’pğº"nÃC@nZKwt˜Ğ.[qè<‘Ïi«!}BL'+Ú0t¡b`Ö+„àÆ,¾†) =üşÈ0çê€c‘°“xù4EU°A¥$–Ìhø9RR8}Û‰òè$ó¨URõÈªÊ•­)‚_Ÿ ˜‚040½’QhèNæîey0ÀD  À
- ^)ÈÖ1Eav„óª]†BvĞDşBì9gšf
-Ò	H‚¤M¬<vXG2†j	>td&ÏØ*W¥QèàP3õ!„H‚cğ¥ÕC
-‰kŸ0¬êµÑüPšj2ÌCÇ#Ú÷zQ-F}hi#µW¯IYş)ú"ÃLt„ ´?bXzä‚tKÇ¡8·Gã‹Û„†9EåŒHGB+Ã@cÒVû§|ï»p®ù¬ a;2ºc9ÖLø¾’y¶^½G×é@Äíİ»ìÍ¿4`³³?>R€4)±hb›wNÍÊÜğœ²ZEå\¼•e»ı‚C~_1Î«åŒíÙğŞÃ1¥–““Çoigk¼‚iñí±ã›Ë†óx°MV8ß âha4#ä$ãĞ Eüı²7$o9¿€°ß’ø4ç¹¿ºŠw;ú]´‰„$âK(g?‚85¸-q3“sŒÙn‡~ÅAÅ Ä720  5²EÀ;…†  bB
-3¡ 	5W€I dšQDÄ%Ï@n$1¯Æ†lßoù•5¦ÂHa7%¹EñàIÌ%¬’Ç€â!â‰CVË=…bÛöÃíÌ¬,é°€¨šKÄ .”}å’±=@<«M£2ş)Ù³	 ø7Ü+ğ¹–JIc1)1öIxXÁ„¬‘zó€õÎ
-]Õ±á£\z‚€kfÍƒF°Ä¬EZœüç ‰A
-‰¨C°Ô±æâ¢SÒ‹%Øôàƒ úxç;ZCI7†ôã) H£6#ñp	Ì{%È²‹p$uÈ´š2Æ]Ù}OTyíVÔÅU!IöÏDT–õgôyĞK¤•A'ÙpéCpà¹*LõeZã:ÑnÒªÙd'ÑÕêÏ¶b¬eİÕ	 Åào k …îçO+ÛI~D&—ªáå"áF,ñeuÑü‰$6Ãh”í«ĞM?¢(êot	¥Œÿ}¾}Œù…N3DèîB]5¤
-£³æüŒl,ÕäÕ¯Á1& —J4Åã° Í:´
-î1‘·üìıÀ™{¾lf•(nùn¡$Ußc?æ¹Ûç‹HØş<
-á‰S?èüê-9)Cğ?±Mş8Rr[›RhI4CîIaÛ’0éò€¡\7íÒ ?îÖlÄärùÁ>á¢û¿ÅaÚ/”Ê†ŸØğ–À@Æ&mĞNØ”f  ¼¢‰}‚9¹É Š'\º?cÉ…“RÌüR¡NÂ],  Nß4NlÂR´-¿ÿ\„A½¸Ìµ!)pü†ÿ"yHàc' ô!¶ƒœ=?E4D aĞ†€ì®Pa	œ·ä²ùlP`RÀd4'(È7R|CØ5Ôø TåôŒÈsô€ĞÈ<eŸïÚ·Î£®ˆ½ŸÑP=0ş€P$0Ñ¥¢_Å`øé&€V¾Cà_²ŒFÇ!‘RËàT¤°Ò¸@B ”†‘'"ï½êö	 û Ä•€-/e PĞ‚O€ 88i`7ÇÉbO'À ,àŞ»Æ#­<Jy9  ˜‘»¤/ÉçÈFÃØ¹4Ï'Ÿè—ŠÄ¾qÁş7º"=Ñs.ı‘o³Ï—Î³§jò³ñ‹f±¨(BŞ/®IXğf»²	ÿL|›E õİQğ·«Öœš½ìí¨èw«ŞÑ¼»Ä¨òdÕäÚ÷j´3¤öğNÊÖ®ä[ŞNŠ	K~VÙÍ£ùrKéZYê“•ë÷ã>[86ˆ£SşÜÃÀĞúÎPüØ?Æ‰â -|^ÇòtJR¼k’…›Üñü  º!e€—  àîÿÿÿÿÿÿÿÿÿ`8E[‹Y¿+ˆ£Í3ŞqGo(`¾8æÔAJëç¾$ñ\v¨ùÅsø‰23?fÃÙB'âˆ­8bGšæÀÔ PÔ Áû¬*@véNäü°½† ì0
-,03ê%ö`¢[á;Éièø`TÀÎÙ$Äqp¾éá^ëY1=ºK,`çÂ’V ‚ÑŠ&“UÉiÀ<%â†røxí/)Røà/¹¬pÃ7Y>ŒˆGHÒÈhJ twÎPÄw8‡vÿ“l  bÀ«—¹hGrÿGÃqÙŠÜ}Y3@wÊ11ÊF`
-É¨&#F ŸÏ=b/B!bf)ÈÛ3m°z¶\x¢!Fxi5 Í®-è†e`8ò`+!´rjŠcĞLÜ!¢€‘\ˆ@; ò	a¤‚`¤Ô’A$  ì '&’À¨k$›ÜîfÀI;"J%™DWI˜V,”fğå…Ä ÄÜkäfá©ÇíÎFÏºÍøíJFH&€à0 J“„Ä òX-smû
-À¼2¶êÖLÁ:&†¦[6Äx4šj"2# Òò"‚ èjPĞ*^gRpÀ)Ã|I0†XÒSbÈMÙXùVşÁl ¨˜hFÂR»5ñÕğUú"²×CCÃ4P`Áôêâ·¢"Ğx|fl*+¦M¤2	®şºäû30|Ÿ"G“Vuàn¿«³®ƒº®®Õ†šîÓ5Ú­OvEÙ%<ÊÂª?•#¹çšA¯ån¶qFÔ¶aCÍÛ0D¼¨ìvæáR‹s/? î&,xs§N(Ê¸½»œ´ù6üw#ì;G`óòÕzQlå@0BK|ê¤50€_A/
-€ëÈÀ*JC8QÄkHğÅ§“CÆQ„¾;cÃµåƒJ|ı¸¯ƒÈívCJoÙÌ„¯­Y€z•ñZ—Š> ˆùú9œğÄ­x¡ÃRy|ÍXı#r?Kâf%’ğ´öVFçfª9=% è3âÃKv%”?„—ù›õeuå€ >@
-~ı=Æşw[²`èx¢"†8ÎHc~q¸–o]ë ßba¸ÑHËLP‹¢)À÷“I-äš_Û~ÈFéJxèY¯ŞĞkÀ¨K Q™÷H	¢hˆ›*JK-(1A… ÒÒ’qÒu}‰{Ã6È“TEaîJ	h
-†ğj1Hà+ö²!Ù|‘LF(«qU’âk8|ÊÌˆd$îrè$ó®Zw|¥$É6}Y³%ìı®¢(‰¯bLJ6ñ÷HŠ"ªT™
-—TlZW«ºjËµ{ºhÔmZ:ëP¿Qş}´JÍˆÒ‚<;Ô¹Ö¬ª¤z?¶j"ÁñZè#ó»÷>ÎjEB)µÔ$…"çšÖq.‚?”wçn"~;ò|4F;êá\ö\¥Fæü¼ëYØ9”£°±2*"² Ş‘æS#©vhŠ	›ÙKgÙŒ8ÅpÙ‰«
-ëµ††¡ÿØWQ<ƒg˜á†'@W0„‚t“ ª@,ßìØ'±!Öo¢ahb€©e$°²ºCÁ¡¥ f^pDü$@0Ä 21 T 3ğâ‹B9dÇïÜ›–_'Q„³
-È¸ÎY
-Â0
-CHiJAXsø†¤(ø4ÏRjUØğmû×êÑ!ÓwmDKj&vZ@pL)$ÒÇ2 CI¡¥Ëà_ô’;İ)Ë'"(¸ˆºIXd$“ãÊs’|€	€T™°öIg+âP“*O¢n)Ç2äŠŞ@İHOpèD2DÀÒ€P¤††‡cƒîÁÛ† 3 Ôì Ä#±ÉR²Ä9|ö1„ÀP–˜äÔ¶(÷À2¶Í “Ó²G ú®ÀRg„,ç§)‡û·Éœ–é=ï4y])fÍ®¨hš7´FÅf˜4¦©+4ƒ7ÁÒy}bfTB€wB™!ƒ!Ba+“_à/¹İÆªì@{üéá²òëx…Ô—ZÜû¢Œ£z¸ä+Õ£+Î(ÂÎmI]±Æ€ÒµÕíÍSÕtoıR+·fªßæU4g@k˜ÕH/ıšÔ…TÂáäD0 éz˜]]„ @àP±êıyxüĞ&º|l¸ì@¯E­¼¹<føı%¨şVp“ Mº94˜‚şã	Œp¶ğ Á$0â¸, ĞßŸ¤ wêršìÀLMÿ¥ÿãÀÕÊ˜Â`aXÄµ?J‚,ÉÕÅ€Ÿ¿ö8`F´†M[vQ‡|/{Xi5“’„÷İIËÇğì&Šó ì†03–R6Ë-)Å#,Ôõ¯TH`; FCH€aÀbL/İöAm÷d$ÄcÙclĞ€-+' Ûm¹E†t7%iê{­yğÀˆ@rVîZÓÿ?"qD$¨3,4šMàe$Ü„¸Å 1} `E/BfrAL.(¾Ãæàiîè†v&ÏïMcC3UZLµ¼$Ê¾Aj&–ùŠz ’Êo×jÙ7 cŠà>âÈòñ—A+  º!‰Û€—  àîÿÿÿÿÿÿÿÿÿ`8'&“
-¥†JAa¨èIIÛäî~ó€˜%¹ãpWõ[°oŞ%aàÚ›aÆi(R²¤|òl"¢ Ø†áœbI'}äïAƒÅ7z´gÕ TÜ™û³sˆÈKÇÌe†KÔ—Ñ˜ú<Ú!Çª&Gë@¹`T3à–Œ#'®èğÜ>â¸äÀäÔ²ƒrl­±hÎ<İîÈn^eŸEeæ£Ö†e°†¬è#€Ö¤4Š|Ã6ëQ²Õú˜ DÍ f ³¾ «f]Õ…>jœ ÌÙóá03mE«Q×İ$}^/——_’ƒX;öß¨ÙÎˆ`ğ o‰­.*.ÈŠª’tGù4B@ˆŠdf	<uÑw¥”	×ÏH™(?	ĞÓDÑ	~Òjz?˜%çç—ö@Í€EÀStE=\ï‡›‰ÔÊˆgpÄ¬è¬¡ÏÃ²DÃO@=ÆĞjI„ ÂY7ŒÛpDønÄÀÁåòqşˆEL¨a¡€#$e†”XÜ1D²b’YHIg®|”ıÌPxè¨ 0³M&€é4†bh@P' `œS€2T€Jpæ®ƒ‡ã„·´J3Ø"Mom+i™FØúl÷j•`Ä©3Èâ"Ú/®šÑèÀÂÀ¯á 7ãâ2C 1 ¸ş`¸9	o"Ùa›K >,Ü^N }¼Xëzüyš(ˆIØ„‚hgdÂNà"K û† •ól^×pPÀ¡!¸1Reïùd2bKĞÇdwß-Ì¹„Ü’’Lëü3³›Ñ×Œƒ¥¬(—òR90¼nI&’Ã;ÄÄ–4„Løq`(ÁœŸAÊÉ¥n…ZxhêÜÿX ÒÙÅXC	¨-j“ÅÅ‡8ÂÔ3“âşØÓåSŠ ‹çear#Q$ÂRX\¸ê"ÖÁ€1 fBl Qd"Ã¸Ôà WÊØàæ	€…òc	!yàA½ÒµW2!ÑÖWÎ5ˆp¸¬„ÒºQ¸²pı[ƒ>4IDk!¶Ôv6c¶Â…uŠ
-e·[8† ç¾£9 Nc(Ø•×şnxÇxŒÛºÿb=RQş8ç­Q‹YîØ>­éj20˜t	…d¿mGÌ¶ÎÊ•
-Êîp¨ŒmA€YÈ_üûµ¥ÂL]JöS˜qÄi½4CÁhÊÎ‘Rl+d¡XbuÃãĞ'è}âN=ßÔĞEòÑ• ;ÌÎûÆYÛ×€ÇŒılá^™Qî‰Ee›ŠG,5	$²Íã @AĞ4  Éœ¢ĞZ  <¡˜ À
-Èe­9Å’Gm €ì†r` :I1	JKØkr€¢>_@bC~=Yq¡9HfÈÉXv{F% fØS‰ò¢ö“H°Xe³(G»¡ã$ç9^AùwAËC@t‰¨	ù7* ’qÜSÚIœ–_îLJ° ¡.Pæ4MÊµ“H\0*(h`Ü—±ÈHñN*GËPGÒ Ô0i¬;ªÚ€Ãå€Ä
-''8Fï”g2Ø5xãgÏŠ­ÊJ6Ss±¢ÅX 2!º¿]£¡©í™„,Š%R†pºÂ€ÜâˆkçRá»@Q '@Ç°(²ĞÑõ_1ØbßXõ›lY¬ïÑ—ÅÎ2—¬Ha@;7È!¬âğÀ³àÂ€è$Ğ(“Š/’¸òºÊ'HsEÀ0 VB!€: Ïc ,!°óÃ?'ëÔxPo ÎJcwG
-³±ÎPNêÎ8jÑ¨ï;·"…|Y€óåöoÖxıQÑ«‰hÍ±îüøŸU–é ‰Ÿ÷ı²²Ô¬â×få#>=<œÃÙß×pÃóãÙ–O6kGq+ŸÁŸş¬ƒ—ùªò'd#m‘•Ü'H×qÇ³0·bKQ°gùÉ=Î0)JÕ!Ÿv‡&l—êW‚fo6o-D0´€•´".Â¬ a‹	Ğ‚n”p™íUŠL»4k¦?–×\’@ ‹çA€	 0 7 ½ :‚@5A1²bI£ó£—»`¦rÉ„¢˜í2
-_ùÏ4t–“Ií÷ÁSSZÌ5êƒ©Ôchß&K.ÙG nV|ìôBa M¼Ã~¬Ë+»‡_êé*]É BLÄÒQn 8fR—®ãuj2ûÊ“¨†*wùÉáprJë€vMBÆĞEà€ªóîàË¤B(š@á™#	ˆøáN1”Õå €0˜€+ÊÛ$åæÒ£¨ÀJ,àÙ	KV» €˜‡ºÛóî`
-JÉÆËxö"ÿ™ì†L( :€nÁ¨è"¸¦í{A£>æÑñ€B¢À2¡¤":RI_u/ tz2svHïÌ2ó€” Éâ€3AàX† 2J°ué>$;€ÎŠ¾Gb
-ÏòL7<}Qm·äJÂP×<ÁX¨ú;RIÁQÁêqøuC:3’”Æ»‡§ÏöÜ¢Z{$(L… ±ŒÇ±ÄP!'&#·ÕVQKGep¼é1èí(1Lp{!4ÅÊ¢ÿ-FS!Ñğ[  º!’Q€—  àîÿÿÿÿÿ`8!Z£¿œŸQ‚‚eHbbÇpüå!{±€?ıYÃÅp] \† WĞ`à«õPi0şĞ¸¾ƒI„œFN6Ñ„Zİæ“f½ÂC¨ùbmÅ8fšU— €òîÓHk•~ßG¥¡÷=·ŞîäßíLOÍˆ½TÉÉ7ùRuC¨^ÿœj¶Q“%)^+ı²ómÎ???A×…˜+8:°ì‡Î’àXñËh‡»èúÿÅ¡´p’$±K`2‚I#¤^°X‰"»î3fÛcÅ¯“¬š•doÆ†¡Óğ‰<óK^@§JŸGØºè€L ”ğ\  ?à ^¨€1ì°ğŒÇ÷Fä„¨ií|‡0`„"ø`É‰
-”1 a€à0°-‚1x’_Ã2ŸÄ$í{Qü‘¾ê›y^R£`Ş1Šµ hÄé8Û!gQ
-S4E†Œa¬I°?ÄÁ=â†Èº?h4ûĞl‘ÇÉ®Ô€iÀv4¬MIX4üv ÈD0@,&€ä3Ä‘b< üh¸È`0 @†gÙ	`+C-» Ì?Ã2ØzØÓbtV“GÇÏoû¨Œ:„#\i]%Ÿni0aHı…S] 
-Ã,|ç3g^‘¸Ğì:D]›DÉN´º‰â%8‘ó³Wü°pƒ Ú>)oRØÌÍøš^Vì¿˜T¨+6çg8DõÁ00d¸pø
- ±_÷à   ÚïŠ   +ÈB$ï÷÷'D0Hf“HjÌe€d%#3’¢ÊÎy÷˜„ÊÃÈ$û;	fDK1cÔÍ¯ĞÌÅáş ,C)ük«ÉÈ7…ï’[ºR¡Î?0HP,b?à}|F`¯°-Òü–qãRà»Ù--ÂR~Äàh|IC|{…ñÓ`Şƒ)ô’ÃV€“E°jWÂÎ"É!ªrËdâZF	øx—ò3¹óõÿ†ÕrXiÊÄ´¶qÙÙfø4Ò¸,kŸË/œ9úµ›(a7x¤¶bˆÄëÀL(DE"Ê˜¢@OwÛ²	)"k'–±bà	R€DÇcÀÿ= éäfšˆê\¢,ái€&ÀM<>ºåŒ»£Fè$	4¶¢6íİİ$½¯cSŸ±ÑCì×ìöjß)k:Mx5íôGyt8f$ãbi ¶øøm–4Á“m)¨~M',<•‡ µWĞó0
-Â  -ñ™€™à*Ç…Ç…ü<%Àæ1Àgz_¬*×³ç|½ø
-YN€…h·b(²tì[0D…uh!››M#=Nnøs“6,ŒŸ!¥—£MB;"¸jé2Œ’3n'ÈNUô%#;³‹‘Îy$Î7rt:ÄÊ†vÙW@it˜ÃìˆáDúm ùòÀ:’„³ßQ†ğÂÛ§æ²0ÄHbŠŸ÷æfÌOì¨’ÅŞã#0·'ÈP«ì£¤0î;¬y:ÈQnÔn*©9±‰(_!ìuİµ$Y’8ÒA,gsBğg½*Ãiè’û$YÚ‰QF‘½‘f¬‘F{Ã@ÒšJ"a/–MÄ ÌøTIE1ş¨FÈç´¤jÏCBFrN½$ 	g¡©*{Ø%õWe–—/‹¢MçˆgUÅá÷ÙCØLœ|–¶Mºat÷ÕÜu„RìÃC]¬«Í¥M”a¥$Êºck7UxGuÏ?’Æ˜< yqJI$©Ù°¢K¨ªÇå¹5&7@JO Éï·€0Ä.³ÖÆÄÀ0ëXu†)ıÚ(lŒ6<}—>›2‚„}İK¹/›ôÙU*ˆ¡¡D º¤ã‘*!k|¨¤cÀ™j$ÎAKK«2ÂtuÑ—°‚\KG	àwÙóó‡€M354¾@ÆÏÒşD>'Ç¬Ö'JÆ€M`¦±ıCGsÜ?´‘¸IHw¢FÒNÃˆ”ë#±‚yÄyj5±½€ç
-zw¨·vp›áÍÀdu°ÓBøôJAŠ/Y·ê¾H{€²è|V²LX’fPU<İ—¢B¶¬û°T}¶°°„Œñ™ôp~Àó+8ŞGòŸZzÂìŞDè’ã)'%Q.ƒmTôJAª'ÀÏÿWU'å3 ıˆ²ÀòÀĞås}3 /tùd`i . Ú€XO½NôÛBO_ùˆøÀ!‰şÙ˜ÖFm‰şèÍ¯àd–¦#$RòÄØÿVÂ+Ö³_İ†,X¨’ƒvıˆ‚h–‚(2qçM‰(°Â8öAš9–c2«[jï`Ä²(b$)gÃjá ùÛ¬0À9å_W@ÜIyÅÕtUu³ç§º(2ş€uCU#¨âÚ fÿº¤—C‡‡»ÏA;¾<Ñ¯€p@vòÕMQ¤Sø¿å½x)bÙŸ€|Z…)Á/÷äSe” çÄş˜šD' °„GÜáHÿÉàåî‹ªÅˆÂ1,->Ş` ê'*ÈZú
-=Î<èI:&S
-7‘$ í}@  º!šÇ€—  àîÿÿÿÿÿ`8!r¸¤¾ã‚¤
-­¨iQÈó©µuySo(Î—q,¢¹7ıİÒ-#LÈÈäêÅÕ#Ù„-Ì Á«6Ë$â™FÔv%!uG8ğ–8­„…r'£œå'#8Û¥É¥ş ĞÂ‡á¥•Ö,”ü/Üğ0‡gıd”†•ğ_0ŸÕWĞM|Œ}ùÛ††uqmûñGeCJš,p×søĞIıàX°í…3…¹X£ÖkİS@ÁJ­COGK.Q>†¶“å¥$´O>Ö“”ó$Û(ójOªÈ0ƒÕB«ÈVgsĞQŸÆ_«¿²º,@âJI¶òâ¡d.ÃIƒÒAÉ8„ªçU
-AW*êoe\óŠ#ÙşF‰ÀÓÿ /SìnP æšH0°‘ˆ0²İXG¡%+ë¦›YÑ.“mÈöE!a”Â	7µ5‡=ZUµ+ºB(7ê<%İA˜¹
-é2œ®É¥$“4³8´6Î¬›yW]O!Aj¡H£E™CKÊ0 o º‚6‘¡æĞƒ-k¤AÚqN“mŞšIDjÒ? Ë¥C"Å]CšIgf›g;³]RUØ'­¥hk¢“1%>›“&’F¤Ñmv¶a›†„2NPñ-va‡Öš(A@5ÒREäIÉßjM³$Ñ’,Á?Éé«rŠ5T§šXŠD‰ `¤ÏÇD 2Y¥ ;ıÉê¤²ÒÊqD‹C¸U‚|»BVƒXÛÒŞšÒV»ÄÛ;zHdŠ¦ ˜Õ µ×¤¡¡ôo¢Jí.¿¤XH
-ººÂ¤ì±G÷2HçS1İä˜h¬9™„İĞÁ¼µN·Œ·O*’¨ÌŠ'÷õÉOµôäv5lèR©Ñ•ØéEò‡PÎCSéºA,.ÉT¡¡£êIG ›F©9S²ì­¨ã*²­§iÅitŞMFµ8éô³•$Ì‚cDà³¦Zˆî¾±8‘ÈôÎAº…p\p20h· ¤W1iü‰_Ü´—‘³÷=#DdIí„ĞXÉ‡r) ”36Íô‹#¨.tj4õ„U`‹ú†p^ƒ\èhãE*ˆÀÀYq;C9ğškŸ5Ò,Á7%—=OÔZĞKhÉdğFˆ³ÇC`¡Ê’¾’êÁğ8Úå3M¸+'É4ërS&™•œª)™Ì¡o6İÌPĞ÷§ —æ¹åk6F\JTF´x«¦ª#‚å±@Ny½âäÿ§ÁFãÀ¥ÊˆïÄÈñ2`‘‡Ìèf4yi¤ˆÍDK÷Lê#
-è%ó¸ú©š­¥U8}_¼6™ŞÈYVN3&’¨æi) ¤™f	>Oèp)*i:ÄGEvN¡•gˆÜh&H p ¡	45`\7€¬ = ~PaE† 3@ĞøËIiVã„Ù„=”Uz7;Ïtf¡×i„)®ëG˜‘Ş%lºŒ„à¤aŞ-¹4Ã@¤¾‚_.ÚoR2}©®t=•û@ı,º^)Ç2€      ;¡Ü;È/²ˆñ5 dÙä(]³‰­v({‘ÈĞâ ì-<Ñˆqë j$ÿQ˜_#Â0÷ÿGü8Pö0‰Üp¿÷'Â ?˜ŞEvF¿²#i¨U=ÑçNå)=œÍØ<9p‘(’½Ÿ7ªÀ¶?ş"k¢BT§,UÑ[w.êšyÕWÔöşŞ¤9‹ZâGµ	@ÜĞCƒ8˜
-¡-Ş‰&V$pÄà‘¨>NÊqógğì2Ä^41#ö²2”JaZ°à¯ıÇhˆŞ dğeÿˆ /º,Ø<óÀ}GÜEöSªÍ¯Ä…M{WbÅ ê¡È4‹YC2»	SR-Úl]U	£M+|WTJ6:¢œtÈ—‚ÒH¢BašƒP,½iïrÍVkªÛCfF { ÖüÊ\—ìÏtF}'””mÒÁİè’‚×eQÇBÍz%0‚ˆˆîtY±“­˜= p*®N"¢AÜ:Åa›HZ±V!%6©;‡È"QgÂDNo]-BJÃ<÷ÖCC6w‰˜›‹á‰eN=×Dµ(£K¡(Ú@Ì#Äà¨K¡µ	LZx±zï’=h'k){MİõÑmÃ â›m‡×ba¼3å‘ª„Ÿ*$<‚œMÖ’’,ÂJ(Wêg	²ñ=SeÄ"QNR´‘„P•ò`®–ÄÀŞ-MÉîN¬qò<é¡-àb ÖŠ\BS(µCî8y:‰#†§“Ùe7	T4|Œå÷çc/POòM¶ƒBoè•	Mr¡%,*„¦PäıR¤S°WU­ÈñD_Ëéì €è0 Æ=;…À/zŞ„İnE;lÿæubƒÙÍC q@?‹MĞcõeu‡Iêxˆ4 k Z7,@eb|`ğ»£g
-4ˆA¢JŒ¢Îô¬Ò$é“5c7cl„rtÌÓØ'ùÛKµ)MV˜“«ôƒË1-Õ˜Ûç¡*p°W0İ ê8 }I³øà`§ùcÔO"A`qû°¨ p3 Ó˜@9ñKáZOìáebuØUF¹y²˜á| i°Ü4}c]Ï è¢6‡ŸPK“±-‰ÖÆ( 8ÈJMçû	ÎNq·Ø T  º!£?€—  àî`81Ïñ‰‘‚%«å8 Ô Û°ñ»Py‰À[f6"J-ã¡ÀD¤™E“²"šá„Šu’m-4… Ã	(±gØ¹Ô´çqb–HšIÂEû¨”`‚
-Ã—SLÚÕ¨–¹&ˆ0€ú¢RXmC\X?„]f¾ëïñGî¨Ğ‘¦ü€Äè¼,’!DZÑ @d:ØƒÿÆA‰HÅf[€áÎõD¶m¢Ôñnñ‡*êA˜JA§Îğ!ğœP"h¬ªĞôĞ¾¤x­#w Á‹ëÂ íV„÷ª™FÓÒàÕÔx˜CElú(Ä´4a‰wg‚SI`ÛÈ ¬VÑI:¦p˜ƒY¤™1¨*œK]×~Îm€^AÚì!ÿ®H7€É¬—ıè0ƒ Päù€Y…‹¡%éuÙŠã(–Á:| ’Y/ú<ğóéğJ¨LE¦ªª„–Rb‹la¢øF±3ö!-7ªÔJXàÉ:ê5‡ŞeÌP)…ïW.Ä…‚&©|à‹e†	§ìyK'Q-Ó<On²=×EX3 ¢Ü»É
->¦8D5eËEY!ÒF¯:Úãˆ÷t>CF×ÓP•Îª¬U‰“K*Ÿ‚š£Oªµ…ÑIÀ¹ ¥bN‚ç’ıİÒ½U©A4ÙCQÅn9Ju6a£€G!@y?îœ•bˆ v‰$ÌulÕ[¦]„¤“o¾¤şôÈ%¢èKóô%0Õ0Ô%¢†T„\ÏÆE`¢ıª¢Õv6ôkª+ªôâÇ˜Ä	¶®d|àÎ\¤6„š[V—j%Xe™cÇÌ­S*BM6lc~‘*µšŸÈ’ÔÌk$úmÓ¬dh¡a/±"O‚”Ç×tç©yJ“°’â™ÔŠ9¦m÷pØ^cDÏ'İŠªD˜xMOV«Ği¨·£ª­ëé9Qæz_ª4¢‘„¹¸wU¿Ó¾Ãµ„„PˆiF€©1ªÜRUÎ­âsÏşÇTÃ´³T<Õ«Åw*$¼ ¡½`/“‹} 5q¶lyäz$æPTƒ÷®D6ˆè ª²í^Ï‡L©šfœ$$ãúºÒ	kî8+Ş©G¦f«ú²ÏÚĞLr¨ŠK§*ÂP/“XMQ…ªÔ*Òóë0îê„vDZ3a§!|Ğ©jÙcø¸3”î™{l„aÍû½œY¦q#Œ7$
-dŒ Îe4Ã£fœçŠ*FÊàlƒBC6"*Vzæ}SÕÂ*®w"æTE‡¢á·}T"6ùÔËåk —›j¦£Y½µ×ÖYøêÆœ¨íi%úM§*#òµ5¼=gÕÚ¯=6”FøuUÊAK’ºãë ÙıØTa¤ÊyÆ[;$Ğª‹bª›b™õrj‘r§«|oß>ƒtY×8uÙó¥_2¥Y„ráŸJYÔuÈv«Ìx#óÌ:n#¢
-7jjCòék6Ô.äB;÷›î_eÊä˜IŒ‹äaŒÂ
-¡œeæ²¨”#¡Ş†QG¸0`& ĞÀ'¤ Ë& èzÀÉ7’~àH®¬<ù2qW
-€ hy@àÖÄ¢ÃY_»TûŒƒ6‰4EZ>z® nºƒI dŞí³HøÓuÀ ÁgGBF{¦.*5UÓï›]¼ªÚ¹UHĞZ‘!Ğ  ¸ $€    ‹NP  +ùH” hÑÒº÷a¹×›ßAä2kÙ`ö 1¾    xù  Œã                      F:\flash\ftpÕ¾µãÍ¨É±\sftp\162.105.0.0--162.105.255.255.txt                                                                                                                                                                                                          F:\flash\ftpÕ¾µãÍ¨É±\sftp\.162.105.0.0--162.105.255.255.txt.map                                                                                                                                                                                                     F:\flash\ftpÕ¾µãÍ¨É±\sftp\.162.105.0.0--162.105.255.255.txt.blk                                                                                                                                                                                                     @qm     ¨ág         (     ¨ág         ğ    ¨ág         ô    ¨ág         ø    ¨ág           È                   <SolH                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ü6˜rhF                          ô(n <So@F                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
