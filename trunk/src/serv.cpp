@@ -12,7 +12,7 @@
 #define SERVER_PORT 7891 // define the defualt connect port id
 #define LENGTH_OF_LISTEN_QUEUE 10 //length of listen queue in server
 #define BUFFER_SIZE 255
-#define WELCOME_MESSAGE "Welcome to J Search Engine 1.0 \nJuat input your query word then Enter\n"
+#define WELCOME_MESSAGE "Welcome to J Search Engine 1.0 \n\rJust input your query word then Enter\n\r"
 
 using namespace std;
 
@@ -31,7 +31,7 @@ ifstream didx_file;
 int servfd,clifd;
 
 void output(string str){
-  cout<<str;
+  send(clifd,str.c_str(),str.size(),0);
 }
 
 int docid2offset(int id)
@@ -168,9 +168,9 @@ void get_telnet_result(string words)
   for(it = result.begin(); it != result.end(); it++){
     c_raw_record record;
     make_rec(cuted,*it,record);
-    output(record.title+'\n');
-    output(record.digest+'\n');
-    output(record.url+"\n\n");
+    output(record.title+"\n\r");
+    output(record.digest+"\n\r");
+    output(record.url+"\n\r\n\r");
   }
 }
 
@@ -211,13 +211,15 @@ void start_serv()
     strcpy(buf,WELCOME_MESSAGE);
     cerr<<"[LOG]:Receive conn from IP:("<<inet_ntoa(cliaddr.sin_addr)<<":"<<ntohs(cliaddr.sin_port)<<')'<<endl;
     send(clifd,buf,strlen(buf)+1,0);
-    recv(clifd,buf,BUFFER_SIZE,0);
-    while(string(buf) != "@bye"){
+    int size = recv(clifd,buf,BUFFER_SIZE,0);
+    buf[size] = 0;
+    while(string(buf).substr(0,4) != "@bye"){
       get_telnet_result(buf);
-      recv(clifd,buf,BUFFER_SIZE,0);
+      size = recv(clifd,buf,BUFFER_SIZE,0);
+      buf[size] = 0;
     }
     close(clifd);
-    }//exit
+  }//exit
   close(servfd);
 }
 
