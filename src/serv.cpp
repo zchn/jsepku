@@ -11,7 +11,7 @@
 
 #define SERVER_PORT 7891 // define the defualt connect port id
 #define LENGTH_OF_LISTEN_QUEUE 10 //length of listen queue in server
-#define BUFFER_SIZE 255
+#define BUFFER_SIZE 1255
 const char WELCOME_MESSAGE[] =
   "88888888888888888888888888888888888888888888888888888888888888888888888\n\r"
   "                                                                       \n\r"
@@ -118,8 +118,9 @@ void get_digest(const string cuted,const string &content,istrstream &cont,c_raw_
   string tmp;
   while(cuted_s){
     cuted_s>>tmp;
-    unsigned int pos = 0;
-    while((pos = content.find(tmp,pos)) != string::npos){
+    unsigned int pos = 0,cnt = 0;
+    while((pos = content.find(tmp,pos)) != string::npos && cnt <= 18){
+      cnt++;
       unsigned int i;
       for(i = pos-1; pos-i < 10; i--){
         if((unsigned char)content[i] >= 128)
