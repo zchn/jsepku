@@ -102,7 +102,6 @@ void get_digest(const string cuted,const string &content,istrstream &cont,c_raw_
         if((unsigned char)content[i] >= 128)
           i++;
       }
-      i--;
       end[i]++;
       pos++;
     }
