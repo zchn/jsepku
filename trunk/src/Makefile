@@ -21,3 +21,5 @@ invert:invert.cpp
 
 serv:serv.cpp query.h
 	$(CXX) $(CXXFLAGS) -o serv serv.cpp Dict.cpp HzSeg.cpp
+clean:
+	rm *.o
