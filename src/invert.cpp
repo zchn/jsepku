@@ -40,7 +40,7 @@ int invert(string path)
 	ifstream in_piidx_sort(path.c_str());
 	if(!in_piidx_sort.is_open())
 	{
-		cerr<<"[ERROR]:in-file can't be opened"<<endl;
+		cerr<<"[ERROR]:piidx file can't be opened"<<endl;
 		return -1;
 	}
 	/*将文件名中的.piidx.sort转化为.iidx*/
@@ -55,7 +55,7 @@ int invert(string path)
 	in_piidx_sort>>words_info[0].words;
 	in_piidx_sort>>words_info[0].id;
 	out_iidx<<setw(TERM_LEN)<<left<<words_info[0].words;
-	out_iidx<<setw(TERM_LEN)<<left<<words_info[0].id;
+	out_iidx<<setw(8)<<left<<words_info[0].id<<' ';
 	/*按照.iidx的要求从左开始输出*/
 	while(!in_piidx_sort.eof())
 	{
@@ -67,7 +67,7 @@ int invert(string path)
 		}
 		else
 		{
-			out_iidx<<endl<<setw(TERM_LEN)<<left<<words_info[1].words<<' ';
+			out_iidx<<endl<<setw(TERM_LEN)<<left<<words_info[1].words;
 			out_iidx<<setw(8)<<left<<words_info[1].id<<' ';
 		}
 		words_info[0].words=words_info[1].words;
