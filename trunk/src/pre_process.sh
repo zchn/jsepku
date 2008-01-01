@@ -23,10 +23,10 @@ if [ -f "$dir/$proj_name.raw" ] ; then
     echo "[WARNING]:$dir/$proj_name.raw exists! Overwrite ?[y/n]"
     read input
     if [[ $input == [Yy]* ]] ; then
-        ./crawl $dir
+        ./crawl $dir $proj_name
     fi
 else
-    ./crawl $dir
+    ./crawl $dir $proj_name
 fi
 
 echo "Prepare to docid2offset..."
@@ -67,7 +67,7 @@ if [ -f "$dir/$proj_name.piidx.sort" ] ; then
     echo "[WARNING]:$dir/$proj_name.piidx.sort exists! Overwrite ?[y/n]"
     read input
     if [[ $input == [Yy]* ]] ; then
-        sort $dir/$proj_name.piidx >  $dir/$proj_name.piidx.sort
+        LC_ALL=C sort $dir/$proj_name.piidx >  $dir/$proj_name.piidx.sort
     fi
 else
     sort $dir/$proj_name.piidx >  $dir/$proj_name.piidx.sort

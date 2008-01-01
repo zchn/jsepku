@@ -6,11 +6,10 @@
 
 // 在此，我感谢 XXX, …, XXX对我的启发和帮助。下面的报告中，我还会具体地提到
 // 他们在各个方法对我的帮助。
- 
+
 // 我的程序里中凡是引用到其他程序或文档之处，
 // 例如教材、课堂笔记、网上的源代码以及其他参考书上的代码段,
 // 我都已经在程序的注释里很清楚地注明了引用的出处。
-
 // 我从未没抄袭过别人的程序，也没有盗用别人的程序，
 // 不管是修改式的抄袭还是原封不动的抄袭。
 
@@ -81,18 +80,18 @@ int crawl(ofstream &raw,const char *dir_name)
 
 int main(int argc, char **argv)
 {
+  if(argc < 3){
+    cerr<<"USAGE: "<<argv[0]<<" dir_path proj_name"<<endl;
+  }
   string path = argv[1];
-/*将文件名改成raw模式*/
+  string proj_name = argv[2];
+
   while(path[path.length()-1] == '/'){
     path.erase(path.length()-1);
   }
   
-  unsigned int pos = path.rfind('/');
-  if(pos == string::npos)
-    RAWFILENAME = path+".raw";
-  else
-    RAWFILENAME = path.substr(pos)+".raw";
-    
+  RAWFILENAME = proj_name+".raw";
+      
   ofstream raw((path+"/"+RAWFILENAME).c_str());
   if(!raw){
     cerr<<"[ERROR]:Error when opening tianwang raw file "<<argv[1]<<"/"<<RAWFILENAME<<" to write!"<<endl;
